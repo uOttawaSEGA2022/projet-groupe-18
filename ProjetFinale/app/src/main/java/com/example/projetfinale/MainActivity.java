@@ -19,4 +19,24 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),Bienvenue.class);
         startActivityForResult(intent,0);
     }
+
+    public void OnClientLogin(View view){
+        Intent intent = new Intent(getApplicationContext(),ClientLogin.class);
+        startActivityForResult(intent,0);
+    }
+
+    public void OnClientSignIn(View view){
+        Intent intent = new Intent(getApplicationContext(),ClientSignIn.class);
+        startActivityForResult(intent,0);
+    }
+
+    public void OnCookerSignIn(View view){
+        Intent intent = new Intent(getApplicationContext(),CuisinierSignIn.class);
+        startActivityForResult(intent,0);
+    }
+
+    public void OnCookerLogin(View view){
+        Intent intent = new Intent(getApplicationContext(),CuisinerLogin.class);
+        startActivityForResult(intent,0);
+    }
 }

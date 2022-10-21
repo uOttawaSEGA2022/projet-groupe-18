@@ -14,24 +14,31 @@
         tools:layout_editor_absoluteY="1dp">
 
         <Button
-            android:id="@+id/Admin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnBienvenue"
-            android:text="Inscrire come Admin" />
-
-        <Button
             android:id="@+id/Client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnBienvenue"
+            android:onClick="OnClientSignIn"
             android:text="INSCRIRE COME CLIENT" />
+
+        <Button
+            android:id="@+id/LCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClientLogin"
+            android:text="Login come Client" />
 
         <Button
             android:id="@+id/Cuisinier"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnBienvenue"
+            android:onClick="OnCookerSignIn"
             android:text="INSCRIRE COME CUISINIER" />
+
+        <Button
+            android:id="@+id/logCuisiner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCookerLogin"
+            android:text="Login come Cuisiner" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
