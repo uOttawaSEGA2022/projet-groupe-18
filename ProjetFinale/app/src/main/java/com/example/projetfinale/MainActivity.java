@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Client userClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,5 +38,9 @@ public class MainActivity extends AppCompatActivity {
     public void OnCookerLogin(View view){
         Intent intent = new Intent(getApplicationContext(),CuisinerLogin.class);
         startActivityForResult(intent,0);
+    }
+
+    public void OnDisconect(View view){
+        finishAndRemoveTask();
     }
 }

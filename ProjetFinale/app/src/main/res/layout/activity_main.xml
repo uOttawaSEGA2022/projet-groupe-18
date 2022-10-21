@@ -40,5 +40,12 @@
             android:layout_height="wrap_content"
             android:onClick="OnCookerLogin"
             android:text="Login come Cuisiner" />
+
+        <Button
+            android:id="@+id/DSCT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnDisconect"
+            android:text="Disconect" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

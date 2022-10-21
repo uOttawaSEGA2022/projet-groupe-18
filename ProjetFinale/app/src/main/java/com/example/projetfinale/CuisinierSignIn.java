@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 
 public class CuisinierSignIn extends AppCompatActivity {
-
+    private Cooker userCooker;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private String email;
+    private String address;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +21,10 @@ public class CuisinierSignIn extends AppCompatActivity {
 
     public void OnCuisinierSignIn(View view){
         Intent intent = new Intent(getApplicationContext(),Bienvenue.class);
+        Intent returnCookerIntent = new Intent();
+        userCooker = new Cooker(firstName,lastName,password,email,address);
+        returnCookerIntent.putExtra("", userCooker.getPassword());
+        setResult(RESULT_OK,returnCookerIntent);
         startActivityForResult(intent,0);
     }
 }
