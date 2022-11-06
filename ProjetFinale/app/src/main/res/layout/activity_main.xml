@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <Button
-            android:id="@+id/Client"
+            android:id="@+id/btn_signin_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnClientSignIn"
@@ -40,6 +40,17 @@
             android:layout_height="wrap_content"
             android:onClick="OnCookerLogin"
             android:text="Login come Cuisiner" />
+
+        <Button
+            android:id="@+id/Admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login comme admin" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_signin_admin" />
 
         <Button
             android:id="@+id/DSCT"

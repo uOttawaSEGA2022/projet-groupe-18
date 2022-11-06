@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Projet Finale</string>
+    <string name="app_name">Projet Final</string>
+    <string name="btn_signin_admin">connecter admin</string>
 </resources>
