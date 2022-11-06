@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -18,45 +19,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnClientSignIn"
-            android:text="INSCRIRE COME CLIENT" />
+            android:text="@string/btn_signin_client" />
 
         <Button
-            android:id="@+id/LCC"
+            android:id="@+id/btn_login_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnClientLogin"
-            android:text="Login come Client" />
+            android:text="@string/btn_login_client" />
 
         <Button
-            android:id="@+id/Cuisinier"
+            android:id="@+id/btn_signin_cook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnCookerSignIn"
-            android:text="INSCRIRE COME CUISINIER" />
+            android:onClick="OnCookSignIn"
+            android:text="@string/btn_signin_cook" />
 
         <Button
-            android:id="@+id/logCuisiner"
+            android:id="@+id/btn_login_cook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnCookerLogin"
-            android:text="Login come Cuisiner" />
+            android:onClick="OnCookLogin"
+            android:text="@string/btn_login_cook" />
 
         <Button
-            android:id="@+id/Admin"
+            android:id="@+id/btn_login_admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="login comme admin" />
+            android:onClick="OnClientLogin"
+            android:text="@string/btn_login_admin" />
 
         <Button
+            android:id="@+id/btn_exitApp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_signin_admin" />
+            android:text="@string/btn_exitApp" />
 
-        <Button
-            android:id="@+id/DSCT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnDisconect"
-            android:text="Disconect" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

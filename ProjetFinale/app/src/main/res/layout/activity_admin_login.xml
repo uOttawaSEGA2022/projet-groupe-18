@@ -14,27 +14,27 @@
         tools:layout_editor_absoluteY="2dp">
 
         <EditText
-            android:id="@+id/Name2"
+            android:id="@+id/edt_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/edt_username"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/MDP2"
+            android:id="@+id/edt_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Mot de passe" />
+            android:hint="@string/edt_password"
+            android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/Login2"
+            android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="OnLogin"
-            android:text="Login" />
+            android:text="@string/btn_login" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
