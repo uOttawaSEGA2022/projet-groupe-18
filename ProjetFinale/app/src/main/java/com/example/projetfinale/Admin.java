@@ -10,6 +10,11 @@ public class Admin extends User{
 
     }
 
+    public void setStatus(Complaint complaint, Status cook){
+
+
+    }
+
     public void suspend(Cooker cook,int time){
 
     }
