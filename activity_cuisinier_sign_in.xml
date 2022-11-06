@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CuisinierSignIn">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -13,46 +13,52 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <Button
-            android:id="@+id/Client"
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnClientSignIn"
-            android:text="INSCRIRE COME CLIENT" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Adress" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="password" />
 
         <Button
-            android:id="@+id/LCC"
+            android:id="@+id/clientSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnClientLogin"
-            android:text="Login come Client" />
+            android:onClick="OnCuisinierSignIn"
+            android:text="Sign in" />
 
-        <Button
-            android:id="@+id/Cuisinier"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnCookerSignIn"
-            android:text="INSCRIRE COME CUISINIER" />
-
-        <Button
-            android:id="@+id/logCuisiner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnCookerLogin"
-            android:text="Login come Cuisiner" />
-
-        <Button
-            android:id="@+id/AdminLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnAdminLog"
-            android:text="Login come Admin" />
-
-        <Button
-            android:id="@+id/Disconnect"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnDisconnect"
-            android:text="Disconnect" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
