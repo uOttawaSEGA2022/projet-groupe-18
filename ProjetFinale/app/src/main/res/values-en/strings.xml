@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Final project</string>
+    <string name="app_name">Final Project</string>
     <string name="btn_login_admin">Admin login</string>
     <string name="btn_signin_client">Client sign in</string>
     <string name="btn_login_client">Client login</string>

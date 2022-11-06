@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,0);
     }
 
+    public void OnAdminLogin(View view){
+        Intent intent = new Intent(getApplicationContext(),AdminLogin.class);
+        startActivityForResult(intent,0);
+    }
+
     public void OnClientLogin(View view){
         Intent intent = new Intent(getApplicationContext(),ClientLogin.class);
         startActivityForResult(intent,0);
@@ -30,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,0);
     }
 
-    public void OnCookerSignIn(View view){
+    public void OnCookSignIn(View view){
         Intent intent = new Intent(getApplicationContext(),CuisinierSignIn.class);
         startActivityForResult(intent,0);
     }
 
-    public void OnCookerLogin(View view){
+    public void OnCookLogin(View view){
         Intent intent = new Intent(getApplicationContext(),CuisinerLogin.class);
         startActivityForResult(intent,0);
     }

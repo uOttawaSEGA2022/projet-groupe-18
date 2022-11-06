@@ -16,7 +16,7 @@ public class CuisinierSignIn extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuisinier_sign_in);
+        setContentView(R.layout.activity_cook_sign_in);
     }
 
     public void OnCuisinierSignIn(View view){

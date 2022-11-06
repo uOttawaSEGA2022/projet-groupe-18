@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet Final</string>
+    <string name="btn_login_admin">Connecter Admin</string>
+    <string name="btn_signin_client">Inscrire Client</string>
+    <string name="btn_login_client">Connecter Client</string>
+    <string name="btn_signin_cook">Inscrire Cuisinier</string>
+    <string name="btn_login_cook">Login Cook</string>
+    <string name="btn_exitApp">Exit</string>
+    <string name="edt_password">password</string>
+    <string name="edt_username">username</string>
+    <string name="btn_login">login</string>
+</resources>
