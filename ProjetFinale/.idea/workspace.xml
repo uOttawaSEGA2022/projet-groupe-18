@@ -9,51 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26527b5d-3805-4c94-becc-05d07389dadd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AdminLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bienvenue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientComplaint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientSignIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Complaint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CookerMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuisinerLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuisinierSignIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/AdminLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Bienvenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Bienvenue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientSignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Complaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Complaint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/CuisinerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/CuisinerLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/CuisinierSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/CuisinierSignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UML Diagram/Mealer_umlDiagram.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UML Diagram/Mealer_umlDiagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/../UML Diagram/Mealer_umlDiagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_bienvenue.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_client_sign_in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_cuisiner_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_cuisinier_sign_in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client_complaints.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clientlogin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cooker_menu.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="26527b5d-3805-4c94-becc-05d07389dadd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
