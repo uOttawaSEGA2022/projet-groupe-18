@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_exitApp">Exit</string>
+    <string name="btn_login">login</string>
+    <string name="btn_login_client">Client login</string>
+    <string name="btn_login_cook">Login Cook</string>
+    <string name="btn_signin_cook">Cook login</string>
+    <string name="edt_password">password</string>
+    <string name="edt_username">username</string>
+    <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

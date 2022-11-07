@@ -11,7 +11,7 @@ public class Bienvenue extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_welcome);
+        setContentView(R.layout.activity_bienvenue);
     }
 
     public void OnReturn(View view){

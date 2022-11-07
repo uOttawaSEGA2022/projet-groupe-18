@@ -10,4 +10,6 @@
     <string name="edt_password">password</string>
     <string name="edt_username">username</string>
     <string name="btn_login">login</string>
+    <string name="btn_logout">logout</string>
+    <string name="btn_complaintPage">Complaint?</string>
 </resources>

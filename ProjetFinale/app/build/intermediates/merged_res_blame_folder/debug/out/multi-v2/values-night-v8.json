@@ -1,0 +1,79 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.projetfinale.app-mergeDebugResources-27:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\corin\\OneDrive - University of Ottawa\\Docs\\University of Ottawa\\Fall 2022\\SEG2505 - Introduction au genie logiciel\\Project\\projet-groupe-18\\ProjetFinale\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "815"
+                    },
+                    "to": {
+                        "startLines": "40",
+                        "startColumns": "4",
+                        "startOffsets": "3697",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "4277"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\1657eaacfdf73cb5b94d8778151083b3\\transformed\\material-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,241,330,431,538,645,744,847,935,1059,1161,1263,1379,1481,1595,1723,1839,1961,2097,2217,2351,2471,2583,2709,2826,2950,3080,3202,3340,3474,3590",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "125,236,325,426,533,640,739,842,930,1054,1156,1258,1374,1476,1590,1718,1834,1956,2092,2212,2346,2466,2578,2704,2821,2945,3075,3197,3335,3469,3585,3705"
+                    },
+                    "to": {
+                        "startLines": "16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,54,55,56,57,58,59,60,61",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1043,1118,1229,1318,1419,1526,1633,1732,1835,1923,2047,2149,2251,2367,2469,2583,2711,2827,2949,3085,3205,3339,3459,3571,4371,4488,4612,4742,4864,5002,5136,5252",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1113,1224,1313,1414,1521,1628,1727,1830,1918,2042,2144,2246,2362,2464,2578,2706,2822,2944,3080,3200,3334,3454,3566,3692,4483,4607,4737,4859,4997,5131,5247,5367"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\3237c50a3caa87d96377052b95ee4677\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,53",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "411,481,565,649,745,847,949,4282",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "476,560,644,740,842,944,1038,4366"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\corin\\OneDrive - University of Ottawa\\Docs\\University of Ottawa\\Fall 2022\\SEG2505 - Introduction au genie logiciel\\Project\\projet-groupe-18\\ProjetFinale\\app\\src\\main\\res\\values-night\\strings.xml",
+                    "from": {
+                        "startLines": "5,8,2,4,3,6,7",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "227,375,57,172,116,273,324",
+                        "endColumns": "44,43,57,53,54,49,49",
+                        "endOffsets": "267,414,110,221,166,318,369"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,100,144,202,256,311,361",
+                        "endColumns": "44,43,57,53,54,49,49",
+                        "endOffsets": "95,139,197,251,306,356,406"
+                    }
+                }
+            ]
+        }
+    ]
+}
