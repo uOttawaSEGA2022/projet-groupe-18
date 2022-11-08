@@ -11,4 +11,5 @@
     <string name="btn_login">login</string>
     <string name="btn_logout">logout</string>
     <string name="btn_complaintPage">Complaint?</string>
+    <string name="welcomeToMealer">Welcome to Mealer!</string>
 </resources>

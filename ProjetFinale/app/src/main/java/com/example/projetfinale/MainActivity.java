@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, 0);
     }
 
-    public void OnDisconect(View view) {finishAndRemoveTask();
+    public void OnDisconnect(View view) {finishAndRemoveTask();
     }
     public void OnAdminLogin(View view){
         Intent intent = new Intent(getApplicationContext(),AdminLogin.class);

@@ -7,37 +7,50 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C17F1B"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <Button
-            android:id="@+id/Client"
+        <ImageView
+            android:id="@+id/mealerLogoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/loginAsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnClientSignIn"
-            android:text="INSCRIRE COME CLIENT" />
+            android:gravity="bottom|center_horizontal"
+            android:text="Login as"
+            android:textColor="#50290C" />
 
         <Button
             android:id="@+id/LCC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
             android:onClick="OnClientLogin"
             android:text="Login come Client" />
-
-        <Button
-            android:id="@+id/Cuisinier"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnCookerSignIn"
-            android:text="INSCRIRE COME CUISINIER" />
 
         <Button
             android:id="@+id/logCuisiner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
             android:onClick="OnCookerLogin"
             android:text="Login come Cuisiner" />
 
@@ -45,14 +58,27 @@
             android:id="@+id/AdminLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
             android:onClick="OnAdminLog"
             android:text="Login come Admin" />
 
-        <Button
-            android:id="@+id/Disconnect"
+        <TextView
+            android:id="@+id/signUpTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Don't have an account yet?" />
+
+        <TextView
+            android:id="@+id/disconnectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center_horizontal"
             android:onClick="OnDisconnect"
-            android:text="Disconnect" />
+            android:text="Disconnect"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
