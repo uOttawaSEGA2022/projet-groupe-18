@@ -12,4 +12,5 @@
     <string name="btn_logout">logout</string>
     <string name="btn_complaintPage">Complaint?</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
+    <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
 </resources>

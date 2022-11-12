@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*      The text commented out has bugs
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ClientLogin = findViewById(R.id.LCC);
@@ -27,44 +28,28 @@ public class MainActivity extends AppCompatActivity {
         ClientSignIn.setOnClickListener(view -> {
             SignInClient();
         });
-    }
-
-    public void OnBienvenue(View view) {
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
-        startActivityForResult(intent, 0);
+        */
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
     }
 
     public void OnClientLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(), ClientLogin.class);
-        startActivityForResult(intent, 0);
-    }
-
-    public void OnClientSignIn(View view) {
-        Intent intent = new Intent(getApplicationContext(), ClientSignIn.class);
-        startActivityForResult(intent, 0);
-    }
-
-    public void OnCookerSignIn(View view) {
-        Intent intent = new Intent(getApplicationContext(), CuisinierSignIn.class);
-        startActivityForResult(intent, 0);
-    }
-
-    public void OnCookerLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(), CuisinerLogin.class);
-        startActivityForResult(intent, 0);
-    }
-
-    public void OnDisconnect(View view) {finishAndRemoveTask();
-    }
-    public void OnAdminLogin(View view){
-        Intent intent = new Intent(getApplicationContext(),AdminLogin.class);
-        startActivityForResult(intent,0);
-    }
-
-    private void LoginClient() {
         startActivity(new Intent(MainActivity.this, ClientLogin.class));
     }
-    private void SignInClient(){
-        startActivity(new Intent(MainActivity.this, ClientSignIn.class));
+
+    public void OnCookLogin(View view) {
+        startActivity(new Intent(MainActivity.this, CuisinerLogin.class));
+    }
+
+    public void OnAdminLogin(View view){
+        startActivity(new Intent(MainActivity.this,AdminLogin.class));
+    }
+
+    public void OnSignUpPage(View view) {
+        startActivity(new Intent(MainActivity.this, GeneralSignUp.class));
+    }
+
+    public void OnDisconnect(View view) {
+        finishAndRemoveTask();
     }
 }

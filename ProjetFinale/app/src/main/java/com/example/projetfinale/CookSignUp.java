@@ -11,37 +11,34 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+public class CookSignUp extends AppCompatActivity {
 
-public class ClientSignIn extends AppCompatActivity {
     EditText FirstName;
     EditText LastName;
     EditText Email;
     EditText Address;
     EditText Password;
     FirebaseAuth mAuth;
-    Button clientSignIn;
+    Button CuisinierSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_client_sign_in);
+        setContentView(R.layout.activity_cook_sign_up);
 
         FirstName = findViewById(R.id.editTextTextPersonName4);
         LastName = findViewById(R.id.editTextTextPersonName7);
         Email = findViewById(R.id.editTextTextPersonName8);
         Address = findViewById(R.id.editTextTextPersonName3);
         Password = findViewById(R.id.editTextTextPersonName5);
-        clientSignIn = findViewById(R.id.clientSignIn);
+        CuisinierSignIn = findViewById(R.id.clientSignIn);
 
         mAuth = FirebaseAuth.getInstance();
-        clientSignIn.setOnClickListener(view ->{
+        CuisinierSignIn.setOnClickListener(view ->{
             createUser();
         });
     }
+
     private void createUser(){
         String firstName = FirstName.getText().toString();
         String lastName = LastName.getText().toString();
@@ -49,37 +46,37 @@ public class ClientSignIn extends AppCompatActivity {
         String address = Address.getText().toString();
         String password = Password.getText().toString();
         if(TextUtils.isEmpty(email)){
-            Email.setError("Email ne peut pas être vide");
+            Email.setError("Email can't be empty");
             Email.requestFocus();
         }else if(TextUtils.isEmpty(password)){
-            Password.setError("Password ne peut pas être vide");
+            Password.setError("Password can't be empty");
             Password.requestFocus();
         }else if(TextUtils.isEmpty(firstName)){
-            FirstName.setError("First name ne peut pas être vide");
+            FirstName.setError("First name can't be empty");
             FirstName.requestFocus();
         }else if(TextUtils.isEmpty(lastName)){
-            LastName.setError("Last name ne peut pas être vide");
+            LastName.setError("Last name can't be empty");
             LastName.requestFocus();
         }else if(TextUtils.isEmpty(address)){
-            Address.setError("Address ne peut pas être vide");
+            Address.setError("Address can't be empty");
             Address.requestFocus();
         }else{
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(ClientSignIn.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(ClientSignIn.this, ClientLogin.class));
+                        Toast.makeText(CookSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(CookSignUp.this, CuisinerLogin.class));
                     }else{
-                        Toast.makeText(ClientSignIn.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
         }
     }
-    public void OnClientSignIn(View view){
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
-        startActivityForResult(intent,0);
+    public void OnCookSignIn(View view){
+        Intent intent = new Intent(CookSignUp.this, CookerMenu.class);
     }
+}
 }

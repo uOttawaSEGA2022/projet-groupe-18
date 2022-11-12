@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="OnClientSignUp"
     tools:context=".GeneralSignUp">
 
     <LinearLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#C17F1B"
+        android:background="@color/mealer_tone2"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -21,7 +22,7 @@
             android:layout_height="350dp"
             android:gravity="center"
             android:text="Welcome to Mealer!"
-            android:textColor="#50290C"
+            android:textColor="@color/mealer_tone1"
             android:textSize="48sp"
             android:textStyle="bold" />
 
@@ -43,9 +44,11 @@
             android:layout_marginTop="2dp"
             android:layout_marginRight="80dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="#50290C"
+            android:backgroundTint="@color/mealer_tone1"
             android:fontFamily="sans-serif-medium"
+            android:onClick="OnClientSignUp"
             android:text="I'm a client!"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <Button
@@ -56,9 +59,11 @@
             android:layout_marginTop="2dp"
             android:layout_marginRight="80dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="#50290C"
+            android:backgroundTint="@color/mealer_tone1"
             android:fontFamily="sans-serif-medium"
+            android:onClick="OnCookSignUp"
             android:text="I'm a cook!"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
@@ -78,7 +83,8 @@
             android:onClick="OnLoginPage"
             android:text="Login page"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

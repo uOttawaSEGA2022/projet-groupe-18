@@ -16,29 +16,29 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class CuisinierSignIn extends AppCompatActivity {
+public class ClientSignUp extends AppCompatActivity {
     EditText FirstName;
     EditText LastName;
     EditText Email;
     EditText Address;
     EditText Password;
     FirebaseAuth mAuth;
-    Button CuisinierSignIn;
+    Button clientSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuisinier_sign_in);
+        setContentView(R.layout.activity_client_sign_up);
 
         FirstName = findViewById(R.id.editTextTextPersonName4);
         LastName = findViewById(R.id.editTextTextPersonName7);
         Email = findViewById(R.id.editTextTextPersonName8);
         Address = findViewById(R.id.editTextTextPersonName3);
         Password = findViewById(R.id.editTextTextPersonName5);
-        CuisinierSignIn = findViewById(R.id.clientSignIn);
+        clientSignIn = findViewById(R.id.clientSignIn);
 
         mAuth = FirebaseAuth.getInstance();
-        CuisinierSignIn.setOnClickListener(view ->{
+        clientSignIn.setOnClickListener(view ->{
             createUser();
         });
     }
@@ -68,18 +68,18 @@ public class CuisinierSignIn extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(CuisinierSignIn.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CuisinierSignIn.this, CuisinerLogin.class));
+                        Toast.makeText(ClientSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(ClientSignUp.this, ClientLogin.class));
                     }else{
-                        Toast.makeText(CuisinierSignIn.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
         }
     }
-    public void OnCuisinierSignIn(View view){
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
-        startActivityForResult(intent,0);
+
+    public void OnClientSignIn(View view) {
+        startActivity(new Intent(ClientSignUp.this, ClientMenu.class));
     }
 }
