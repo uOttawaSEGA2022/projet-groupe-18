@@ -10,11 +10,11 @@ public class Admin extends User{
 
     }
 
-    public void suspend(Cooker cook,int time){
+    public void suspend(Cook cook,int time){
 
     }
 
-    public void suspend(Cooker cook){
+    public void suspend(Cook cook){
 
     }
 }

@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class CookMenu extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class CookMenu extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         returnToMain.setOnClickListener(view ->{
             mAuth.signOut();
-            startActivity(new Intent(CookerMenu.this, MainActivity.class));
+            startActivity(new Intent(CookMenu.this, MainActivity.class));
         });
     }
     @Override
@@ -30,7 +32,7 @@ public class CookMenu extends AppCompatActivity {
 
         FirebaseUser user = mAuth.getCurrentUser();
         if (user == null){
-            startActivity(new Intent(CookerMenu.this, ClientLogin.class ));
+            startActivity(new Intent(CookMenu.this, ClientLogin.class ));
         }
     }
 

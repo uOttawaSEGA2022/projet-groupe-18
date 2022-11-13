@@ -10,123 +10,128 @@
 9        android:targetSdkVersion="32" />
 9-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-70:19
-12        android:allowBackup="true"
-12-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] C:\Users\corin\.gradle\caches\transforms-3\28a1708219c3158e49b329d141e5cfff\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-14        android:dataExtractionRules="@xml/data_extraction_rules"
-14-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:7:9-65
-15        android:debuggable="true"
-16        android:fullBackupContent="@xml/backup_rules"
-16-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:8:9-54
-17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:9:9-43
-18        android:label="@string/app_name"
-18-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:10:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:11:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.ProjetFinale" >
-22-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:13:9-50
-23        <activity
-23-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:15:9-21:20
-24            android:name="com.example.projetfinale.CuisinerLogin"
-24-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:16:13-42
-25            android:exported="false" >
-25-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:17:13-37
-26            <meta-data
-26-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-27                android:name="android.app.lib_name"
-27-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-28                android:value="" />
-28-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-29        </activity>
-30        <activity
-30-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:22:9-28:20
-31            android:name="com.example.projetfinale.CuisinierSignIn"
-31-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:23:13-44
-32            android:exported="false" >
-32-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:24:13-37
-33            <meta-data
-33-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-34                android:name="android.app.lib_name"
-34-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-35                android:value="" />
-35-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-36        </activity>
-37        <activity
-37-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:29:9-35:20
-38            android:name="com.example.projetfinale.ClientSignIn"
-38-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:30:13-41
-39            android:exported="false" >
-39-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:31:13-37
-40            <meta-data
-40-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-41                android:name="android.app.lib_name"
-41-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-42                android:value="" />
-42-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-43        </activity>
-44        <activity
-44-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:36:9-42:20
-45            android:name="com.example.projetfinale.ClientLogin"
-45-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-40
-46            android:exported="false" >
-46-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:38:13-37
-47            <meta-data
-47-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-48                android:name="android.app.lib_name"
-48-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-49                android:value="" />
-49-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-50        </activity>
-51        <activity
-51-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:43:9-49:20
-52            android:name="com.example.projetfinale.ClientLoginAndSignUp"
-52-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:44:13-49
-53            android:exported="false" >
-53-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:45:13-37
-54            <meta-data
-54-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-55                android:name="android.app.lib_name"
-55-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-56                android:value="" />
-56-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-57        </activity>
-58        <activity
-58-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:50:9-56:20
-59            android:name="com.example.projetfinale.Bienvenue"
-59-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-38
-60            android:exported="false" >
-60-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:52:13-37
-61            <meta-data
-61-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-62                android:name="android.app.lib_name"
-62-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-63                android:value="" />
-63-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-64        </activity>
-65        <activity
-65-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:57:9-69:20
-66            android:name="com.example.projetfinale.MainActivity"
-66-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-41
-67            android:exported="true" >
-67-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:59:13-36
-68            <intent-filter>
-68-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:60:13-64:29
-69                <action android:name="android.intent.action.MAIN" />
-69-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:61:17-69
-69-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:61:25-66
-70
-71                <category android:name="android.intent.category.LAUNCHER" />
-71-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:63:17-77
-71-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:63:27-74
-72            </intent-filter>
-73
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+11-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+14-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+16
+17    <application
+17-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-77:19
+18        android:allowBackup="true"
+18-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.8.0] C:\Users\corin\.gradle\caches\transforms-3\28a1708219c3158e49b329d141e5cfff\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:fullBackupContent="@xml/backup_rules"
+22-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:8:9-54
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:9:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:10:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:11:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:12:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.ProjetFinale" >
+28-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:13:9-50
+29        <activity
+29-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:15:9-21:20
+30            android:name="com.example.projetfinale.CookSignUp"
+30-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:16:13-39
+31            android:exported="false" >
+31-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:17:13-37
+32            <meta-data
+32-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+33                android:name="android.app.lib_name"
+33-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+34                android:value="" />
+34-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+35        </activity>
+36        <activity
+36-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:22:9-28:20
+37            android:name="com.example.projetfinale.GeneralSignUp"
+37-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:23:13-42
+38            android:exported="false" >
+38-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:24:13-37
+39            <meta-data
+39-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+40                android:name="android.app.lib_name"
+40-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+41                android:value="" />
+41-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+42        </activity>
+43        <activity
+43-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:29:9-35:20
+44            android:name="com.example.projetfinale.CuisinerLogin"
+44-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:30:13-42
+45            android:exported="false" >
+45-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:31:13-37
+46            <meta-data
+46-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+47                android:name="android.app.lib_name"
+47-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+48                android:value="" />
+48-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+49        </activity>
+50        <activity
+50-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:36:9-42:20
+51            android:name="com.example.projetfinale.ClientSignUp"
+51-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-41
+52            android:exported="false" >
+52-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:38:13-37
+53            <meta-data
+53-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+54                android:name="android.app.lib_name"
+54-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+55                android:value="" />
+55-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+56        </activity>
+57        <activity
+57-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:43:9-49:20
+58            android:name="com.example.projetfinale.ClientLogin"
+58-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:44:13-40
+59            android:exported="false" >
+59-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:45:13-37
+60            <meta-data
+60-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+61                android:name="android.app.lib_name"
+61-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+62                android:value="" />
+62-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+63        </activity>
+64        <activity
+64-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:50:9-56:20
+65            android:name="com.example.projetfinale.ClientLoginAndSignUp"
+65-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-49
+66            android:exported="false" >
+66-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:52:13-37
+67            <meta-data
+67-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+68                android:name="android.app.lib_name"
+68-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+69                android:value="" />
+69-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+70        </activity>
+71        <activity
+71-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:57:9-63:20
+72            android:name="com.example.projetfinale.Bienvenue"
+72-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-38
+73            android:exported="false" >
+73-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:59:13-37
 74            <meta-data
 74-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
 75                android:name="android.app.lib_name"
@@ -134,28 +139,208 @@
 76                android:value="" />
 76-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
 77        </activity>
-78
-79        <provider
-79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-80            android:name="androidx.startup.InitializationProvider"
-80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-81            android:authorities="com.example.projetfinale.androidx-startup"
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-82            android:exported="false" >
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-83            <meta-data
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-85                android:value="androidx.startup" />
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-86            <meta-data
-86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-88                android:value="androidx.startup" />
-88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-89        </provider>
-90    </application>
-91
-92</manifest>
+78        <activity
+78-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:64:9-76:20
+79            android:name="com.example.projetfinale.MainActivity"
+79-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:65:13-41
+80            android:exported="true" >
+80-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:66:13-36
+81            <intent-filter>
+81-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:67:13-71:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:68:17-69
+82-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:68:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:70:17-77
+84-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:70:27-74
+85            </intent-filter>
+86
+87            <meta-data
+87-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+88                android:name="android.app.lib_name"
+88-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+89                android:value="" />
+89-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+90        </activity>
+91        <activity
+91-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+92            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+92-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+93            android:excludeFromRecents="true"
+93-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+94            android:exported="true"
+94-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+95            android:launchMode="singleTask"
+95-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+96-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+97            <intent-filter>
+97-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+98                <action android:name="android.intent.action.VIEW" />
+98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+99
+100                <category android:name="android.intent.category.DEFAULT" />
+100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+101                <category android:name="android.intent.category.BROWSABLE" />
+101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+102
+103                <data
+103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+104                    android:host="firebase.auth"
+104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+105                    android:path="/"
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+106                    android:scheme="genericidp" />
+106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+107            </intent-filter>
+108        </activity>
+109        <activity
+109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+110            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+111            android:excludeFromRecents="true"
+111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+112            android:exported="true"
+112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+113            android:launchMode="singleTask"
+113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+114-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+115            <intent-filter>
+115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+116                <action android:name="android.intent.action.VIEW" />
+116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+117
+118                <category android:name="android.intent.category.DEFAULT" />
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+119                <category android:name="android.intent.category.BROWSABLE" />
+119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+120
+121                <data
+121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+122                    android:host="firebase.auth"
+122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+123                    android:path="/"
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+124                    android:scheme="recaptcha" />
+124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+125            </intent-filter>
+126        </activity>
+127
+128        <service
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
+129            android:name="com.google.firebase.components.ComponentDiscoveryService"
+129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:65:13-84
+130            android:directBootAware="true"
+130-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+131            android:exported="false" >
+131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:66:13-37
+132            <meta-data
+132-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+133                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+133-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+135            <meta-data
+135-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+136                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+136-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+139                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+139-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+141        </service>
+142
+143        <provider
+143-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+144            android:name="com.google.firebase.provider.FirebaseInitProvider"
+144-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+145            android:authorities="com.example.projetfinale.firebaseinitprovider"
+145-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+149
+150        <receiver
+150-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+151            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+151-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+153            android:exported="false" >
+153-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+154        </receiver>
+155
+156        <service
+156-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+157            android:name="com.google.android.gms.measurement.AppMeasurementService"
+157-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+158            android:enabled="true"
+158-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+159            android:exported="false" />
+159-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+160        <service
+160-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+161            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+161-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+162            android:enabled="true"
+162-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" />
+164-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+170
+171        <meta-data
+171-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+172            android:name="com.google.android.gms.version"
+172-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+173            android:value="@integer/google_play_services_version" />
+173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+174
+175        <provider
+175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+176            android:name="androidx.startup.InitializationProvider"
+176-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+177            android:authorities="com.example.projetfinale.androidx-startup"
+177-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+178            android:exported="false" >
+178-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+179            <meta-data
+179-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+180-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+181                android:value="androidx.startup" />
+181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+182            <meta-data
+182-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+183-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+184                android:value="androidx.startup" />
+184-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+185        </provider>
+186    </application>
+187
+188</manifest>

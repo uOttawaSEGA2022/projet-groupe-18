@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnAdminLogin(View view){
-        startActivity(new Intent(MainActivity.this,AdminLogin.class));
+        Intent intent = new Intent(getApplicationContext(),AdminLogin.class);
+        MainActivity.this.startActivity(intent);
     }
 
     public void OnSignUpPage(View view) {

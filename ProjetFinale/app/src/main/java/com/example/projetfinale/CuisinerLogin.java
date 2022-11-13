@@ -25,7 +25,7 @@ public class CuisinerLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuisiner_login);
+        setContentView(R.layout.activity_cook_login);
 
         Email = findViewById(R.id.editTextTextPersonName);
         Password = findViewById(R.id.editTextTextPersonName2);
@@ -50,7 +50,7 @@ public class CuisinerLogin extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(CuisinerLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CuisinerLogin.this, CookerMenu.class));
+                        startActivity(new Intent(CuisinerLogin.this, CookMenu.class));
                     } else {
                         Toast.makeText(CuisinerLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -60,7 +60,7 @@ public class CuisinerLogin extends AppCompatActivity {
         }
     }
     public void OnCuisinierLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
+        Intent intent = new Intent(getApplicationContext(), CookMenu.class);
         startActivityForResult(intent,0);
     }
 }
