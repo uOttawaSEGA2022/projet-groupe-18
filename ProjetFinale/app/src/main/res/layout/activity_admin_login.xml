@@ -12,7 +12,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <EditText
-            android:id="@+id/AdminEmail"
+            android:id="@+id/edt_admin_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -20,7 +20,7 @@
             android:text="Email" />
 
         <EditText
-            android:id="@+id/AdminPassword"
+            android:id="@+id/edt_admin_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -28,7 +28,7 @@
             android:text="Password" />
 
         <Button
-            android:id="@+id/AdminLogin2"
+            android:id="@+id/btn_admin_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onAdminLogin"

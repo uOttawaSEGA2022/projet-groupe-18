@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="btn_complaintPage">Complaint?</string>
     <string name="btn_exitApp">Exit</string>
     <string name="btn_login">login</string>
     <string name="btn_login_client">Client login</string>
     <string name="btn_login_cook">Login Cook</string>
+    <string name="btn_logout">logout</string>
     <string name="btn_signin_cook">Cook login</string>
     <string name="edt_password">password</string>
     <string name="edt_username">username</string>

@@ -24,11 +24,11 @@ public class ClientLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.clientlogin);
+        setContentView(R.layout.activity_client_login);
 
-        Email = findViewById(R.id.Email3);
-        Password = findViewById(R.id.MDP2);
-        Login = findViewById(R.id.Login2);
+        Email = findViewById(R.id.edt_email);
+        Password = findViewById(R.id.edt_password);
+        Login = findViewById(R.id.btn_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
@@ -38,20 +38,20 @@ public class ClientLogin extends AppCompatActivity {
         String email = Email.getText().toString();
         String password = Password.getText().toString();
         if(TextUtils.isEmpty(email)){
-            Email.setError("Email ne peut pas être vide");
+            Email.setError("E-mail section cannot be empty ");
             Email.requestFocus();
         }else if(TextUtils.isEmpty(password)) {
-            Password.setError("Password ne peut pas être vide");
+            Password.setError("Password section cannot be empty");
             Password.requestFocus();
         }else{
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(ClientLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientLogin.this, "Useur logged in without issues", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(ClientLogin.this, ClientComplaint.class));
                     } else {
-                        Toast.makeText(ClientLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientLogin.this, "Log in error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -59,7 +59,7 @@ public class ClientLogin extends AppCompatActivity {
         }
     }
     public void OnLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
+        Intent intent = new Intent(getApplicationContext(), CookMenu.class);
         startActivityForResult(intent,0);
     }
 }

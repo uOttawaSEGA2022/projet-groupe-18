@@ -7,52 +7,101 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mealer_tone2"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <Button
-            android:id="@+id/Client"
+        <ImageView
+            android:id="@+id/mealerLogoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/loginAsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnClientSignIn"
-            android:text="INSCRIRE COME CLIENT" />
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="Login as"
+            android:textColor="#50290C"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/LCC"
+            android:id="@+id/btn_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/mealer_tone1"
             android:onClick="OnClientLogin"
-            android:text="Login come Client" />
+            android:text="Client"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/Cuisinier"
+            android:id="@+id/btn_cook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnCookerSignIn"
-            android:text="INSCRIRE COME CUISINIER" />
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnCookLogin"
+            android:text="Cook"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/logCuisiner"
+            android:id="@+id/btn_admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnCookerLogin"
-            android:text="Login come Cuisiner" />
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnAdminLogin"
+            android:text="Admin"
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/AdminLogin"
+        <TextView
+            android:id="@+id/noAccountYetTextView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnAdminLog"
-            android:text="Login come Admin" />
+            android:layout_height="60dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="Don't have an account yet?"
+            android:textColor="@color/mealer_tone1"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/Disconnect"
+        <TextView
+            android:id="@+id/signUpHereTextView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center|top"
+            android:onClick="OnSignUpPage"
+            android:text="Sign up here!"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/disconnectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center_horizontal"
             android:onClick="OnDisconnect"
-            android:text="Disconnect" />
+            android:text="Disconnect"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

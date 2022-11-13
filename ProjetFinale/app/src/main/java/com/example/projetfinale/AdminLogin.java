@@ -27,9 +27,9 @@ public class AdminLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
 
-        Email = findViewById(R.id.AdminEmail);
-        Password = findViewById(R.id.AdminPassword);
-        Login =  findViewById(R.id.AdminLogin2);
+        Email = findViewById(R.id.edt_admin_email);
+        Password = findViewById(R.id.edt_admin_password);
+        Login =  findViewById(R.id.btn_admin_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
@@ -39,20 +39,20 @@ public class AdminLogin extends AppCompatActivity {
         String email = Email.getText().toString();
         String password = Password.getText().toString();
         if(TextUtils.isEmpty(email)){
-            Email.setError("Email ne peut pas être vide");
+            Email.setError("E-mail section cannot be empty");
             Email.requestFocus();
         }else if(TextUtils.isEmpty(password)) {
-            Password.setError("Password ne peut pas être vide");
+            Password.setError("Password section cannot be empty");
             Password.requestFocus();
         }else{
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(AdminLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(AdminLogin.this, CookerMenu.class));
+                        Toast.makeText(AdminLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(AdminLogin.this, CookMenu.class));
                     } else {
-                        Toast.makeText(AdminLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AdminLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -60,7 +60,7 @@ public class AdminLogin extends AppCompatActivity {
         }
     }
     public void OnAdminLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), CookerMenu.class);
+        Intent intent = new Intent(getApplicationContext(), CookMenu.class);
         startActivityForResult(intent,0);
     }
 }

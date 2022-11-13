@@ -11,6 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class CookSignUp extends AppCompatActivity {
 
     EditText FirstName;
@@ -19,7 +24,7 @@ public class CookSignUp extends AppCompatActivity {
     EditText Address;
     EditText Password;
     FirebaseAuth mAuth;
-    Button CuisinierSignIn;
+    Button CookSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +36,10 @@ public class CookSignUp extends AppCompatActivity {
         Email = findViewById(R.id.editTextTextPersonName8);
         Address = findViewById(R.id.editTextTextPersonName3);
         Password = findViewById(R.id.editTextTextPersonName5);
-        CuisinierSignIn = findViewById(R.id.clientSignIn);
+        CookSignIn = findViewById(R.id.clientSignIn);
 
         mAuth = FirebaseAuth.getInstance();
-        CuisinierSignIn.setOnClickListener(view ->{
+        CookSignIn.setOnClickListener(view ->{
             createUser();
         });
     }
@@ -76,7 +81,6 @@ public class CookSignUp extends AppCompatActivity {
         }
     }
     public void OnCookSignIn(View view){
-        Intent intent = new Intent(CookSignUp.this, CookerMenu.class);
+        Intent intent = new Intent(CookSignUp.this, CookMenu.class);
     }
-}
 }
