@@ -30,7 +30,7 @@ public class CookLogin extends AppCompatActivity {
         Email = findViewById(R.id.editTextTextPersonName);
         Password = findViewById(R.id.editTextTextPersonName2);
         Login = findViewById(R.id.CuisinierLoginButton);
-        //mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
         });

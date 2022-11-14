@@ -30,7 +30,7 @@ public class AdminLogin extends AppCompatActivity {
         Email = findViewById(R.id.edt_admin_email);
         Password = findViewById(R.id.edt_admin_password);
         Login =  findViewById(R.id.btn_admin_login);
-        //mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
         });
