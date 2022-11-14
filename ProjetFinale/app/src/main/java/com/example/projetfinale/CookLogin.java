@@ -1,8 +1,5 @@
 package com.example.projetfinale;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,26 +8,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class CuisinerLogin extends AppCompatActivity {
+public class CookLogin extends AppCompatActivity {
     EditText Email;
     EditText Password;
     Button Login;
     FirebaseAuth mAuth;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_login);
 
         Email = findViewById(R.id.editTextTextPersonName);
         Password = findViewById(R.id.editTextTextPersonName2);
         Login = findViewById(R.id.CuisinierLoginButton);
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
         });
@@ -49,17 +49,17 @@ public class CuisinerLogin extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(CuisinerLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CuisinerLogin.this, CookMenu.class));
+                        Toast.makeText(CookLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(CookLogin.this, CookMenu.class));
                     } else {
-                        Toast.makeText(CuisinerLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
         }
     }
-    public void OnCuisinierLogin(View view){
+    public void OnCuisinierLogin( View view){
         Intent intent = new Intent(getApplicationContext(), CookMenu.class);
         startActivityForResult(intent,0);
     }

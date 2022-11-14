@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnCookLogin(View view) {
-        startActivity(new Intent(MainActivity.this, CuisinerLogin.class));
+        startActivity(new Intent(MainActivity.this, CookLogin.class));
     }
 
     public void OnAdminLogin(View view){

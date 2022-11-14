@@ -27,6 +27,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProjetFinale" >
         <activity
+            android:name="com.example.projetfinale.AdminLogin"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.projetfinale.CookSignUp"
             android:exported="false" >
             <meta-data
@@ -41,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CuisinerLogin"
+            android:name="com.example.projetfinale.CookLogin"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -69,7 +76,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.Bienvenue"
+            android:name="com.example.projetfinale.Welcome"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

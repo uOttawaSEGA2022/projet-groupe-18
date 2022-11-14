@@ -29,7 +29,7 @@ public class ClientLogin extends AppCompatActivity {
         Email = findViewById(R.id.edt_email);
         Password = findViewById(R.id.edt_password);
         Login = findViewById(R.id.btn_login);
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
         });

@@ -27,7 +27,7 @@
 15-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
 16
 17    <application
-17-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-77:19
+17-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-84:19
 18        android:allowBackup="true"
 18-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,7 +50,7 @@
 28-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:13:9-50
 29        <activity
 29-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:15:9-21:20
-30            android:name="com.example.projetfinale.CookSignUp"
+30            android:name="com.example.projetfinale.AdminLogin"
 30-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:16:13-39
 31            android:exported="false" >
 31-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:17:13-37
@@ -63,8 +63,8 @@
 35        </activity>
 36        <activity
 36-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:22:9-28:20
-37            android:name="com.example.projetfinale.GeneralSignUp"
-37-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:23:13-42
+37            android:name="com.example.projetfinale.CookSignUp"
+37-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:23:13-39
 38            android:exported="false" >
 38-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:24:13-37
 39            <meta-data
@@ -76,7 +76,7 @@
 42        </activity>
 43        <activity
 43-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:29:9-35:20
-44            android:name="com.example.projetfinale.CuisinerLogin"
+44            android:name="com.example.projetfinale.GeneralSignUp"
 44-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:30:13-42
 45            android:exported="false" >
 45-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:31:13-37
@@ -89,8 +89,8 @@
 49        </activity>
 50        <activity
 50-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:36:9-42:20
-51            android:name="com.example.projetfinale.ClientSignUp"
-51-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-41
+51            android:name="com.example.projetfinale.CookLogin"
+51-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-38
 52            android:exported="false" >
 52-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:38:13-37
 53            <meta-data
@@ -102,8 +102,8 @@
 56        </activity>
 57        <activity
 57-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:43:9-49:20
-58            android:name="com.example.projetfinale.ClientLogin"
-58-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:44:13-40
+58            android:name="com.example.projetfinale.ClientSignUp"
+58-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:44:13-41
 59            android:exported="false" >
 59-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:45:13-37
 60            <meta-data
@@ -115,8 +115,8 @@
 63        </activity>
 64        <activity
 64-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:50:9-56:20
-65            android:name="com.example.projetfinale.ClientLoginAndSignUp"
-65-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-49
+65            android:name="com.example.projetfinale.ClientLogin"
+65-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-40
 66            android:exported="false" >
 66-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:52:13-37
 67            <meta-data
@@ -128,8 +128,8 @@
 70        </activity>
 71        <activity
 71-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:57:9-63:20
-72            android:name="com.example.projetfinale.Bienvenue"
-72-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-38
+72            android:name="com.example.projetfinale.ClientLoginAndSignUp"
+72-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-49
 73            android:exported="false" >
 73-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:59:13-37
 74            <meta-data
@@ -140,207 +140,220 @@
 76-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
 77        </activity>
 78        <activity
-78-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:64:9-76:20
-79            android:name="com.example.projetfinale.MainActivity"
-79-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:65:13-41
-80            android:exported="true" >
-80-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:66:13-36
-81            <intent-filter>
-81-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:67:13-71:29
-82                <action android:name="android.intent.action.MAIN" />
-82-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:68:17-69
-82-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:68:25-66
-83
-84                <category android:name="android.intent.category.LAUNCHER" />
-84-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:70:17-77
-84-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:70:27-74
-85            </intent-filter>
-86
-87            <meta-data
-87-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
-88                android:name="android.app.lib_name"
-88-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
-89                android:value="" />
-89-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
-90        </activity>
-91        <activity
-91-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-92            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-92-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-93            android:excludeFromRecents="true"
-93-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-94            android:exported="true"
-94-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-95            android:launchMode="singleTask"
-95-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-96-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-97            <intent-filter>
-97-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-98                <action android:name="android.intent.action.VIEW" />
-98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-99
-100                <category android:name="android.intent.category.DEFAULT" />
-100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-101                <category android:name="android.intent.category.BROWSABLE" />
-101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-102
-103                <data
-103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-104                    android:host="firebase.auth"
-104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-105                    android:path="/"
-105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-106                    android:scheme="genericidp" />
-106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-107            </intent-filter>
-108        </activity>
-109        <activity
-109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-110            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-111            android:excludeFromRecents="true"
-111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-112            android:exported="true"
-112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-113            android:launchMode="singleTask"
-113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-114            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-114-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-115            <intent-filter>
-115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-116                <action android:name="android.intent.action.VIEW" />
-116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-117
-118                <category android:name="android.intent.category.DEFAULT" />
-118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-119                <category android:name="android.intent.category.BROWSABLE" />
-119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-120
-121                <data
-121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-122                    android:host="firebase.auth"
-122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-123                    android:path="/"
-123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-124                    android:scheme="recaptcha" />
-124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-125            </intent-filter>
-126        </activity>
+78-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:64:9-70:20
+79            android:name="com.example.projetfinale.Welcome"
+79-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:65:13-36
+80            android:exported="false" >
+80-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:66:13-37
+81            <meta-data
+81-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+82                android:name="android.app.lib_name"
+82-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+83                android:value="" />
+83-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+84        </activity>
+85        <activity
+85-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:71:9-83:20
+86            android:name="com.example.projetfinale.MainActivity"
+86-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:72:13-41
+87            android:exported="true" >
+87-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:73:13-36
+88            <intent-filter>
+88-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:74:13-78:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:75:17-69
+89-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:75:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:77:17-77
+91-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:77:27-74
+92            </intent-filter>
+93
+94            <meta-data
+94-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:18:13-20:36
+95                android:name="android.app.lib_name"
+95-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:19:17-52
+96                android:value="" />
+96-->C:\Users\corin\OneDrive - University of Ottawa\Docs\University of Ottawa\Fall 2022\SEG2505 - Introduction au genie logiciel\Project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:20:17-33
+97        </activity>
+98        <activity
+98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+99            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+99-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+100            android:excludeFromRecents="true"
+100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+101            android:exported="true"
+101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+102            android:launchMode="singleTask"
+102-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+104            <intent-filter>
+104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+105                <action android:name="android.intent.action.VIEW" />
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+108                <category android:name="android.intent.category.BROWSABLE" />
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+109
+110                <data
+110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+111                    android:host="firebase.auth"
+111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+112                    android:path="/"
+112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+113                    android:scheme="genericidp" />
+113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+117            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+118            android:excludeFromRecents="true"
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+119            android:exported="true"
+119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+120            android:launchMode="singleTask"
+120-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+122            <intent-filter>
+122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
 127
-128        <service
-128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
-129            android:name="com.google.firebase.components.ComponentDiscoveryService"
-129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:65:13-84
-130            android:directBootAware="true"
-130-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-131            android:exported="false" >
-131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:66:13-37
-132            <meta-data
-132-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-133                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-133-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
-134                android:value="com.google.firebase.components.ComponentRegistrar" />
-134-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
-135            <meta-data
-135-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
-136                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-136-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
-137                android:value="com.google.firebase.components.ComponentRegistrar" />
-137-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
-138            <meta-data
-138-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
-139                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-139-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
-140                android:value="com.google.firebase.components.ComponentRegistrar" />
-140-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
-141        </service>
-142
-143        <provider
-143-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-144            android:name="com.google.firebase.provider.FirebaseInitProvider"
-144-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-145            android:authorities="com.example.projetfinale.firebaseinitprovider"
-145-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-146            android:directBootAware="true"
-146-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-147            android:exported="false"
-147-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-148            android:initOrder="100" />
-148-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+128                <data
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+129                    android:host="firebase.auth"
+129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+130                    android:path="/"
+130-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+131                    android:scheme="recaptcha" />
+131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+132            </intent-filter>
+133        </activity>
+134
+135        <service
+135-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
+136            android:name="com.google.firebase.components.ComponentDiscoveryService"
+136-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:65:13-84
+137            android:directBootAware="true"
+137-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+138            android:exported="false" >
+138-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:66:13-37
+139            <meta-data
+139-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+140                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+140-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\cd31bff5589a8c91852afc52d5b8bf89\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+142            <meta-data
+142-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+143                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+143-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\2d50cf86f5e33839a965078f2e7b365d\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+146                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+146-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\65c6f3f81baf4e8276f67630f08c40c9\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+148        </service>
 149
-150        <receiver
-150-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
-151            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-151-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
-152            android:enabled="true"
-152-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
-153            android:exported="false" >
-153-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
-154        </receiver>
-155
-156        <service
-156-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
-157            android:name="com.google.android.gms.measurement.AppMeasurementService"
-157-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
-158            android:enabled="true"
-158-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
-159            android:exported="false" />
-159-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
-160        <service
-160-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
-161            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-161-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
-162            android:enabled="true"
-162-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
-163            android:exported="false"
-163-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
-164            android:permission="android.permission.BIND_JOB_SERVICE" />
-164-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
-165
-166        <activity
-166-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-167-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-168            android:exported="false"
-168-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-169-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-170
-171        <meta-data
-171-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-172            android:name="com.google.android.gms.version"
-172-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-173            android:value="@integer/google_play_services_version" />
-173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-174
-175        <provider
-175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-176            android:name="androidx.startup.InitializationProvider"
-176-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-177            android:authorities="com.example.projetfinale.androidx-startup"
-177-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-178            android:exported="false" >
-178-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-179            <meta-data
-179-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-180                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-180-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-181                android:value="androidx.startup" />
-181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-182            <meta-data
-182-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-183-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-184                android:value="androidx.startup" />
-184-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-185        </provider>
-186    </application>
-187
-188</manifest>
+150        <provider
+150-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+151            android:name="com.google.firebase.provider.FirebaseInitProvider"
+151-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+152            android:authorities="com.example.projetfinale.firebaseinitprovider"
+152-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+153            android:directBootAware="true"
+153-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+154            android:exported="false"
+154-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+155            android:initOrder="100" />
+155-->[com.google.firebase:firebase-common:20.2.0] C:\Users\corin\.gradle\caches\transforms-3\06e983ee54ccab7e5e6a611f0aaecfe9\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+156
+157        <receiver
+157-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+158            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+158-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+159            android:enabled="true"
+159-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+160            android:exported="false" >
+160-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+161        </receiver>
+162
+163        <service
+163-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+164            android:name="com.google.android.gms.measurement.AppMeasurementService"
+164-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+166            android:exported="false" />
+166-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+167        <service
+167-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+168            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+168-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+171            android:permission="android.permission.BIND_JOB_SERVICE" />
+171-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\d1809d1eeb98ef3051e43a02af2cfd1a\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\70692688c394950fd4baec5b8ddc06e8\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+177
+178        <meta-data
+178-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+179            android:name="com.google.android.gms.version"
+179-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+180            android:value="@integer/google_play_services_version" />
+180-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\corin\.gradle\caches\transforms-3\d53af0c3f60fb07eaf59376681e0dbe9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+181
+182        <provider
+182-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+183            android:name="androidx.startup.InitializationProvider"
+183-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+184            android:authorities="com.example.projetfinale.androidx-startup"
+184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+185            android:exported="false" >
+185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+186            <meta-data
+186-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+187                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+188                android:value="androidx.startup" />
+188-->[androidx.emoji2:emoji2:1.2.0] C:\Users\corin\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+189            <meta-data
+189-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+190                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+190-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+191                android:value="androidx.startup" />
+191-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\corin\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+192        </provider>
+193    </application>
+194
+195</manifest>
