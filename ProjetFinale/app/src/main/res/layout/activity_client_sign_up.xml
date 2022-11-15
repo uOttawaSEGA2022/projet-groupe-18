@@ -67,18 +67,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/editTextTextPostalAddress"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:hint="Address"
-            android:inputType="textPostalAddress"
-            android:textColor="@color/white" />
-
-        <EditText
-            android:id="@+id/passwordField1"
+            android:id="@+id/passwordField"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="20dp"
@@ -89,14 +78,14 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/passwordField2"
+            android:id="@+id/addressField"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:ems="10"
-            android:hint="Confirm password"
-            android:inputType="textPassword"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
             android:textColor="@color/white" />
 
         <Button
@@ -104,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/mealer_tone1"
             android:text="Sign in!" />
