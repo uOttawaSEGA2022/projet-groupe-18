@@ -21,14 +21,19 @@ import java.util.regex.Pattern;
 
 public class ClientSignUp extends AppCompatActivity {
 
+    // Instance variables
+
     private EditText FirstName;
     private EditText LastName;
     private EditText Email;
     private EditText Address;
     private EditText Password;
-    FirebaseAuth mAuth;
+    //FirebaseAuth mAuth;
     private Button clientSignIn;
 
+    // Instance methods
+
+    // Constructor
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +46,13 @@ public class ClientSignUp extends AppCompatActivity {
         Address = findViewById(R.id.addressField);
         clientSignIn = findViewById(R.id.clientSignIn);
 
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{
             createUser();
         });
     }
+
+    /*
     private void createUser(){
 
         String firstName = FirstName.getText().toString();
@@ -53,29 +60,29 @@ public class ClientSignUp extends AppCompatActivity {
         String email = Email.getText().toString();
         String address = Address.getText().toString();
         String password = Password.getText().toString();
-        if(TextUtils.isEmpty(email)){
+        if (TextUtils.isEmpty(email)) {
             Email.setError("Email ne peut pas être vide");
             Email.requestFocus();
-        }else if(TextUtils.isEmpty(password)){
+        } else if (TextUtils.isEmpty(password)) {
             Password.setError("Password ne peut pas être vide");
             Password.requestFocus();
-        }else if(TextUtils.isEmpty(firstName)){
+        } else if (TextUtils.isEmpty(firstName)) {
             FirstName.setError("First name ne peut pas être vide");
             FirstName.requestFocus();
-        }else if(TextUtils.isEmpty(lastName)){
+        } else if(TextUtils.isEmpty(lastName)) {
             LastName.setError("Last name ne peut pas être vide");
             LastName.requestFocus();
-        }else if(TextUtils.isEmpty(address)){
+        } else if(TextUtils.isEmpty(address)) {
             Address.setError("Address ne peut pas être vide");
             Address.requestFocus();
-        }else{
+        } else {
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         Toast.makeText(ClientSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(ClientSignUp.this, ClientLogin.class));
-                    }else{
+                    } else {
                         Toast.makeText(ClientSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
@@ -83,6 +90,8 @@ public class ClientSignUp extends AppCompatActivity {
             });
         }
     }
+
+     */
 
     public void OnClientSignIn(View view) {
 

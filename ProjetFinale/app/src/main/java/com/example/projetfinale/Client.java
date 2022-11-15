@@ -1,13 +1,30 @@
 package com.example.projetfinale;
 
-public class Client extends User{
+public class Client extends User {
+
+    // Instance variables
+
+    private String firstName;
+    private String lastname;
+    private String email;
+    private String password;
     private String address;
-    public Client(String firstName, String lastName, String emailAddress, String password, String address){
-        super(firstName,lastName,emailAddress,password);
+
+    // Instance methods
+
+    // Constructor
+    public Client(String firstName, String lastName, String email, String password, String address){
+        super(firstName,lastName,email,password);
         this.address = address;
+        cr
     }
 
-    public String getAdress(){
+    // Getters
+    public String getAddress(){
         return address;
     }
+
+    // Setters
+    public void setAddress(String newAddress) { address = newAddress; }
+
 }

@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="26527b5d-3805-4c94-becc-05d07389dadd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/ClientSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_client_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_client_sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetfinale/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
