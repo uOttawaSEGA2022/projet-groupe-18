@@ -23,9 +23,6 @@ import java.util.regex.Pattern;
 public class ClientSignUp extends AppCompatActivity {
 
 
-    /*
-
-
     // Instance variables
 
     private EditText FirstName;
@@ -33,7 +30,7 @@ public class ClientSignUp extends AppCompatActivity {
     private EditText Email;
     private EditText Address;
     private EditText Password;
-    //FirebaseAuth mAuth;
+    FirebaseAuth mAuth;
     private Button clientSignIn;
 
     // Instance methods
@@ -49,7 +46,7 @@ public class ClientSignUp extends AppCompatActivity {
         Email = findViewById(R.id.emailField);
         Password = findViewById(R.id.passwordField);
         Address = findViewById(R.id.addressField);
-        clientSignIn = findViewById(R.id.clientSignIn);
+        clientSignIn = findViewById(R.id.btn_signin);
 
         //mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{
@@ -96,11 +93,9 @@ public class ClientSignUp extends AppCompatActivity {
         }
     }
 
-
+    /*
 
     public void OnClientSignIn(View view) {
-
-        /*
 
         String firstName = String.valueOf(FirstName.getText());
         String lastName = String.valueOf(LastName.getText());
@@ -157,5 +152,9 @@ public class ClientSignUp extends AppCompatActivity {
     }
 
     */
+
+    public void OnLoginPage(View view) {
+        startActivity(new Intent(ClientSignUp.this, MainActivity.class));
+    }
 
 }

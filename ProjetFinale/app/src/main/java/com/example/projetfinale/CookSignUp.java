@@ -31,12 +31,13 @@ public class CookSignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_sign_up);
 
-        FirstName = findViewById(R.id.editTextTextPersonName4);
-        LastName = findViewById(R.id.editTextTextPersonName7);
-        Email = findViewById(R.id.editTextTextPersonName8);
-        Address = findViewById(R.id.editTextTextPersonName3);
-        Password = findViewById(R.id.editTextTextPersonName5);
-        CookSignIn = findViewById(R.id.clientSignIn);
+        FirstName = findViewById(R.id.firstNameField);
+        LastName = findViewById(R.id.lastNameField);
+        Email = findViewById(R.id.emailField);
+        Address = findViewById(R.id.passwordField);
+        Password = findViewById(R.id.addressField);
+        Description = findViewById(R.id.descriptionField);
+        CookSignIn = findViewById(R.id.btn_signin);
 
         mAuth = FirebaseAuth.getInstance();
         CookSignIn.setOnClickListener(view ->{
@@ -80,7 +81,15 @@ public class CookSignUp extends AppCompatActivity {
             });
         }
     }
+
+    /*
     public void OnCookSignIn(View view){
-        Intent intent = new Intent(CookSignUp.this, CookMenu.class);
+        startActivity(new Intent(CookSignUp.this, CookMenu.class));
     }
+    */
+
+    public void OnLoginPage(View view) {
+        startActivity(new Intent(CookSignUp.this, MainActivity.class));
+    }
+
 }

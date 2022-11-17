@@ -18,10 +18,6 @@ public class GeneralSignUp extends AppCompatActivity {
         startActivity(new Intent(GeneralSignUp.this, ClientSignUp.class));
     }
 
-    public void OnCookSignUp(View view) {
-        startActivity(new Intent(GeneralSignUp.this, CookSignUp.class));
-    }
-
     public void OnLoginPage(View view) {
         startActivity(new Intent(GeneralSignUp.this, MainActivity.class));
     }
