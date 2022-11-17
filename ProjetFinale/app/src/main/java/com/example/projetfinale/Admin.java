@@ -15,6 +15,6 @@ public class Admin extends User{
     }
 
     public void suspend(Cook cook){
-
+        cook.setSuspend();
     }
 }
