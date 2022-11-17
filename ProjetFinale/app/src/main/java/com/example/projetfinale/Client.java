@@ -16,7 +16,6 @@ public class Client extends User {
     public Client(String firstName, String lastName, String email, String password, String address){
         super(firstName,lastName,email,password);
         this.address = address;
-        cr
     }
 
     // Getters

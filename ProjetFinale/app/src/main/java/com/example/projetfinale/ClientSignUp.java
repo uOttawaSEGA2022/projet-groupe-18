@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -20,6 +21,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.regex.Pattern;
 
 public class ClientSignUp extends AppCompatActivity {
+
+
+    /*
+
 
     // Instance variables
 
@@ -52,7 +57,7 @@ public class ClientSignUp extends AppCompatActivity {
         });
     }
 
-    /*
+
     private void createUser(){
 
         String firstName = FirstName.getText().toString();
@@ -91,7 +96,7 @@ public class ClientSignUp extends AppCompatActivity {
         }
     }
 
-     */
+
 
     public void OnClientSignIn(View view) {
 
@@ -149,28 +154,8 @@ public class ClientSignUp extends AppCompatActivity {
         Toast.makeText(ClientSignUp.this, "Please provide valid entries",
                 Toast.LENGTH_LONG).show();
 
-
-         */
-
-        createUser();
-
     }
 
+    */
 
-    /*  Put following firebase update in the Client class
-
-    mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()){
-                        Toast.makeText(ClientSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(ClientSignUp.this, ClientLogin.class));
-                    }else{
-                        Toast.makeText(ClientSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-
-                    }
-                }
-            });
-
-     */
 }
