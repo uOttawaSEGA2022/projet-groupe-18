@@ -50,7 +50,7 @@ public class AdminLogin extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(AdminLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(AdminLogin.this, CookMenu.class));
+                        startActivity(new Intent(AdminLogin.this,AdminWelcome.class));
                     } else {
                         Toast.makeText(AdminLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -60,7 +60,7 @@ public class AdminLogin extends AppCompatActivity {
         }
     }
     public void OnAdminLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), CookMenu.class);
+        Intent intent = new Intent(getApplicationContext(), AdminWelcome.class);
         startActivityForResult(intent,0);
     }
 }

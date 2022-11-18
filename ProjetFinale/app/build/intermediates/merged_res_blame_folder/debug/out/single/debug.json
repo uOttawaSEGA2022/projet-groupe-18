@@ -1,122 +1,126 @@
 [
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cooker_menu.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cooker_menu.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_complaints.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_complaints.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_sign_up.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_admin_welcome.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_admin_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_login.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_login.xml"
     },
     {
         "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cook_welcome.xml.flat",
         "source": "com.example.projetfinale.app-main-8:/layout/activity_cook_welcome.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_sign_up.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_sign_up.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cooker_menu.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_cooker_menu.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_general_sign_up.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_general_sign_up.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.projetfinale.app-pngs-1:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_menu.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_menu.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cook_login.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_cook_login.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_welcome.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_welcome.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_main.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_main.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_admin_login.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_admin_login.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/xml_backup_rules.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_test.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_test.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_admin_login.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_admin_login.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_test.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_test.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_menu.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_menu.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-pngs-1:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_admin_welcome.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_admin_welcome.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_sign_up.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_sign_up.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_complaints.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_complaints.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_login.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_login.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cook_sign_up.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_cook_sign_up.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_welcome.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_welcome.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_welcome.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_welcome.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_login.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_login.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_general_sign_up.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_general_sign_up.xml"
-    },
-    {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.projetfinale.app-merged_res-6:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.projetfinale.app-main-8:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xxhdpi\\ic_launcher.webp"
     }
 ]

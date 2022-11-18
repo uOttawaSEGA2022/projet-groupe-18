@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="OnClientSignUp"
+    tools:context=".GeneralSignUp">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mealer_tone2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="center"
+            android:text="Welcome to Mealer!"
+            android:textColor="@color/mealer_tone1"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Which status do you want?"
+            android:textColor="#50290C"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/mealer_tone1"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="OnClientSignUp"
+            android:text="I'm a client!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_client2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/mealer_tone1"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="OnCookSignUp"
+            android:text="I'm a cook!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/comeBackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="Come back to"
+            android:textColor="#50230C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/backToLoginTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top"
+            android:onClick="OnLoginPage"
+            android:text="Login page"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

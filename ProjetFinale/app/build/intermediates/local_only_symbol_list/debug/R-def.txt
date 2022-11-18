@@ -22,6 +22,7 @@ id backToLoginTextView2
 id btn_ComplaintPage
 id btn_admin
 id btn_admin_login
+id btn_admin_logout
 id btn_client
 id btn_client2
 id btn_cook
@@ -50,7 +51,6 @@ id noAccountYetTextView
 id passwordField
 id postalAddressField
 id progilePictureImageView
-id returnToMain
 id signUpHereTextView
 id space1
 id spinner

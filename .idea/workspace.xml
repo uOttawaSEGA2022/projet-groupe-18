@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82ac2f98-3aa1-4ed4-9591-71b2bb97631c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/local_only_symbol_list/debug/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/local_only_symbol_list/debug/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_admin_login.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_admin_login.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_admin_welcome.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_admin_welcome.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_client_welcome.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_client_welcome.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_cook_welcome.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res/debug/layout_activity_cook_welcome.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_admin_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_admin_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_admin_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_admin_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_client_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_client_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_cook_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/packaged_res/debug/layout/activity_cook_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/java/com/example/projetfinale/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/java/com/example/projetfinale/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/java/com/example/projetfinale/CookMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/java/com/example/projetfinale/CookMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_admin_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_admin_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_admin_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_admin_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_client_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_client_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_cook_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_cook_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_cooker_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetFinale/app/src/main/res/layout/activity_cooker_menu.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HhX6RCd9auRbLS5gAcqJqILnLs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjetFinale" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82ac2f98-3aa1-4ed4-9591-71b2bb97631c" name="Changes" comment="" />
+      <created>1668738114404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668738114404</updated>
+    </task>
+    <servers />
+  </component>
+</project>
