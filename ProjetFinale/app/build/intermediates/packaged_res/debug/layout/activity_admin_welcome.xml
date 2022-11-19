@@ -17,10 +17,10 @@
             android:id="@+id/Bienvenue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="bienvenue!" />
+            android:text="bienvenue Admin!" />
 
         <Button
-            android:id="@+id/returnToMain"
+            android:id="@+id/btn_admin_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnReturn"

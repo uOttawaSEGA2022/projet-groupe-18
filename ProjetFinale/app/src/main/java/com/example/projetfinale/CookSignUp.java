@@ -23,6 +23,7 @@ public class CookSignUp extends AppCompatActivity {
     EditText Email;
     EditText Address;
     EditText Password;
+    EditText Description;
     FirebaseAuth mAuth;
     Button CookSignIn;
 

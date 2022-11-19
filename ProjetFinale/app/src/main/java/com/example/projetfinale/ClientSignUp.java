@@ -48,7 +48,7 @@ public class ClientSignUp extends AppCompatActivity {
         Address = findViewById(R.id.addressField);
         clientSignIn = findViewById(R.id.btn_signin);
 
-        //mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{
             createUser();
         });

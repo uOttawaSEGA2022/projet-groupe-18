@@ -2675,6 +2675,7 @@ id browser_actions_menu_view
 id btn_ComplaintPage
 id btn_admin
 id btn_admin_login
+id btn_admin_logout
 id btn_client
 id btn_client2
 id btn_cook
@@ -2705,8 +2706,6 @@ id chip_group
 id chronometer
 id circle_center
 id clear_text
-id clientSignIn
-id clientSignIn2
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -2736,6 +2735,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriptionField
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2766,17 +2766,7 @@ id easeInOut
 id easeOut
 id east
 id editTextTextPersonName
-id editTextTextPersonName10
-id editTextTextPersonName11
-id editTextTextPersonName12
 id editTextTextPersonName2
-id editTextTextPersonName3
-id editTextTextPersonName4
-id editTextTextPersonName5
-id editTextTextPersonName6
-id editTextTextPersonName7
-id editTextTextPersonName8
-id editTextTextPersonName9
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
@@ -2963,7 +2953,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id returnToMain
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3390,6 +3379,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

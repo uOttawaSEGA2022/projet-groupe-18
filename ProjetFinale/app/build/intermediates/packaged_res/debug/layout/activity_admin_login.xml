@@ -16,22 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Email" />
+            android:hint="Email"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/edt_admin_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Password" />
+            android:hint="Password"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btn_admin_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onAdminLogin"
-            android:text="Login come Admin" />
+            android:text="@string/btn_login" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

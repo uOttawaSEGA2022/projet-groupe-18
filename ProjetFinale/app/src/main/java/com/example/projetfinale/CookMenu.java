@@ -19,7 +19,7 @@ public class CookMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cooker_menu);
 
-        returnToMain = findViewById(R.id.returnToMain);
+        returnToMain = findViewById(R.id.btn_admin_logout);
         mAuth = FirebaseAuth.getInstance();
         returnToMain.setOnClickListener(view ->{
             mAuth.signOut();
