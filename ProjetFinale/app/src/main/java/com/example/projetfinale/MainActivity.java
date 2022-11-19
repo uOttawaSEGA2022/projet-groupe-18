@@ -33,21 +33,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void OnClientLogin(View view) {
-        startActivity(new Intent(MainActivity.this, ClientLogin.class));
+    public void OnClientLoginPage(View view) {
+        startActivity(new Intent(getApplicationContext(), ClientLogin.class));
     }
 
-    public void OnCookLogin(View view) {
-        startActivity(new Intent(MainActivity.this, CookLogin.class));
+    public void OnCookLoginPage(View view) {
+        startActivity(new Intent(getApplicationContext(), CookLogin.class));
     }
 
-    public void OnAdminLogin(View view){
-        Intent intent = new Intent(getApplicationContext(),AdminLogin.class);
-        MainActivity.this.startActivity(intent);
+    public void OnAdminLoginPage(View view){
+        startActivity(new Intent(getApplicationContext(), AdminLogin.class));
     }
 
     public void OnSignUpPage(View view) {
-        startActivity(new Intent(MainActivity.this, GeneralSignUp.class));
+        startActivity(new Intent(getApplicationContext(), GeneralSignUp.class));
     }
 
     public void OnDisconnect(View view) {

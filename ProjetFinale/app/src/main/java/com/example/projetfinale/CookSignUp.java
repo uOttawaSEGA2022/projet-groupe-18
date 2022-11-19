@@ -38,7 +38,7 @@ public class CookSignUp extends AppCompatActivity {
         Address = findViewById(R.id.passwordField);
         Password = findViewById(R.id.addressField);
         Description = findViewById(R.id.descriptionField);
-        CookSignIn = findViewById(R.id.btn_signin);
+        CookSignIn = findViewById(R.id.btn_admin_login);
 
         mAuth = FirebaseAuth.getInstance();
         CookSignIn.setOnClickListener(view ->{
@@ -73,7 +73,7 @@ public class CookSignUp extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         Toast.makeText(CookSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CookSignUp.this, CookLogin.class));
+                        startActivity(new Intent(CookSignUp.this, CookLogin2.class));
                     }else{
                         Toast.makeText(CookSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 

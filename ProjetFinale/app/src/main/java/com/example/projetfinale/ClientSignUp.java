@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -17,8 +16,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.util.regex.Pattern;
 
 public class ClientSignUp extends AppCompatActivity {
 
@@ -46,7 +43,7 @@ public class ClientSignUp extends AppCompatActivity {
         Email = findViewById(R.id.emailField);
         Password = findViewById(R.id.passwordField);
         Address = findViewById(R.id.addressField);
-        clientSignIn = findViewById(R.id.btn_signin);
+        clientSignIn = findViewById(R.id.btn_admin_login);
 
         mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{
@@ -153,8 +150,12 @@ public class ClientSignUp extends AppCompatActivity {
 
     */
 
-    public void OnLoginPage(View view) {
-        startActivity(new Intent(ClientSignUp.this, MainActivity.class));
+    public void OnClientSignIn(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
+
+    public void OnMainPageFromClientSignUp(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
 }

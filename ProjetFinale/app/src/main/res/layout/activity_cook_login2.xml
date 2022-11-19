@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CookLogin">
+    tools:context=".CuisinerLogin">
 
     <LinearLayout
         android:id="@+id/mainLayout"
@@ -62,7 +62,6 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/mealer_tone1"
-            android:onClick="OnCookLogin"
             android:text="Log in!" />
 
         <TextView
@@ -70,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
-            android:onClick="OnMainPageFromCookLogin"
+            android:onClick="OnMainLoginPage"
             android:text="Come back to main login page"
             android:textColor="@color/mealer_tone1"
             android:textSize="18sp" />

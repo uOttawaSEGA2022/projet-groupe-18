@@ -27,8 +27,8 @@ public class AdminLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
 
-        Email = findViewById(R.id.edt_admin_email);
-        Password = findViewById(R.id.edt_admin_password);
+        Email = findViewById(R.id.emailField);
+        Password = findViewById(R.id.passwordField);
         Login =  findViewById(R.id.btn_admin_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
@@ -60,7 +60,10 @@ public class AdminLogin extends AppCompatActivity {
         }
     }
     public void OnAdminLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), AdminWelcome.class);
-        startActivityForResult(intent,0);
+        startActivity(new Intent(getApplicationContext(), AdminWelcome.class));
+    }
+
+    public void OnMainPageFromAdminLogin(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 }

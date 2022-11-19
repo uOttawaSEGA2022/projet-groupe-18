@@ -27,9 +27,9 @@ public class CookLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_login);
 
-        Email = findViewById(R.id.editTextTextPersonName);
-        Password = findViewById(R.id.editTextTextPersonName2);
-        Login = findViewById(R.id.CuisinierLoginButton);
+        Email = findViewById(R.id.emailField);
+        Password = findViewById(R.id.passwordField);
+        Login = findViewById(R.id.btn_cook_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
@@ -59,8 +59,13 @@ public class CookLogin extends AppCompatActivity {
             });
         }
     }
-    public void OnCuisinierLogin( View view){
-        Intent intent = new Intent(getApplicationContext(), CookMenu.class);
-        startActivityForResult(intent,0);
+
+    public void OnCookLogin(View view) {
+        startActivity(new Intent(getApplicationContext(), CookMenu.class));
     }
+
+    public void OnMainPageFromCookLogin(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
+
 }

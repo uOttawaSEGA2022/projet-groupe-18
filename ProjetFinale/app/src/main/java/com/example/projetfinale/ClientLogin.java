@@ -17,6 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ClientLogin extends AppCompatActivity {
+
     EditText Email;
     EditText Password;
     Button Login;
@@ -26,14 +27,15 @@ public class ClientLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_login);
 
-        Email = findViewById(R.id.edt_email);
-        Password = findViewById(R.id.edt_password);
-        Login = findViewById(R.id.btn_login);
+        Email = findViewById(R.id.emailField);
+        Password = findViewById(R.id.passwordField);
+        Login = findViewById(R.id.btn_admin_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
         });
     }
+
     private void LoginUser(){
         String email = Email.getText().toString();
         String password = Password.getText().toString();
@@ -58,8 +60,12 @@ public class ClientLogin extends AppCompatActivity {
             });
         }
     }
-    public void OnLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), ClientMenu.class);
-        startActivityForResult(intent,0);
+
+    public void OnClientLogin(View view){
+        startActivity(new Intent(getApplicationContext(), ClientMenu.class));
+    }
+
+    public void OnMainPageFromClientLogin(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 }
