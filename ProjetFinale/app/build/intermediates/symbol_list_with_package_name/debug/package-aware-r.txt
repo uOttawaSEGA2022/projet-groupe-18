@@ -2514,6 +2514,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon_rating
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2555,6 +2556,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable roundedbutton
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2562,7 +2564,6 @@ drawable tooltip_frame_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
-id Bienvenue
 id CTRL
 id ClientReturn
 id Complaint
@@ -2679,10 +2680,12 @@ id btn_admin_logout
 id btn_client
 id btn_client2
 id btn_cook
+id btn_cook_addMenuItems
+id btn_cook_logout
 id btn_login
 id btn_logout
 id btn_signin
-id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2798,6 +2801,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id floatingActionButton
 id forever
 id fragment_container_view_tag
 id frost
@@ -2824,6 +2828,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
 id immediateStop
 id included
 id info
@@ -2836,6 +2841,7 @@ id jumpToStart
 id labeled
 id lastNameField
 id layout
+id layout_cook_lists
 id left
 id leftToRight
 id legacy
@@ -2844,6 +2850,8 @@ id line1
 id line3
 id linear
 id listMode
+id list_admin_complaints
+id list_cook_menuItems
 id list_item
 id loginAsTextView
 id mainLayout
@@ -3051,6 +3059,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3076,6 +3085,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt_client_welcomeMsg
+id txt_welcomeMsg
 id unchecked
 id uniform
 id unlabeled
@@ -3207,7 +3218,6 @@ layout activity_cook_welcome
 layout activity_cooker_menu
 layout activity_general_sign_up
 layout activity_main
-layout activity_test
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

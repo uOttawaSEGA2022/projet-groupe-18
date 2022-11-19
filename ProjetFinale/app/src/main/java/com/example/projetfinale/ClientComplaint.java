@@ -51,9 +51,9 @@ public class ClientComplaint extends AppCompatActivity implements AdapterView.On
                 String a1 = FullName.getText().toString();
                 String b1 = Complaint.getText().toString();
                 if (a1.equals("") || b1.equals("")) {
-                    Toast.makeText(ClientComplaint.this, "Erreur, tout doit être remplis", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ClientComplaint.this, "Field needs to be filled", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(ClientComplaint.this, "Complainte envoyer" + admin, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ClientComplaint.this, "Complaint sent" + admin, Toast.LENGTH_SHORT).show();
                    FullName.setText("");
                    Complaint.setText("");
                 }

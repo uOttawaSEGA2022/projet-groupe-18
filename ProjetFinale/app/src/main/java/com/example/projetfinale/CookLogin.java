@@ -35,30 +35,32 @@ public class CookLogin extends AppCompatActivity {
             LoginUser();
         });
     }
-    private void LoginUser(){
+    private String LoginUser(){
         String email = Email.getText().toString();
         String password = Password.getText().toString();
         if(TextUtils.isEmpty(email)){
-            Email.setError("Email ne peut pas être vide");
+            Email.setError("E-mail section cannot be empty");
             Email.requestFocus();
         }else if(TextUtils.isEmpty(password)) {
-            Password.setError("Password ne peut pas être vide");
+            Password.setError("Password section cannot be empty");
             Password.requestFocus();
         }else{
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(CookLogin.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CookLogin.this, CookMenu.class));
+                        Toast.makeText(CookLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(CookLogin.this, CookWelcome.class));
                     } else {
-                        Toast.makeText(CookLogin.this, "Erreur de login" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
         }
+        return email;
     }
+<<<<<<< Updated upstream
 
     public void OnCookLogin(View view) {
         startActivity(new Intent(getApplicationContext(), CookMenu.class));
@@ -66,6 +68,11 @@ public class CookLogin extends AppCompatActivity {
 
     public void OnMainPageFromCookLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+=======
+    public void OnCookLogin( View view){
+        Intent intent = new Intent(getApplicationContext(), CookWelcome.class);
+        startActivityForResult(intent,0);
+>>>>>>> Stashed changes
     }
 
 }

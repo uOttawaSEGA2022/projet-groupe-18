@@ -50,8 +50,8 @@ public class ClientLogin extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(ClientLogin.this, "Useur logged in without issues", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(ClientLogin.this, ClientMenu.class));
+                        Toast.makeText(ClientLogin.this, "User logged in without issues", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(ClientLogin.this, ClientWelcome.class));
                     } else {
                         Toast.makeText(ClientLogin.this, "Log in error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -60,6 +60,7 @@ public class ClientLogin extends AppCompatActivity {
             });
         }
     }
+<<<<<<< Updated upstream
 
     public void OnClientLogin(View view){
         startActivity(new Intent(getApplicationContext(), ClientMenu.class));
@@ -67,5 +68,10 @@ public class ClientLogin extends AppCompatActivity {
 
     public void OnMainPageFromClientLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+=======
+    public void OnLogin(View view){
+        Intent intent = new Intent(getApplicationContext(), ClientWelcome.class);
+        startActivityForResult(intent,0);
+>>>>>>> Stashed changes
     }
 }

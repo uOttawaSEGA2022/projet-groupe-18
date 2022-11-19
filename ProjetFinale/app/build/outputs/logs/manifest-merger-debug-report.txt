@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\corin\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\corin\.gradle\caches\transforms-3\f3d98ef11c142fc1ab7aa6ab289a1339\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -11,6 +11,7 @@ MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\corin\.gradle\caches\t
 MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\36fb7b24728397f93e21aeacbea3420d\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\corin\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\corin\.gradle\caches\transforms-3\9a2a26e4a6796183dccfef9d7fb49e49\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
@@ -69,27 +70,29 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\corin\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\corin\.gradle\caches\transforms-3\278dc29f0623aadea82d99de2f6d77a6\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\corin\.gradle\caches\transforms-3\0bec845f6b293929bb6bcf403f1ceaec\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\corin\.gradle\caches\transforms-3\294ce4756884f83db0ec41d640c8fc3e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\corin\.gradle\caches\transforms-3\53d9dcccbb4733807bd36ca154114fa2\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\f8e528a95f7b3798f145278ea81ad218\transformed\grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
 	package
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-100:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-107:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-98:19
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-105:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\corin\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -100,6 +103,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\corin\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -180,70 +185,76 @@ ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\m
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:23:13-41
-activity#com.example.projetfinale.CookSignUp
+activity#com.example.projetfinale.CookWelcome
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:30:13-39
-activity#com.example.projetfinale.ClientWelcome
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:30:13-40
+activity#com.example.projetfinale.CookSignUp
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-42
-activity#com.example.projetfinale.GeneralSignUp
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:37:13-39
+activity#com.example.projetfinale.ClientWelcome
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:43:9-49:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:44:13-42
-activity#com.example.projetfinale.CookLogin
+activity#com.example.projetfinale.GeneralSignUp
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:50:9-56:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-38
-activity#com.example.projetfinale.ClientSignUp
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:51:13-42
+activity#com.example.projetfinale.CookLogin
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:57:9-63:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-41
-activity#com.example.projetfinale.ClientLogin
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:58:13-38
+activity#com.example.projetfinale.ClientSignUp
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:64:9-70:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:65:13-40
-activity#com.example.projetfinale.ClientLoginAndSignUp
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:65:13-41
+activity#com.example.projetfinale.ClientLogin
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:71:9-77:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:72:13-49
-activity#com.example.projetfinale.Welcome
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:72:13-40
+activity#com.example.projetfinale.ClientLoginAndSignUp
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:78:9-84:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:79:13-36
-activity#com.example.projetfinale.MainActivity
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:85:9-97:20
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:79:13-49
+activity#com.example.projetfinale.Welcome
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:85:9-91:20
 	android:exported
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:87:13-36
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:87:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:86:13-41
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:86:13-36
+activity#com.example.projetfinale.MainActivity
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:92:9-104:20
+	android:exported
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:94:13-36
+	android:name
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:93:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:88:13-92:29
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:95:13-99:29
 action#android.intent.action.MAIN
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:89:17-69
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:96:17-69
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:89:25-66
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:96:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:91:17-77
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:98:17-77
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:91:27-74
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:98:27-74
 uses-sdk
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
@@ -262,6 +273,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\corin\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
@@ -378,6 +391,10 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\corin\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\corin\.gradle\caches\transforms-3\0bec845f6b293929bb6bcf403f1ceaec\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\corin\.gradle\caches\transforms-3\294ce4756884f83db0ec41d640c8fc3e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\corin\.gradle\caches\transforms-3\294ce4756884f83db0ec41d640c8fc3e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\corin\.gradle\caches\transforms-3\53d9dcccbb4733807bd36ca154114fa2\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\corin\.gradle\caches\transforms-3\53d9dcccbb4733807bd36ca154114fa2\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\f8e528a95f7b3798f145278ea81ad218\transformed\grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\f8e528a95f7b3798f145278ea81ad218\transformed\grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -392,6 +409,8 @@ uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\8925545000941a0eeddb9daafb80b0ac\transformed\firebase-installations-17.1.0\AndroidManifest.xml:10:5-67
@@ -408,6 +427,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\8925545000941a0eeddb9daafb80b0ac\transformed\firebase-installations-17.1.0\AndroidManifest.xml:9:5-79
@@ -418,6 +439,8 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\f755c379cc70f8d9289a18f4a39b057b\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\1e0a04b8ef0dd6d6e3d132a5cb4d6df3\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\1e0a04b8ef0dd6d6e3d132a5cb4d6df3\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\f8e528a95f7b3798f145278ea81ad218\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\f8e528a95f7b3798f145278ea81ad218\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
@@ -472,6 +495,8 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\corin\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\corin\.gradle\caches\transforms-3\8925545000941a0eeddb9daafb80b0ac\transformed\firebase-installations-17.1.0\AndroidManifest.xml:14:9-20:19
@@ -498,6 +523,12 @@ ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle
 		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\corin\.gradle\caches\transforms-3\50e3871daf5b806b964e71fe40d25b2e\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\corin\.gradle\caches\transforms-3\8b128c61e29d0d26fe794981a9ece61a\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\4a8d77325b67161b1cb864d5fa2e3d25\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\corin\.gradle\caches\transforms-3\20c0ed039f1287dec076f132f8aa7615\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:25:5-68

@@ -11,7 +11,8 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id Bienvenue
+drawable icon_rating
+drawable roundedbutton
 id ClientReturn
 id Complaint
 id ComplaintSubmit
@@ -26,10 +27,12 @@ id btn_admin_logout
 id btn_client
 id btn_client2
 id btn_cook
+id btn_cook_addMenuItems
+id btn_cook_logout
 id btn_login
 id btn_logout
 id btn_signin
-id button
+id button2
 id comeBackTextView
 id descriptionField
 id disconnectTextView
@@ -42,7 +45,12 @@ id edt_password
 id edt_usernam
 id emailField
 id firstNameField
+id floatingActionButton
+id imageButton
 id lastNameField
+id layout_cook_lists
+id list_admin_complaints
+id list_cook_menuItems
 id loginAsTextView
 id mainLayout
 id main_layout
@@ -56,6 +64,9 @@ id space1
 id spinner
 id statusTextView
 id textView
+id textView2
+id txt_client_welcomeMsg
+id txt_welcomeMsg
 id welcomeTextView
 layout activity_admin_login
 layout activity_admin_welcome
@@ -70,7 +81,6 @@ layout activity_cook_welcome
 layout activity_cooker_menu
 layout activity_general_sign_up
 layout activity_main
-layout activity_test
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

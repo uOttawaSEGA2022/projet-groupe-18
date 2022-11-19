@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="-1dp">
 
         <TextView
-            android:id="@+id/Bienvenue"
+            android:id="@+id/txt_welcomeMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="bienvenue!" />

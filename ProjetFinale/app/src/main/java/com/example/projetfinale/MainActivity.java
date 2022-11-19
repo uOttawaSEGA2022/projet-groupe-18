@@ -10,25 +10,10 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button ClientLogin;
-    Button ClientSignIn;
-    FirebaseAuth mAuth;
+    public static String str_userID = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*      The text commented out has bugs
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ClientLogin = findViewById(R.id.LCC);
-        ClientSignIn = findViewById(R.id.Client);
-        mAuth = FirebaseAuth.getInstance();
-        ClientLogin.setOnClickListener(view -> {
-            LoginClient();
-        });
-        ClientSignIn.setOnClickListener(view -> {
-            SignInClient();
-        });
-        */
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
