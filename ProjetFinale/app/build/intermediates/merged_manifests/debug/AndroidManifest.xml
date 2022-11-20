@@ -27,6 +27,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProjetFinale" >
         <activity
+            android:name="com.example.projetfinale.activity_cook_manage_meals"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.projetfinale.AdminLogin"
             android:exported="false" >
             <meta-data
@@ -49,6 +56,20 @@
         </activity>
         <activity
             android:name="com.example.projetfinale.CookLogin"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.projetfinale.CookMeal"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.projetfinale.CookOrder"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

@@ -2635,6 +2635,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_main
 id add
 id addressField
 id adjust_height
@@ -2736,6 +2737,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id descriptionField
@@ -2786,6 +2788,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id find
 id firstNameField
 id fitCenter
 id fitEnd
@@ -3028,6 +3031,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3079,6 +3083,10 @@ id transition_transform
 id triangle
 id txt_cook_status
 id txt_cook_welcomeMsg
+id txt_mealID
+id txt_mealInfos
+id txt_mealName
+id txt_mealPrice
 id txt_welcomeMsg
 id unchecked
 id uniform
@@ -3207,9 +3215,10 @@ layout activity_client_sign_up
 layout activity_client_welcome
 layout activity_cook_login
 layout activity_cook_login2
+layout activity_cook_manage_meals
+layout activity_cook_manage_orders
 layout activity_cook_sign_up
 layout activity_cook_welcome
-layout activity_cooker_menu
 layout activity_general_sign_up
 layout activity_main
 layout browser_actions_context_menu_page

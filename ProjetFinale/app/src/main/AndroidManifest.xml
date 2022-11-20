@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ProjetFinale"
         tools:targetApi="31">
         <activity
+            android:name=".activity_cook_manage_meals"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AdminLogin"
             android:exported="false">
             <meta-data
@@ -28,14 +35,28 @@
         </activity>
         <activity
             android:name=".CookWelcome"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".CookLogin"
-            android:exported="false" >
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CookMeal"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CookOrder"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

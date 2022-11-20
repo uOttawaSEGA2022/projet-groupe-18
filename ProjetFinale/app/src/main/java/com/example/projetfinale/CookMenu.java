@@ -11,16 +11,17 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class CookMenu extends AppCompatActivity {
-    Button returnToMain;
+
     FirebaseAuth mAuth;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cooker_menu);
-
-        returnToMain = findViewById(R.id.btn_admin_logout);
         mAuth = FirebaseAuth.getInstance();
+        setContentView(R.layout.activity_cook_welcome);
+        Button returnToMain;
+        returnToMain = findViewById(R.id.btn_cook_logout);
+
         returnToMain.setOnClickListener(view ->{
             mAuth.signOut();
             startActivity(new Intent(CookMenu.this, MainActivity.class));

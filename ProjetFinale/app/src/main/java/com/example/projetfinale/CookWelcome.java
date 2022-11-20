@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -25,6 +27,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CookWelcome extends AppCompatActivity {
+    FirebaseFirestore db;
+    FirebaseAuth mAuth;
+
     String cookUserName="";
     int cookStatus;
     int cookID;
@@ -32,8 +37,16 @@ public class CookWelcome extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db = FirebaseFirestore.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_cook_welcome);
+      //Set logout button
+        Button returnToMain= findViewById(R.id.btn_cook_logout);
+        returnToMain.setOnClickListener(view ->{
+            mAuth.signOut();
+            startActivity(new Intent(CookWelcome.this, MainActivity.class));
+        });
+
         //Get cook username
         Bundle extras = getIntent().getExtras();
         cookUserName = extras.getString("cookUserName");
@@ -100,10 +113,22 @@ public class CookWelcome extends AppCompatActivity {
 
 
     }
+    protected void onStart(){
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user == null){
+            startActivity(new Intent(getApplicationContext(), CookLogin.class ));
+        } else
+        {
 
-    public void OnReturn(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-        startActivityForResult(intent,0);
+        }
     }
+
+    public void OnReturn( View view){
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+
+    }
+
+
 
 }
