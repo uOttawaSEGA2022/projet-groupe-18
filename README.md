@@ -8,9 +8,15 @@ Default sign-in and log in informations:
   Client:
     client@email.com
     password
-  Cook
+  Cook : Active cook
     cook@email.com
     password
+  Cook : Suspended
+     suspended@email.com
+     password
     
 This project is made by:
+  https://github.com/a-taillardat
   Anna C. N'guessanble https://github.com/angue047
+  https://github.com/S1monMarch
+  https://github.com/LSavkovic
