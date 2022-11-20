@@ -13,51 +13,17 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-1dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:src="@android:drawable/ic_dialog_dialer" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/btn_admin_logout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/mealer_tone1"
-                android:onClick="OnReturn"
-                android:text="logout"
-                app:rippleColor="@color/mealer_tone1" />
-
-        </LinearLayout>
-
         <TextView
-            android:id="@+id/txt_welcomeMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome Admin!"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/Bienvenue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Complaints" />
+            android:text="bienvenue Admin!" />
 
-        <ListView
-            android:id="@+id/list_admin_complaints"
+        <Button
+            android:id="@+id/btn_admin_logout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="wrap_content"
+            android:onClick="OnReturn"
+            android:text="logout" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

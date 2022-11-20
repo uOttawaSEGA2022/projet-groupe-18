@@ -7,33 +7,74 @@
     tools:context=".ClientLogin">
 
     <LinearLayout
-        android:layout_width="415dp"
-        android:layout_height="732dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="2dp">
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mealer_tone2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginAsATextView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="Login as a"
+            android:textColor="@color/mealer_tone1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/adminTextView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center_horizontal|top"
+            android:text="Client"
+            android:textColor="@color/mealer_tone1"
+            android:textSize="60sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/emailField"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name" />
-
-        <EditText
-            android:id="@+id/edt_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Mot de passe" />
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_admin_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnLogin"
-            android:text="Login" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnClientLogin"
+            android:text="Log in!" />
+
+        <TextView
+            android:id="@+id/backToMainLoginPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="OnMainPageFromClientLogin"
+            android:text="Come back to main login page"
+            android:textColor="@color/mealer_tone1"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

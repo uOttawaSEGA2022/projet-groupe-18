@@ -15,9 +15,9 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/loginAsATextView"
             android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_height="120dp"
             android:gravity="center"
             android:text="@string/signingUpAsClient"
             android:textColor="@color/mealer_tone1"
@@ -90,21 +90,22 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_signin"
+            android:id="@+id/btn_admin_login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnClientSignIn"
             android:text="Sign in!" />
 
         <TextView
-            android:id="@+id/backToLoginTextView2"
+            android:id="@+id/backToMainLoginPage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
-            android:onClick="OnLoginPage"
+            android:onClick="OnMainPageFromClientSignUp"
             android:text="Come back to Login page"
             android:textColor="@color/mealer_tone1"
             android:textSize="18sp" />

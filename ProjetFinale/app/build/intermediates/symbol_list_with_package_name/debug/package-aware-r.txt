@@ -2564,11 +2564,11 @@ drawable tooltip_frame_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id Bienvenue
 id CTRL
 id ClientReturn
 id Complaint
 id ComplaintSubmit
-id CuisinierLoginButton
 id FUNCTION
 id META
 id NO_DEBUG
@@ -2639,6 +2639,7 @@ id add
 id addressField
 id adjust_height
 id adjust_width
+id adminTextView
 id alertTitle
 id aligned
 id all
@@ -2656,7 +2657,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backToLoginTextView
-id backToLoginTextView2
+id backToMainLoginPage
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2681,10 +2682,9 @@ id btn_client
 id btn_client2
 id btn_cook
 id btn_cook_addMenuItems
+id btn_cook_login
 id btn_cook_logout
-id btn_login
 id btn_logout
-id btn_signin
 id button2
 id buttonPanel
 id cache_measures
@@ -2768,15 +2768,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextPersonName
-id editTextTextPersonName2
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
-id edt_admin_email
-id edt_admin_password
-id edt_email
-id edt_password
 id edt_usernam
 id elastic
 id emailField
@@ -2801,7 +2795,6 @@ id fitXY
 id fixed
 id flip
 id floating
-id floatingActionButton
 id forever
 id fragment_container_view_tag
 id frost
@@ -2850,9 +2843,9 @@ id line1
 id line3
 id linear
 id listMode
-id list_admin_complaints
 id list_cook_menuItems
 id list_item
+id loginAsATextView
 id loginAsTextView
 id mainLayout
 id main_layout
@@ -3058,8 +3051,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3213,6 +3204,7 @@ layout activity_client_menu
 layout activity_client_sign_up
 layout activity_client_welcome
 layout activity_cook_login
+layout activity_cook_login2
 layout activity_cook_sign_up
 layout activity_cook_welcome
 layout activity_cooker_menu
