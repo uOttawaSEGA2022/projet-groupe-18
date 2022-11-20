@@ -12,11 +12,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CookSignUp extends AppCompatActivity {
 
@@ -27,6 +34,7 @@ public class CookSignUp extends AppCompatActivity {
     EditText Password;
     EditText Description;
     FirebaseAuth mAuth;
+    FirebaseFirestore db;
     Button CookSignIn;
 
     @Override
@@ -37,11 +45,11 @@ public class CookSignUp extends AppCompatActivity {
         FirstName = findViewById(R.id.firstNameField);
         LastName = findViewById(R.id.lastNameField);
         Email = findViewById(R.id.emailField);
-        Address = findViewById(R.id.passwordField);
-        Password = findViewById(R.id.addressField);
+        Password = findViewById(R.id.passwordField);
+        Address = findViewById(R.id.addressField);
         Description = findViewById(R.id.descriptionField);
         CookSignIn = findViewById(R.id.btn_cook_signup);
-
+        db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         CookSignIn.setOnClickListener(view ->{
             createUser();
@@ -54,6 +62,7 @@ public class CookSignUp extends AppCompatActivity {
         String email = Email.getText().toString();
         String address = Address.getText().toString();
         String password = Password.getText().toString();
+        String description = Description.getText().toString();
         if(TextUtils.isEmpty(email)){
             Email.setError("Email can't be empty");
             Email.requestFocus();
@@ -77,13 +86,14 @@ public class CookSignUp extends AppCompatActivity {
                         Toast.makeText(CookSignUp.this, "Utilisateur a ete creer sans problèmes", Toast.LENGTH_SHORT).show();
                         FirebaseUser user = mAuth.getCurrentUser();
                         UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                                .setDisplayName(FirstName+" "+LastName)
+                                .setDisplayName(firstName+" "+lastName)
                                 .build();
 
                         user.updateProfile(profileUpdates)
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
+                                        addCookUser(email,firstName,lastName,address,description);
 
                                     }
                                 });
@@ -105,6 +115,33 @@ public class CookSignUp extends AppCompatActivity {
 
     public void OnLoginPage(View view) {
         startActivity(new Intent(CookSignUp.this, MainActivity.class));
+    }
+    private void addCookUser(String email,String first, String last, String addr, String desc){
+        // Create a new user with a first and last name
+        Map<String, Object> cook = new HashMap<>();
+        cook.put("cookEmail", email);
+        cook.put("cookFirstname", first);
+        cook.put("cookLastname", last);
+        cook.put("cookAddress", addr);
+        cook.put("cookDescription", desc);
+        cook.put("cookStatus",2);
+
+        // Add a new document with a generated ID
+        db.collection("cook")
+                .add(cook)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        //Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                       // Log.w(TAG, "Error adding document", e);
+                    }
+                });
+
     }
 
 }
