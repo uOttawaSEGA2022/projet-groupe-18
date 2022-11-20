@@ -53,7 +53,7 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_admin_login"
+            android:id="@+id/btn_cook_signup"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"

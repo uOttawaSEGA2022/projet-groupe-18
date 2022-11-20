@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class CookSignUp extends AppCompatActivity {
 
@@ -38,7 +40,7 @@ public class CookSignUp extends AppCompatActivity {
         Address = findViewById(R.id.passwordField);
         Password = findViewById(R.id.addressField);
         Description = findViewById(R.id.descriptionField);
-        CookSignIn = findViewById(R.id.btn_admin_login);
+        CookSignIn = findViewById(R.id.btn_cook_signup);
 
         mAuth = FirebaseAuth.getInstance();
         CookSignIn.setOnClickListener(view ->{
@@ -72,10 +74,22 @@ public class CookSignUp extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(CookSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookSignUp.this, "Utilisateur a ete creer sans problèmes", Toast.LENGTH_SHORT).show();
+                        FirebaseUser user = mAuth.getCurrentUser();
+                        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                                .setDisplayName(FirstName+" "+LastName)
+                                .build();
+
+                        user.updateProfile(profileUpdates)
+                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+
+                                    }
+                                });
                         startActivity(new Intent(CookSignUp.this, CookLogin.class));
                     }else{
-                        Toast.makeText(CookSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookSignUp.this, "Erreur de création" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -83,11 +97,11 @@ public class CookSignUp extends AppCompatActivity {
         }
     }
 
-    /*
-    public void OnCookSignIn(View view){
+
+    public void OnCookSignUp(View view){
         startActivity(new Intent(CookSignUp.this, CookMenu.class));
     }
-    */
+
 
     public void OnLoginPage(View view) {
         startActivity(new Intent(CookSignUp.this, MainActivity.class));

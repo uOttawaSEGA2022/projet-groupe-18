@@ -101,15 +101,15 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_admin_login"
+            android:id="@+id/btn_cook_signup"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/mealer_tone1"
-            android:onClick="OnCookSignIn"
-            android:text="Sign in!" />
+            android:onClick="OnCookSignUp"
+            android:text="Sign Up!" />
 
         <TextView
             android:id="@+id/backToMainLoginPage"

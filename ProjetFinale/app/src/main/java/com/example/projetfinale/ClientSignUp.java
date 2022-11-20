@@ -43,7 +43,7 @@ public class ClientSignUp extends AppCompatActivity {
         Email = findViewById(R.id.emailField);
         Password = findViewById(R.id.passwordField);
         Address = findViewById(R.id.addressField);
-        clientSignIn = findViewById(R.id.btn_admin_login);
+        clientSignIn = findViewById(R.id.btn_cook_signup);
 
         mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{

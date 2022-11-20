@@ -2677,7 +2677,6 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_ComplaintPage
 id btn_admin
-id btn_admin_login
 id btn_admin_logout
 id btn_client
 id btn_client2
@@ -2686,6 +2685,7 @@ id btn_cook_login
 id btn_cook_logout
 id btn_cook_manage_meals
 id btn_cook_manage_orders
+id btn_cook_signup
 id btn_logout
 id buttonPanel
 id cache_measures
