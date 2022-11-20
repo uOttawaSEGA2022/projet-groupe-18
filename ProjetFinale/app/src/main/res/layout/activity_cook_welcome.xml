@@ -51,7 +51,7 @@
                 android:id="@+id/btn_cook_addMenuItems"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add a new items" />
+                android:text="MANAGE MEALS" />
 
             <ListView
                 android:id="@+id/list_cook_menuItems"

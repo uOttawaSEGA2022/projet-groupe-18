@@ -60,18 +60,16 @@ public class ClientLogin extends AppCompatActivity {
             });
         }
     }
-<<<<<<< Updated upstream
-
     public void OnClientLogin(View view){
         startActivity(new Intent(getApplicationContext(), ClientMenu.class));
     }
 
     public void OnMainPageFromClientLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-=======
+    }
     public void OnLogin(View view){
         Intent intent = new Intent(getApplicationContext(), ClientWelcome.class);
         startActivityForResult(intent,0);
->>>>>>> Stashed changes
+
     }
 }

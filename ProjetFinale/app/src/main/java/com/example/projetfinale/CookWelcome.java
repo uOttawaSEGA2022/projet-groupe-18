@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-package com.example.projetfinale;public class CookWelcome {
-=======
+
 package com.example.projetfinale;
 
 import android.content.Intent;
@@ -33,10 +31,6 @@ public class CookWelcome extends AppCompatActivity {
         setContentView(R.layout.activity_cook_welcome);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
-
-
-        ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_activated_1,lstMeal);
 
         //List all meals of a cook based on Firestore database
 
@@ -52,19 +46,22 @@ public class CookWelcome extends AppCompatActivity {
                                        + " $CAD)");
 
                            }
+                           ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
+                           ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_activated_1,lstMeal);
+                           list_cook_menuItems.setAdapter(arrayAdapter);
                        } else {
                            Toast.makeText(CookWelcome.this, "Database error"
                                    + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                        }
                    }
                });
-       // lstMeal.add("hello");
-       list_cook_menuItems.setAdapter(arrayAdapter);
+
+
     }
 
     public void OnReturn(View view){
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivityForResult(intent,0);
     }
->>>>>>> Stashed changes
+
 }

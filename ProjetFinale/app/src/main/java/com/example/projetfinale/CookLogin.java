@@ -60,19 +60,14 @@ public class CookLogin extends AppCompatActivity {
         }
         return email;
     }
-<<<<<<< Updated upstream
 
     public void OnCookLogin(View view) {
-        startActivity(new Intent(getApplicationContext(), CookMenu.class));
+        startActivity(new Intent(getApplicationContext(), CookWelcome.class));
     }
 
     public void OnMainPageFromCookLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-=======
-    public void OnCookLogin( View view){
-        Intent intent = new Intent(getApplicationContext(), CookWelcome.class);
-        startActivityForResult(intent,0);
->>>>>>> Stashed changes
     }
+
 
 }
