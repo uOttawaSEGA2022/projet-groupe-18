@@ -28,11 +28,11 @@ id btn_admin_logout
 id btn_client
 id btn_client2
 id btn_cook
-id btn_cook_addMenuItems
 id btn_cook_login
 id btn_cook_logout
+id btn_cook_manage_meals
+id btn_cook_manage_orders
 id btn_logout
-id button2
 id comeBackTextView
 id descriptionField
 id disconnectTextView
@@ -43,6 +43,7 @@ id imageButton
 id lastNameField
 id layout_cook_lists
 id list_cook_menuItems
+id list_cook_orders
 id loginAsATextView
 id loginAsTextView
 id mainLayout

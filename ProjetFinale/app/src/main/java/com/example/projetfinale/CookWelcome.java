@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -54,9 +55,19 @@ public class CookWelcome extends AppCompatActivity {
                             }
                            TextView statusMsg = findViewById(R.id.txt_cook_status);
                            statusMsg.setText("Your account ID "+ cookID + " is "+codeStatus[cookStatus]);
-
+                            if (cookStatus!=2){
+                                //Deactivate buttons and invisible lists when account is suspended
+                                Button btnMeals = findViewById(R.id.btn_cook_manage_meals);
+                                btnMeals.setEnabled(Boolean.FALSE);
+                                Button btnOrders = findViewById(R.id.btn_cook_manage_orders);
+                                btnOrders.setEnabled(Boolean.FALSE);
+                                ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
+                                list_cook_menuItems.setVisibility(View.INVISIBLE);
+                                ListView list_cook_orders = findViewById(R.id.list_cook_orders);
+                                list_cook_orders.setVisibility(View.INVISIBLE);
+                            }
                         } else {
-                            Toast.makeText(CookWelcome.this, "Database cook status error"
+                            Toast.makeText(CookWelcome.this, "Database cook infos error"
                                     + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }

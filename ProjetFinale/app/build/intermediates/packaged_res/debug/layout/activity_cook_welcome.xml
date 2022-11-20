@@ -54,29 +54,30 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_cook_addMenuItems"
+                android:id="@+id/btn_cook_manage_meals"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="MANAGE MEALS" />
 
             <ListView
                 android:id="@+id/list_cook_menuItems"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_width="wrap_content"
+                android:layout_height="276dp" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_cook_manage_orders"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="MANAGE ORDERS" />
 
             <ListView
+                android:id="@+id/list_cook_orders"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
     </LinearLayout>
