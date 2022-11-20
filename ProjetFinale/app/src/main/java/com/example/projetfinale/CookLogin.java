@@ -53,9 +53,7 @@ public class CookLogin extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(CookLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(CookLogin.this, CookWelcome.class);
-                        i.putExtra("cookUserName",email);
-                        startActivity(i);
+                        startActivity(new Intent(CookLogin.this, CookWelcome.class));
                     } else {
                         Toast.makeText(CookLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_cook_manage_meals">
+    android:background="@color/mealer_tone2"
+    >
 
     <LinearLayout
         android:id="@+id/activity_main"
@@ -93,6 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/mealer_tone1"
                 android:onClick="newProduct"
                 android:text="Add" />
 
@@ -102,6 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/mealer_tone1"
                 android:onClick="lookupProduct"
                 android:text="Find" />
 
@@ -111,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/mealer_tone1"
                 android:onClick="removeProduct"
                 android:text="Delete" />
 
