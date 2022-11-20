@@ -56,7 +56,8 @@ id signUpHereTextView
 id space1
 id spinner
 id statusTextView
-id txt_client_welcomeMsg
+id txt_cook_status
+id txt_cook_welcomeMsg
 id txt_welcomeMsg
 id welcomeTextView
 layout activity_admin_login

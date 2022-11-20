@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,22 +24,52 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CookWelcome extends AppCompatActivity {
-
-    public static List<String> lstMeal = new ArrayList<>();
+    String cookUserName="";
+    int cookStatus;
+    int cookID;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cook_welcome);
-
         FirebaseFirestore db = FirebaseFirestore.getInstance();
+        setContentView(R.layout.activity_cook_welcome);
+        //Get cook username
+        Bundle extras = getIntent().getExtras();
+        cookUserName = extras.getString("cookUserName");
+        //Display cook username on the page
+        TextView welcomeMsg = findViewById(R.id.txt_cook_welcomeMsg);
+        welcomeMsg.setText("Welcome Cook "+cookUserName);
+        //Get cookID and cookstatus : temporarely suspended =1 , Active = 2, permanently suspend = 3
+        String codeStatus[] = {"Not specified","Temporarely suspended","Active","Permenantly suspend"};
+        db.collection("cook")
+                .whereEqualTo("cookEmail",cookUserName)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete( @NonNull Task<QuerySnapshot> task ) {
+                       if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                cookStatus = Integer.parseInt(document.get("cookStatus").toString());
+                                cookID = Integer.parseInt(document.get("cookID").toString());
+                            }
+                           TextView statusMsg = findViewById(R.id.txt_cook_status);
+                           statusMsg.setText("Your account ID "+ cookID + " is "+codeStatus[cookStatus]);
 
-        //List all meals of a cook based on Firestore database
+                        } else {
+                            Toast.makeText(CookWelcome.this, "Database cook status error"
+                                    + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+        //Get the list of all meals of a cook based on Firestore database
 
         db.collection("meal")
                 .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                    @Override
                    public void onComplete( @NonNull Task<QuerySnapshot> task ) {
+                       List<String> lstMeal = new ArrayList<>();
                        if (task.isSuccessful()) {
                            for (QueryDocumentSnapshot document : task.getResult()) {
                                lstMeal.add(document.get("mealName").toString() + " ("

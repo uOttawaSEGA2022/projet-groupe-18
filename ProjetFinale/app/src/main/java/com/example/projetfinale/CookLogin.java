@@ -21,7 +21,10 @@ public class CookLogin extends AppCompatActivity {
     EditText Password;
     Button Login;
     FirebaseAuth mAuth;
-
+    String cookUserName;
+    public String getCookUserName(){
+        return cookUserName;
+    }
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +38,7 @@ public class CookLogin extends AppCompatActivity {
             LoginUser();
         });
     }
-    private String LoginUser(){
+    private void LoginUser(){
         String email = Email.getText().toString();
         String password = Password.getText().toString();
         if(TextUtils.isEmpty(email)){
@@ -50,15 +53,16 @@ public class CookLogin extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(CookLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CookLogin.this, CookWelcome.class));
+                        Intent i = new Intent(CookLogin.this, CookWelcome.class);
+                        i.putExtra("cookUserName",email);
+                        startActivity(i);
                     } else {
                         Toast.makeText(CookLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
-        }
-        return email;
+        };
     }
 
     public void OnCookLogin(View view) {

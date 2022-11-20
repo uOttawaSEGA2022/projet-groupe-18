@@ -35,10 +35,16 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txt_client_welcomeMsg"
+            android:id="@+id/txt_cook_welcomeMsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome  cook" />
+
+        <TextView
+            android:id="@+id/txt_cook_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cook status" />
 
         <LinearLayout
             android:id="@+id/layout_cook_lists"
