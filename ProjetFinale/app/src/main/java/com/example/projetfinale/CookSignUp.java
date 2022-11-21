@@ -138,7 +138,7 @@ public class CookSignUp extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                       // Log.w(TAG, "Error adding document", e);
+                        Toast.makeText(CookSignUp.this, "Erreur de création :" + e.getMessage(), Toast.LENGTH_SHORT).show();;
                     }
                 });
 

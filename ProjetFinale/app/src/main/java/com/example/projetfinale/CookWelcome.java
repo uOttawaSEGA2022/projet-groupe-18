@@ -33,7 +33,7 @@ public class CookWelcome extends AppCompatActivity {
     String cookName;
     String cookEmail;
     int cookStatus;
-    int cookID;
+    String cookID;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,10 +73,10 @@ public class CookWelcome extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 cookStatus = Integer.parseInt(document.get("cookStatus").toString());
-                                cookID = Integer.parseInt(document.get("cookID").toString());
+                                cookID = document.getId().toString();
                             }
                             TextView statusMsg = findViewById(R.id.txt_cook_status);
-                            statusMsg.setText("Your account ID "+ cookID + " is "+codeStatus[cookStatus]);
+                            statusMsg.setText("Your account is "+codeStatus[cookStatus]);
                             if (cookStatus!=2){
                                 //Deactivate buttons and invisible lists when account is suspended
                                 Button btnMeals = findViewById(R.id.btn_cook_manage_meals);
@@ -98,7 +98,7 @@ public class CookWelcome extends AppCompatActivity {
                     }
                 });
     }
-    public void displayMeal(int cookID) {
+    public void displayMeal(String cookID) {
         //Get the list of all meals of a cook based on Firestore database
 
         db.collection("meal")
@@ -135,11 +135,15 @@ public class CookWelcome extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
     public void OnManageMeals( View view){
-        startActivity(new Intent(getApplicationContext(), CookMeal.class));
+        Intent i = new Intent(getApplicationContext(), CookMeal.class);
+        i.putExtra("cookID",cookID);
+        startActivity(i);
     }
     public void OnManageOrders( View view){
 
-        startActivity(new Intent(getApplicationContext(), CookOrder.class));
+        Intent i = new Intent(getApplicationContext(), CookOrder.class);
+        i.putExtra("CookID",cookID);
+        startActivity(i);
     }
 
 }

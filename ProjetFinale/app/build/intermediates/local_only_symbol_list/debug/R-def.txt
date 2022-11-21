@@ -18,12 +18,12 @@ id ClientReturn
 id Complaint
 id ComplaintSubmit
 id activity_main
-id add
 id addressField
 id adminTextView
 id backToLoginTextView
 id backToMainLoginPage
 id btn_ComplaintPage
+id btn_add_meal
 id btn_admin
 id btn_admin_logout
 id btn_client
@@ -65,7 +65,6 @@ id tableLayout
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID
-id txt_mealInfos
 id txt_mealName
 id txt_mealPrice
 id txt_welcomeMsg

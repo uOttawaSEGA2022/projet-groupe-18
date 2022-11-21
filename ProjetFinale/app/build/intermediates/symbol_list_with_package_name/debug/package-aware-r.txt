@@ -2676,6 +2676,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_ComplaintPage
+id btn_add_meal
 id btn_admin
 id btn_admin_logout
 id btn_client
@@ -3084,7 +3085,6 @@ id triangle
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID
-id txt_mealInfos
 id txt_mealName
 id txt_mealPrice
 id txt_welcomeMsg
