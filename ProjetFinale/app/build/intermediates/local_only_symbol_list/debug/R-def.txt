@@ -9,6 +9,8 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable ic_baseline_arrow_back_24
+drawable ic_baseline_dropdown_settings_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_rating
@@ -22,6 +24,7 @@ id addressField
 id adminTextView
 id backToLoginTextView
 id backToMainLoginPage
+id back_arrow
 id btn_ComplaintPage
 id btn_add_meal
 id btn_admin
@@ -39,6 +42,7 @@ id comeBackTextView
 id delete
 id descriptionField
 id disconnectTextView
+id dropdown_settings_icon
 id edt_usernam
 id emailField
 id find
@@ -62,6 +66,7 @@ id space1
 id spinner
 id statusTextView
 id tableLayout
+id toolbar_title
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID
@@ -77,13 +82,13 @@ layout activity_client_menu
 layout activity_client_sign_up
 layout activity_client_welcome
 layout activity_cook_login
-layout activity_cook_login2
 layout activity_cook_manage_meals
 layout activity_cook_manage_orders
 layout activity_cook_sign_up
 layout activity_cook_welcome
 layout activity_general_sign_up
 layout activity_main
+layout toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

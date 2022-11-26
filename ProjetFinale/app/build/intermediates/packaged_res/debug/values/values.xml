@@ -31,7 +31,7 @@
     <string name="project_id" translatable="false">projet-finale-3e073</string>
     <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
-    <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
