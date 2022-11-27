@@ -17,6 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <include layout="@layout/toolbar" />
+
         <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="wrap_content"
@@ -58,7 +60,9 @@
 
                     android:id="@+id/txt_mealName"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_column="2" />
             </TableRow>
 
@@ -76,7 +80,9 @@
 
                     android:id="@+id/txt_mealPrice"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_column="2" />
             </TableRow>
 

@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".activity_cook_manage_orders">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
