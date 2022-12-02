@@ -25,7 +25,6 @@ id adminTextView
 id backToLoginTextView
 id backToMainLoginPage
 id back_arrow
-id btn_ComplaintPage
 id btn_add_meal
 id btn_admin
 id btn_admin_logout
@@ -37,7 +36,9 @@ id btn_cook_logout
 id btn_cook_manage_meals
 id btn_cook_manage_orders
 id btn_cook_signup
-id btn_logout
+id client_menu_toolbar
+id client_tabs_layout
+id clients_menu_view_pager
 id comeBackTextView
 id delete
 id descriptionField
@@ -66,6 +67,7 @@ id space1
 id spinner
 id statusTextView
 id tableLayout
+id title
 id toolbar_title
 id txt_cook_status
 id txt_cook_welcomeMsg
@@ -88,6 +90,8 @@ layout activity_cook_sign_up
 layout activity_cook_welcome
 layout activity_general_sign_up
 layout activity_main
+layout fragment_orders_tab
+layout fragment_search_tab
 layout toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -110,6 +114,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string project_id
 string signingUpAsClient
 string welcomeToMealer

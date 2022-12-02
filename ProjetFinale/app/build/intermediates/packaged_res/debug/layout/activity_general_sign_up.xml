@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="OnClientSignUp"
-    tools:context=".GeneralSignUp">
+    tools:context=".GUI.GeneralSignUp">
 
     <LinearLayout
         android:id="@+id/main_layout"

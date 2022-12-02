@@ -34,98 +34,91 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.AdminLogin"
+            android:name="com.example.projetfinale.GUI.AdminLogin"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.AdminWelcome"
+            android:name="com.example.projetfinale.GUI.AdminWelcome"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CookWelcome"
+            android:name="com.example.projetfinale.GUI.CookWelcome"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CookLogin"
+            android:name="com.example.projetfinale.GUI.CookLogin"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CookMeal"
+            android:name="com.example.projetfinale.GUI.CookMeal"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CookOrder"
+            android:name="com.example.projetfinale.GUI.CookOrder"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.CookSignUp"
+            android:name="com.example.projetfinale.GUI.CookSignUp"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.ClientWelcome"
+            android:name="com.example.projetfinale.GUI.ClientWelcome"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.GeneralSignUp"
+            android:name="com.example.projetfinale.GUI.GeneralSignUp"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.ClientSignUp"
+            android:name="com.example.projetfinale.GUI.ClientSignUp"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.ClientLogin"
+            android:name="com.example.projetfinale.GUI.ClientLogin"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.ClientLoginAndSignUp"
+            android:name="com.example.projetfinale.GUI.Welcome"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.projetfinale.Welcome"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.example.projetfinale.MainActivity"
+            android:name="com.example.projetfinale.GUI.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

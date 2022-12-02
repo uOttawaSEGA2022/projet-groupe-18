@@ -28,16 +28,17 @@
     <string name="google_app_id" translatable="false">1:800544220412:android:c647264581dca76f3b6379</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA9RnxzrdQqSqMEVdM0XnlyR3SATAcA8q0</string>
     <string name="google_storage_bucket" translatable="false">projet-finale-3e073.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="project_id" translatable="false">projet-finale-3e073</string>
     <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
     <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/mealer_tone1</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/mealer_tone2</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         
