@@ -1,10 +1,13 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.projetfinale.GUI.MainActivity;
+import com.example.projetfinale.R;
 
 public class Welcome extends AppCompatActivity {
 
@@ -15,7 +18,7 @@ public class Welcome extends AppCompatActivity {
     }
 
     public void OnReturn(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivityForResult(intent,0);
     }
 }

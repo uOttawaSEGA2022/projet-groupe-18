@@ -1,19 +1,20 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
-import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.projetfinale.R;
 
-public class AdminWelcome extends AppCompatActivity {
+public class CookOrder extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_welcome);
+        setContentView(R.layout.activity_cook_manage_orders);
 
         ImageView backArrow = findViewById(R.id.back_arrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
@@ -29,10 +30,5 @@ public class AdminWelcome extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Dropdown settings coming soon", Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public void OnReturn(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-        startActivityForResult(intent,0);
     }
 }

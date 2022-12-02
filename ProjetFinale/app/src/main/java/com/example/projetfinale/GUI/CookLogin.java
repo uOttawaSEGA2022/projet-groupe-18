@@ -1,4 +1,4 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,25 +11,29 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class AdminLogin extends AppCompatActivity {
+public class CookLogin extends AppCompatActivity {
     EditText Email;
     EditText Password;
     Button Login;
     FirebaseAuth mAuth;
-
+    String cookUserName;
+    public String getCookUserName(){
+        return cookUserName;
+    }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login);
+        setContentView(R.layout.activity_cook_login);
 
         Email = findViewById(R.id.emailField);
         Password = findViewById(R.id.passwordField);
-        Login =  findViewById(R.id.btn_cook_signup);
+        Login = findViewById(R.id.btn_cook_login);
         mAuth = FirebaseAuth.getInstance();
         Login.setOnClickListener(view -> {
             LoginUser();
@@ -49,21 +53,24 @@ public class AdminLogin extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(AdminLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(AdminLogin.this,AdminWelcome.class));
+                        Toast.makeText(CookLogin.this, "User logged in without errors", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(CookLogin.this, CookWelcome.class));
                     } else {
-                        Toast.makeText(AdminLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CookLogin.this, "Login error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
-        }
-    }
-    public void OnAdminLogin(View view){
-        startActivity(new Intent(getApplicationContext(), AdminWelcome.class));
+        };
     }
 
-    public void OnMainPageFromAdminLogin(View view) {
+    public void OnCookLogin(View view) {
+        startActivity(new Intent(getApplicationContext(), CookWelcome.class));
+    }
+
+    public void OnMainPageFromCookLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
+
+
 }

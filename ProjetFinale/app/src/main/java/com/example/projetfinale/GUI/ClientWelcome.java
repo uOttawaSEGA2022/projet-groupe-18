@@ -1,4 +1,4 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.projetfinale.R;
 
 public class ClientWelcome extends AppCompatActivity {
 
@@ -32,7 +34,7 @@ public class ClientWelcome extends AppCompatActivity {
     }
 
     public void OnReturn(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivityForResult(intent,0);
     }
 }

@@ -1,13 +1,16 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.projetfinale.GUI.AdminLogin;
+import com.example.projetfinale.GUI.ClientLogin;
+import com.example.projetfinale.GUI.CookLogin;
+import com.example.projetfinale.GUI.GeneralSignUp;
+import com.example.projetfinale.R;
 
 public class MainActivity extends AppCompatActivity {
     public static String str_userID = "";

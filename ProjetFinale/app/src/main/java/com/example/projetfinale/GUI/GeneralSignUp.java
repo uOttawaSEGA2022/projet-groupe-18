@@ -1,10 +1,12 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.projetfinale.R;
 
 public class GeneralSignUp extends AppCompatActivity {
 

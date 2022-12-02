@@ -13,4 +13,7 @@
     <string name="btn_complaintPage">Complaint?</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
     <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
