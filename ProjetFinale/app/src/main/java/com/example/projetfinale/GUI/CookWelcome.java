@@ -3,6 +3,7 @@ package com.example.projetfinale.GUI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,7 +35,7 @@ public class CookWelcome extends AppCompatActivity {
     String cookEmail;
     int cookStatus;
     String cookID;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +108,7 @@ public class CookWelcome extends AppCompatActivity {
                             }
 
                             displayMeal(cookID);
+                            displayOrders(cookID);
 
                         } else {
                             Toast.makeText(CookWelcome.this, "Database cook infos error"
@@ -119,7 +121,7 @@ public class CookWelcome extends AppCompatActivity {
         //Get the list of all meals of a cook based on Firestore database
 
         db.collection("meal")
-                .whereEqualTo("cookID",cookID)
+                .whereEqualTo("cookID", cookID)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -133,8 +135,37 @@ public class CookWelcome extends AppCompatActivity {
 
                             }
                             ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
-                            ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_activated_1,lstMeal);
+                            ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
+                                    android.R.layout.simple_list_item_activated_1,lstMeal);
                             list_cook_menuItems.setAdapter(arrayAdapter);
+                        } else {
+                            Toast.makeText(CookWelcome.this, "Database error"
+                                    + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
+
+    public void displayOrders(String cookID) {
+        //Get the list of all meals of a cook based on Firestore database
+        db.collection("orders")
+                .whereEqualTo("cookID",cookID)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete( @NonNull Task<QuerySnapshot> task ) {
+                        List<String> lstOrders = new ArrayList<>();
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                lstOrders.add(document.get("mealFullName").toString()
+                                        + " X " + document.get("quantity").toString()
+                                        + "\nFor " + document.get("clientFullName").toString()
+                                        + "\nStatus: " + document.get("orderStatus"));
+                            }
+                            ListView list_cook_orders = findViewById(R.id.list_cook_orders);
+                            ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
+                                    android.R.layout.simple_list_item_activated_1,lstOrders);
+                            list_cook_orders.setAdapter(arrayAdapter);
                         } else {
                             Toast.makeText(CookWelcome.this, "Database error"
                                     + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

@@ -4,25 +4,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.projetfinale.GUI.ClientComplaint;
 import com.example.projetfinale.GUI.ClientLogin;
+import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
 import com.example.projetfinale.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    //Firebase variables
+    FirebaseAuth mAuth;
+    //GUI variables
     Button Logout;
     Button Complaint;
-    FirebaseAuth mAuth;
-
     TabLayout tabLayout;
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
@@ -78,6 +90,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
             startActivity(new Intent(ClientMenu.this, ClientLogin.class ));
         }
     }
+
+
     public void OnComplaint(View view){
         startActivity(new Intent(getApplicationContext(), ClientComplaint.class));
     }

@@ -16,12 +16,16 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_admin_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_fragment_orders_tab.xml.flat",
-        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\fragment_orders_tab.xml"
+        "merged": "com.example.projetfinale.app-merged_res-6:/layout_fragment_search_tab.xml.flat",
+        "source": "com.example.projetfinale.app-main-8:/layout/fragment_search_tab.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_login.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_fragment_orders_tab.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\fragment_orders_tab.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_baseline_arrow_back_24.xml.flat",
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_client_welcome.xml.flat",
+        "source": "com.example.projetfinale.app-main-8:/layout/activity_client_welcome.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_roundedbutton.xml.flat",

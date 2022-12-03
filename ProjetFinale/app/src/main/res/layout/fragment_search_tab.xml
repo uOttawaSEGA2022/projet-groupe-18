@@ -5,10 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".GUI.clientmenu.fragments.SearchTabFragment">
 
-    <TextView
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <ListView
+        android:id="@+id/list_meals"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Search tab test"
-        android:gravity="center"/>
+        android:layout_height="match_parent" />
 
 </FrameLayout>

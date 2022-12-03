@@ -44,6 +44,7 @@ id delete
 id descriptionField
 id disconnectTextView
 id dropdown_settings_icon
+id editTextTextPersonName
 id edt_usernam
 id emailField
 id find
@@ -53,15 +54,18 @@ id lastNameField
 id layout_cook_lists
 id list_cook_menuItems
 id list_cook_orders
+id list_meals
 id loginAsATextView
 id loginAsTextView
 id mainLayout
 id main_layout
 id mealerLogoImageView
 id noAccountYetTextView
+id ordersTab
 id passwordField
 id postalAddressField
 id progilePictureImageView
+id searchTab
 id signUpHereTextView
 id space1
 id spinner
