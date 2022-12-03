@@ -76,6 +76,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".GUI.clientmenu.ClientMenu"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".GUI.GeneralSignUp"
             android:exported="false">
             <meta-data

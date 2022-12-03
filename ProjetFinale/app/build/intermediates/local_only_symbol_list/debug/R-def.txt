@@ -44,17 +44,17 @@ id delete
 id descriptionField
 id disconnectTextView
 id dropdown_settings_icon
-id editTextTextPersonName
 id edt_usernam
 id emailField
 id find
 id firstNameField
+id fragment_container_view
 id imageButton
 id lastNameField
 id layout_cook_lists
+id list_client_meals
 id list_cook_menuItems
 id list_cook_orders
-id list_meals
 id loginAsATextView
 id loginAsTextView
 id mainLayout
@@ -73,6 +73,7 @@ id statusTextView
 id tableLayout
 id title
 id toolbar_title
+id txt_client_searchBar
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID

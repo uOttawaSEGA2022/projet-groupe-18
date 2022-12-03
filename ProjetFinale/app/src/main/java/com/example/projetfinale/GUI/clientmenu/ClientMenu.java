@@ -11,12 +11,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentContainer;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.projetfinale.GUI.ClientComplaint;
 import com.example.projetfinale.GUI.ClientLogin;
 import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
+import com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment;
 import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -38,6 +41,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
     TabLayout tabLayout;
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
+    FragmentContainerView fragCtView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +52,13 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
         clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
         clientsMenuViewPager2.setAdapter(clientsMenuTabsViewPagerAdapter);
-
+        fragCtView = findViewById(R.id.fragment_container_view);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragment_container_view, SearchTabFragment.class, null)
+                    .commit();
+        }
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -77,10 +87,10 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         // Logout = findViewById(R.id.btn_logout);
         // Complaint = findViewById(R.id.btn_ComplaintPage);
         mAuth = FirebaseAuth.getInstance();
-        Logout.setOnClickListener(view ->{
-            mAuth.signOut();
-            startActivity(new Intent(ClientMenu.this, MainActivity.class));
-        });
+        //Logout.setOnClickListener(view ->{
+            //mAuth.signOut();
+            //startActivity(new Intent(ClientMenu.this, MainActivity.class));
+        //});
     }
     @Override
     protected void onStart(){
