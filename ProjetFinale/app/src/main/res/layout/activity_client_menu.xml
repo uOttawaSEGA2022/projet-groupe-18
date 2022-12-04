@@ -47,6 +47,7 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true">
 
+
                     <ImageView
                         android:id="@+id/btn_complaint"
                         android:layout_width="wrap_content"
@@ -61,6 +62,22 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_baseline_my_profile_24" />
+
+                    <Button
+                        android:id="@+id/btnOrder"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnOrder"
+                        android:text="Submit an Order" />
+
+                    <Button
+                        android:id="@+id/btnComplaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:onClick="OnComplaint"
+                        android:text="Submit a complaint" />
+
 
                     <ImageView
                         android:id="@+id/btn_logout"

@@ -64,7 +64,7 @@ public class ClientSignUp extends AppCompatActivity {
 
         String firstName = FirstName.getText().toString();
         String lastName = LastName.getText().toString();
-        String email = Email.getText().toString();
+        String email = Email.getText().toString().toLowerCase();
         String address = Address.getText().toString();
         String password = Password.getText().toString();
         if (TextUtils.isEmpty(email)) {

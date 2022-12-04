@@ -52,7 +52,9 @@ public class ClientComplaint extends AppCompatActivity implements AdapterView.On
         ImageView dropdownSettingsIcon = findViewById(R.id.dropdown_settings_icon);
         dropdownSettingsIcon.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public
+
+            void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Dropdown settings coming soon", Toast.LENGTH_SHORT).show();
             }
         });

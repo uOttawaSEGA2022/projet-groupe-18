@@ -23,6 +23,7 @@ import com.example.projetfinale.GUI.CookLogin;
 import com.example.projetfinale.GUI.CookOrder;
 import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
+import com.example.projetfinale.GUI.clientmenu.fragments.OrdersTabFragment;
 import com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment;
 import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -47,6 +48,9 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
     ImageView complaintButton;
     ImageView myProfileButton;
     ImageView logoutButton;
+
+    Button Order;
+    Button Complaint;
     TabLayout tabLayout;
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
@@ -66,6 +70,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         tabLayout = findViewById(R.id.client_tabs_layout);
+        Complaint = findViewById(R.id.btnComplaint);
+        Order = findViewById(R.id.btnOrder);
         clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
         clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
         clientsMenuViewPager2.setAdapter(clientsMenuTabsViewPagerAdapter);
@@ -81,7 +87,26 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                clientsMenuViewPager2.setCurrentItem(tab.getPosition());
+                if (tab.getPosition()==0) {
+                    Complaint.setEnabled(false);
+                    Order.setEnabled(true);
+                    getSupportFragmentManager().beginTransaction()
+                            .setReorderingAllowed(true)
+                            .add(R.id.fragment_container_view, SearchTabFragment.class, null)
+                            .commit();
+
+                } else {
+                    Complaint.setEnabled(true);
+                    Order.setEnabled(false);
+                    Bundle args = new Bundle();
+                    args.putString("clientID", clientID);
+                    args.putString("clientFullName", clientFullName);
+                    getSupportFragmentManager().beginTransaction()
+                            .setReorderingAllowed(true)
+                            .add(R.id.fragment_container_view, OrdersTabFragment.class, args)
+                            .commit();
+                }
+
             }
 
             @Override
@@ -130,7 +155,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         {
             //Get client email
 
-            clientEmail = user.getEmail();
+            clientEmail = user.getEmail().toLowerCase();
             getClientInfo();
 
 

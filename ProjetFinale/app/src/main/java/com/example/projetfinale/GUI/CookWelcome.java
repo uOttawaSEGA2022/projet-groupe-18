@@ -77,7 +77,7 @@ public class CookWelcome extends AppCompatActivity {
         {
             //Get cook username
             cookName = user.getDisplayName();
-            cookEmail = user.getEmail();
+            cookEmail = user.getEmail().toLowerCase();
             //Display cook username on the page
             TextView welcomeMsg = findViewById(R.id.txt_cook_welcomeMsg);
             welcomeMsg.setText("Welcome "+cookName+ " ("+cookEmail+")");
