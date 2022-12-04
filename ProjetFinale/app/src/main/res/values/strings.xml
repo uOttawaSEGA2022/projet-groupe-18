@@ -12,8 +12,12 @@
     <string name="btn_logout">logout</string>
     <string name="btn_complaintPage">Complaint?</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
-    <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signingUpAsClient">You are signing up as a <b>Client</b>.</string>
+    <string name="signingUpAsACook">You are signing up as a <b>Cook</b>.</string>
+    <string name="title_activity_cook_main_page">CookMainPage</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="come_back_to_login">Come back to main <b><font color="#ffffff">login page</font></b></string>
+
 
 </resources>

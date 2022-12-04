@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <include layout="@layout/toolbar" />
+
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
@@ -51,6 +51,11 @@
                     android:text="Orders" />
 
             </com.google.android.material.tabs.TabLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:layout_width="match_parent"

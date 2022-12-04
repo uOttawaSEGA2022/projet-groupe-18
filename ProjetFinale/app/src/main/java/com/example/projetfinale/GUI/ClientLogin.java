@@ -53,7 +53,7 @@ public class ClientLogin extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(ClientLogin.this, "User logged in without issues", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(ClientLogin.this, ClientWelcome.class));
+                        startActivity(new Intent(ClientLogin.this, ClientMenu.class));
                     } else {
                         Toast.makeText(ClientLogin.this, "Log in error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -68,10 +68,5 @@ public class ClientLogin extends AppCompatActivity {
 
     public void OnMainPageFromClientLogin(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-    }
-    public void OnLogin(View view){
-        Intent intent = new Intent(getApplicationContext(), ClientWelcome.class);
-        startActivityForResult(intent,0);
-
     }
 }

@@ -71,7 +71,7 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
             android:onClick="OnMainPageFromClientLogin"
-            android:text="Come back to main login page"
+            android:text="@string/come_back_to_login"
             android:textColor="@color/mealer_tone1"
             android:textSize="18sp" />
 
