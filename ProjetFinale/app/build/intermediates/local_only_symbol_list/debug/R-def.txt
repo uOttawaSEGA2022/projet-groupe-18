@@ -31,7 +31,6 @@ id activity_main
 id add_meal_fab
 id addressField
 id adminTextView
-id appbar_layout
 id backToLoginTextView
 id backToMainLoginPage
 id btnComplaint
@@ -41,7 +40,6 @@ id btn_admin
 id btn_admin_logout
 id btn_client
 id btn_client2
-id btn_complaint
 id btn_cook
 id btn_cook_login
 id btn_cook_logout
@@ -52,8 +50,8 @@ id btn_cook_update
 id btn_logout
 id btn_my_profile
 id btn_profil_update
+id client_menu_toolbar
 id client_tabs_layout
-id client_toolbar_layout
 id clients_menu_view_pager
 id comeBackTextView
 id cook_main_page_tabs_layout
