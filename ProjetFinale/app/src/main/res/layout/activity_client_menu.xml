@@ -9,11 +9,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/mealer_tone2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             android:orientation="vertical">
 
             <RelativeLayout
@@ -82,7 +84,7 @@
                     android:id="@+id/searchTab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Search" />
+                    android:text="Meals" />
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/ordersTab"
@@ -95,7 +97,9 @@
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragment_container_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:name="com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment"
+                tools:layout="@layout/fragment_search_tab" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/clients_menu_view_pager"

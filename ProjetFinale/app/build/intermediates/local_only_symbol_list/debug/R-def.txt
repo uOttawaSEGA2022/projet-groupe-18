@@ -17,7 +17,6 @@ drawable ic_launcher_foreground
 drawable icon_rating
 drawable roundedbutton
 id Bienvenue
-id ClientReturn
 id ComplaintSubmit
 id FirstFragment
 id RestaurantName
@@ -30,6 +29,7 @@ id adminTextView
 id backToLoginTextView
 id backToMainLoginPage
 id back_arrow
+id btnComplaint
 id btn_add_meal
 id btn_admin
 id btn_admin_logout
