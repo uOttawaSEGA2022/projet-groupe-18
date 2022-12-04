@@ -49,8 +49,8 @@ public class ClientComplaint extends AppCompatActivity implements AdapterView.On
             }
         });
 
-        FullName = findViewById(R.id.edt_usernam);
-        Complaint = findViewById(R.id.Complaint);
+        FullName = findViewById(R.id.edt_username);
+        Complaint = findViewById(R.id.tctComplaint);
         Submit = findViewById(R.id.ComplaintSubmit);
         Return = findViewById(R.id.ClientReturn);
         spinner = findViewById(R.id.spinner);

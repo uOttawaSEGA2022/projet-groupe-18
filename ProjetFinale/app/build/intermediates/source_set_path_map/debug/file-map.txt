@@ -1,37 +1,48 @@
-com.example.projetfinale.app-lifecycle-livedata-core-2.5.1-0 C:\Users\alexi\.gradle\caches\transforms-3\001fd40991babfcc4e19ae7ee73a3d39\transformed\lifecycle-livedata-core-2.5.1\res
-com.example.projetfinale.app-lifecycle-process-2.4.1-1 C:\Users\alexi\.gradle\caches\transforms-3\01fcd40c26c845c4f1495b8e45143789\transformed\lifecycle-process-2.4.1\res
-com.example.projetfinale.app-annotation-experimental-1.1.0-2 C:\Users\alexi\.gradle\caches\transforms-3\294ce4756884f83db0ec41d640c8fc3e\transformed\annotation-experimental-1.1.0\res
-com.example.projetfinale.app-constraintlayout-2.1.4-3 C:\Users\alexi\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\res
-com.example.projetfinale.app-core-ktx-1.8.0-4 C:\Users\alexi\.gradle\caches\transforms-3\3bfe04653b1da63d53a7df2611d5a137\transformed\core-ktx-1.8.0\res
-com.example.projetfinale.app-cardview-1.0.0-5 C:\Users\alexi\.gradle\caches\transforms-3\3c28b4986e8330111ec373a187770b31\transformed\cardview-1.0.0\res
-com.example.projetfinale.app-play-services-base-18.0.1-6 C:\Users\alexi\.gradle\caches\transforms-3\4f36281d46ee8373ea89445f988a58a6\transformed\play-services-base-18.0.1\res
-com.example.projetfinale.app-material-1.6.1-7 C:\Users\alexi\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\res
-com.example.projetfinale.app-play-services-basement-18.1.0-8 C:\Users\alexi\.gradle\caches\transforms-3\6386fcf57f58045ac147a5ebc907797a\transformed\play-services-basement-18.1.0\res
-com.example.projetfinale.app-fragment-1.3.6-9 C:\Users\alexi\.gradle\caches\transforms-3\69deac44cc03013f6c798896174e0b6d\transformed\fragment-1.3.6\res
-com.example.projetfinale.app-lifecycle-viewmodel-2.5.1-10 C:\Users\alexi\.gradle\caches\transforms-3\7e70ee7e66b49c94ea4358e93d6fb5ab\transformed\lifecycle-viewmodel-2.5.1\res
-com.example.projetfinale.app-emoji2-1.2.0-11 C:\Users\alexi\.gradle\caches\transforms-3\8d9e1a410c2a73b622526687aec45bce\transformed\emoji2-1.2.0\res
-com.example.projetfinale.app-emoji2-views-helper-1.2.0-12 C:\Users\alexi\.gradle\caches\transforms-3\9ff3e587907e10d703d3b4460b62d5ae\transformed\emoji2-views-helper-1.2.0\res
-com.example.projetfinale.app-coordinatorlayout-1.1.0-13 C:\Users\alexi\.gradle\caches\transforms-3\a07a52953b1cdf06cf9bdba9f056c585\transformed\coordinatorlayout-1.1.0\res
-com.example.projetfinale.app-core-1.8.0-14 C:\Users\alexi\.gradle\caches\transforms-3\a3aef3274c222e47595fbfeb9137a19e\transformed\core-1.8.0\res
-com.example.projetfinale.app-drawerlayout-1.1.1-15 C:\Users\alexi\.gradle\caches\transforms-3\a4153796797c088077773eed59492303\transformed\drawerlayout-1.1.1\res
-com.example.projetfinale.app-viewpager2-1.0.0-16 C:\Users\alexi\.gradle\caches\transforms-3\ac1b4e39c257433abc6b31d182637583\transformed\viewpager2-1.0.0\res
-com.example.projetfinale.app-lifecycle-runtime-2.5.1-17 C:\Users\alexi\.gradle\caches\transforms-3\b950359b83f736b1c5889465d34dc8de\transformed\lifecycle-runtime-2.5.1\res
-com.example.projetfinale.app-firebase-common-20.2.0-18 C:\Users\alexi\.gradle\caches\transforms-3\b9f541fd40a0a7b93724c39d28fa6e88\transformed\firebase-common-20.2.0\res
-com.example.projetfinale.app-savedstate-1.2.0-19 C:\Users\alexi\.gradle\caches\transforms-3\bf10f8284fe729b49a8abe66d2a34991\transformed\savedstate-1.2.0\res
-com.example.projetfinale.app-recyclerview-1.1.0-20 C:\Users\alexi\.gradle\caches\transforms-3\d1c3bdd4e080625de79adf3d5c15ceee\transformed\recyclerview-1.1.0\res
-com.example.projetfinale.app-browser-1.4.0-21 C:\Users\alexi\.gradle\caches\transforms-3\d33a41edb58f2fa3d03fe34ee34433c7\transformed\browser-1.4.0\res
-com.example.projetfinale.app-lifecycle-viewmodel-savedstate-2.5.1-22 C:\Users\alexi\.gradle\caches\transforms-3\d4a198cc07384e7fd4d8bd5a25178d89\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-com.example.projetfinale.app-activity-1.5.1-23 C:\Users\alexi\.gradle\caches\transforms-3\d90270338e13ea41ccfcdd5fb20a1050\transformed\activity-1.5.1\res
-com.example.projetfinale.app-startup-runtime-1.1.1-24 C:\Users\alexi\.gradle\caches\transforms-3\dc5921fea0dfb2d455dc960032d16587\transformed\startup-runtime-1.1.1\res
-com.example.projetfinale.app-transition-1.2.0-25 C:\Users\alexi\.gradle\caches\transforms-3\e6c09e71c58f426efa1bc72f1bc9c580\transformed\transition-1.2.0\res
-com.example.projetfinale.app-appcompat-1.5.1-26 C:\Users\alexi\.gradle\caches\transforms-3\ea4fb2c479fb388b06192e19e8a38269\transformed\appcompat-1.5.1\res
-com.example.projetfinale.app-appcompat-resources-1.5.1-27 C:\Users\alexi\.gradle\caches\transforms-3\f3d98ef11c142fc1ab7aa6ab289a1339\transformed\appcompat-resources-1.5.1\res
-com.example.projetfinale.app-google-services-28 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\generated\res\google-services\debug
-com.example.projetfinale.app-pngs-29 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\generated\res\pngs\debug
-com.example.projetfinale.app-resValues-30 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\generated\res\resValues\debug
-com.example.projetfinale.app-rs-31 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\generated\res\rs\debug
-com.example.projetfinale.app-packageDebugResources-32 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.projetfinale.app-packageDebugResources-33 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.projetfinale.app-merged_res-34 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\build\intermediates\merged_res\debug
-com.example.projetfinale.app-debug-35 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\src\debug\res
-com.example.projetfinale.app-main-36 C:\Users\alexi\Documents\uOttawa\2_1_Fall2022\SEG2505\Projet\projet-groupe-18\ProjetFinale\app\src\main\res
+com.example.projetfinale.app-google-services-0 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\generated\res\google-services\debug
+com.example.projetfinale.app-pngs-1 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\generated\res\pngs\debug
+com.example.projetfinale.app-resValues-2 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\generated\res\resValues\debug
+com.example.projetfinale.app-rs-3 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\generated\res\rs\debug
+com.example.projetfinale.app-packageDebugResources-4 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.projetfinale.app-packageDebugResources-5 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.projetfinale.app-merged_res-6 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\build\intermediates\merged_res\debug
+com.example.projetfinale.app-debug-7 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\debug\res
+com.example.projetfinale.app-main-8 C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\res
+com.example.projetfinale.app-lifecycle-livedata-core-2.5.1-9 C:\Users\corin\.gradle\caches\transforms-3\001fd40991babfcc4e19ae7ee73a3d39\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.projetfinale.app-jetified-emoji2-1.2.0-10 C:\Users\corin\.gradle\caches\transforms-3\0c602a271d76919655c85fcca18996fc\transformed\jetified-emoji2-1.2.0\res
+com.example.projetfinale.app-slidingpanelayout-1.2.0-11 C:\Users\corin\.gradle\caches\transforms-3\1c87f37c1fd173e33cbc3841e7ecc125\transformed\slidingpanelayout-1.2.0\res
+com.example.projetfinale.app-navigation-runtime-2.5.3-12 C:\Users\corin\.gradle\caches\transforms-3\2ca4fa3f1df98f04a3ea5846ff5a35f3\transformed\navigation-runtime-2.5.3\res
+com.example.projetfinale.app-jetified-appcompat-resources-1.5.1-13 C:\Users\corin\.gradle\caches\transforms-3\2db3f58d7365b1d6b12dcddf4358ef7a\transformed\jetified-appcompat-resources-1.5.1\res
+com.example.projetfinale.app-fragment-1.5.4-14 C:\Users\corin\.gradle\caches\transforms-3\2ff4943448fb19182c47f11801646259\transformed\fragment-1.5.4\res
+com.example.projetfinale.app-constraintlayout-2.1.4-15 C:\Users\corin\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\res
+com.example.projetfinale.app-jetified-emoji2-views-helper-1.2.0-16 C:\Users\corin\.gradle\caches\transforms-3\351d4f5fe136239b0feabb780fce80b9\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.example.projetfinale.app-jetified-annotation-experimental-1.1.0-17 C:\Users\corin\.gradle\caches\transforms-3\36c435ca77db51cea62fe8f2d4df721c\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.projetfinale.app-cardview-1.0.0-18 C:\Users\corin\.gradle\caches\transforms-3\3c28b4986e8330111ec373a187770b31\transformed\cardview-1.0.0\res
+com.example.projetfinale.app-jetified-play-services-basement-18.1.0-19 C:\Users\corin\.gradle\caches\transforms-3\418b9b38780225f4c9b9b437c64f6e06\transformed\jetified-play-services-basement-18.1.0\res
+com.example.projetfinale.app-jetified-firebase-common-20.2.0-20 C:\Users\corin\.gradle\caches\transforms-3\4310b5a5aa149adc03c02aa7dea4f91e\transformed\jetified-firebase-common-20.2.0\res
+com.example.projetfinale.app-jetified-activity-1.5.1-21 C:\Users\corin\.gradle\caches\transforms-3\47741d14ab72dca6dcd3df84d0cdfe47\transformed\jetified-activity-1.5.1\res
+com.example.projetfinale.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-22 C:\Users\corin\.gradle\caches\transforms-3\4fbba8c396cc0e14ebcbecb623803ae9\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.projetfinale.app-material-1.6.1-23 C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\res
+com.example.projetfinale.app-navigation-common-2.5.3-24 C:\Users\corin\.gradle\caches\transforms-3\5103c37f599cf2e76eb6c7c0de981da9\transformed\navigation-common-2.5.3\res
+com.example.projetfinale.app-jetified-window-1.0.0-25 C:\Users\corin\.gradle\caches\transforms-3\768f4114f6148a2abebfa7e8c991cb90\transformed\jetified-window-1.0.0\res
+com.example.projetfinale.app-lifecycle-viewmodel-2.5.1-26 C:\Users\corin\.gradle\caches\transforms-3\7e70ee7e66b49c94ea4358e93d6fb5ab\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.projetfinale.app-jetified-lifecycle-runtime-ktx-2.5.1-27 C:\Users\corin\.gradle\caches\transforms-3\829a7b6ce92f956888a37d30d1b82835\transformed\jetified-lifecycle-runtime-ktx-2.5.1\res
+com.example.projetfinale.app-navigation-fragment-2.5.3-28 C:\Users\corin\.gradle\caches\transforms-3\97e79757d93a5f6d7bf9ed5d543269d4\transformed\navigation-fragment-2.5.3\res
+com.example.projetfinale.app-coordinatorlayout-1.1.0-29 C:\Users\corin\.gradle\caches\transforms-3\a07a52953b1cdf06cf9bdba9f056c585\transformed\coordinatorlayout-1.1.0\res
+com.example.projetfinale.app-core-1.8.0-30 C:\Users\corin\.gradle\caches\transforms-3\a3aef3274c222e47595fbfeb9137a19e\transformed\core-1.8.0\res
+com.example.projetfinale.app-drawerlayout-1.1.1-31 C:\Users\corin\.gradle\caches\transforms-3\a4153796797c088077773eed59492303\transformed\drawerlayout-1.1.1\res
+com.example.projetfinale.app-jetified-lifecycle-livedata-core-ktx-2.5.1-32 C:\Users\corin\.gradle\caches\transforms-3\a592c97c0b2d9840a67cfc17e1139d2e\transformed\jetified-lifecycle-livedata-core-ktx-2.5.1\res
+com.example.projetfinale.app-jetified-lifecycle-process-2.4.1-33 C:\Users\corin\.gradle\caches\transforms-3\aedb6371ba329da37acf6925ea4dbd70\transformed\jetified-lifecycle-process-2.4.1\res
+com.example.projetfinale.app-transition-1.4.1-34 C:\Users\corin\.gradle\caches\transforms-3\b0edfdca8aa1168a8b5339aa7f38e4a3\transformed\transition-1.4.1\res
+com.example.projetfinale.app-jetified-startup-runtime-1.1.1-35 C:\Users\corin\.gradle\caches\transforms-3\b9441259edfdabf3dcaa719e423e184b\transformed\jetified-startup-runtime-1.1.1\res
+com.example.projetfinale.app-lifecycle-runtime-2.5.1-36 C:\Users\corin\.gradle\caches\transforms-3\b950359b83f736b1c5889465d34dc8de\transformed\lifecycle-runtime-2.5.1\res
+com.example.projetfinale.app-jetified-fragment-ktx-1.5.4-37 C:\Users\corin\.gradle\caches\transforms-3\be105e744cc7b99870e463136647705b\transformed\jetified-fragment-ktx-1.5.4\res
+com.example.projetfinale.app-jetified-play-services-base-18.0.1-38 C:\Users\corin\.gradle\caches\transforms-3\c950be1d1030546b81e10f67942b09ef\transformed\jetified-play-services-base-18.0.1\res
+com.example.projetfinale.app-jetified-lifecycle-viewmodel-ktx-2.5.1-39 C:\Users\corin\.gradle\caches\transforms-3\c9ff14ffd29905c7e277f15aaaff3318\transformed\jetified-lifecycle-viewmodel-ktx-2.5.1\res
+com.example.projetfinale.app-jetified-viewpager2-1.0.0-40 C:\Users\corin\.gradle\caches\transforms-3\cbd38bf67424daec4871fc498c7a28ee\transformed\jetified-viewpager2-1.0.0\res
+com.example.projetfinale.app-jetified-savedstate-ktx-1.2.0-41 C:\Users\corin\.gradle\caches\transforms-3\ce3c8bf1132294a651253c8b568b7f87\transformed\jetified-savedstate-ktx-1.2.0\res
+com.example.projetfinale.app-jetified-activity-ktx-1.5.1-42 C:\Users\corin\.gradle\caches\transforms-3\cfb9f14d559a3bb9fbe1c2bc701e298b\transformed\jetified-activity-ktx-1.5.1\res
+com.example.projetfinale.app-recyclerview-1.1.0-43 C:\Users\corin\.gradle\caches\transforms-3\d1c3bdd4e080625de79adf3d5c15ceee\transformed\recyclerview-1.1.0\res
+com.example.projetfinale.app-browser-1.4.0-44 C:\Users\corin\.gradle\caches\transforms-3\d33a41edb58f2fa3d03fe34ee34433c7\transformed\browser-1.4.0\res
+com.example.projetfinale.app-jetified-core-ktx-1.8.0-45 C:\Users\corin\.gradle\caches\transforms-3\dc1351d37b8f57949fcb5fc020b8f15b\transformed\jetified-core-ktx-1.8.0\res
+com.example.projetfinale.app-jetified-savedstate-1.2.0-46 C:\Users\corin\.gradle\caches\transforms-3\e970e8647ce12dd1333cf606e68fb35c\transformed\jetified-savedstate-1.2.0\res
+com.example.projetfinale.app-appcompat-1.5.1-47 C:\Users\corin\.gradle\caches\transforms-3\ea4fb2c479fb388b06192e19e8a38269\transformed\appcompat-1.5.1\res

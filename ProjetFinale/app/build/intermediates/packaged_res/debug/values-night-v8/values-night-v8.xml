@@ -9,6 +9,9 @@
     <string name="btn_signin_cook">Cook login</string>
     <string name="edt_password">password</string>
     <string name="edt_username">username</string>
+    <string name="first_fragment_label">First fragment</string>
+    <string name="hello_blank_fragment">Hello fragment</string>
+    <string name="second_fragment_label">Second fragment</string>
     <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>

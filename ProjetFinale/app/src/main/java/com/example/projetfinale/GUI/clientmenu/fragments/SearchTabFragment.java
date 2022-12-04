@@ -50,6 +50,7 @@ public class SearchTabFragment extends Fragment {
         //Get the list of all meals based on Firestore database
 
         db.collection("meal")
+                .whereEqualTo("mealAvailable",1)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -57,7 +58,8 @@ public class SearchTabFragment extends Fragment {
                         List<String> lstMeal = new ArrayList<>();
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                lstMeal.add(document.get("mealName").toString() + " ("
+                                lstMeal.add(document.get("cookRestaurantName").toString()+" : "
+                                        + document.get("mealName").toString() + " ("
                                         + document.get("mealPrice").toString()
                                         + " $CAD)");
                             }

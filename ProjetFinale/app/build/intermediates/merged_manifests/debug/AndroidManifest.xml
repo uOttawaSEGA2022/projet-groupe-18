@@ -27,6 +27,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProjetFinale" >
         <activity
+            android:name="com.example.projetfinale.CookMainPage"
+            android:exported="false"
+            android:label="@string/title_activity_cook_main_page"
+            android:theme="@style/Theme.ProjetFinale.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.projetfinale.activity_cook_manage_meals"
             android:exported="false" >
             <meta-data
@@ -238,6 +247,13 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
     </application>
 
 </manifest>

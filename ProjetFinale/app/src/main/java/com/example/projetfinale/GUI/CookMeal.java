@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +27,9 @@ import java.util.Map;
 public class CookMeal extends AppCompatActivity {
     TextView txtmealName;
     TextView txtmealPrice;
+    RadioButton rdAvailableYes;
     String cookID;
+    String cookRestaurantName;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
     Button btnadd;
@@ -53,16 +57,27 @@ public class CookMeal extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         txtmealName = findViewById(R.id.txt_mealName);
         txtmealPrice = findViewById(R.id.txt_mealPrice);
+        rdAvailableYes= findViewById(R.id.rdYes);
         btnadd = findViewById(R.id.btn_add_meal);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             cookID = extras.getString("cookID");
+            cookRestaurantName = extras.getString("cookRestaurantName");
 
         }
     }
     public void onAddMeal( View view) {
             String mealNname = txtmealName.getText().toString();
             String mealPrice = txtmealPrice.getText().toString();
+            Boolean checkMealAvailable = rdAvailableYes.isChecked();
+            Integer mealAvailable;
+            if (checkMealAvailable){
+                mealAvailable=1;
+            }else
+            {
+                mealAvailable=0;
+            }
+
             if (TextUtils.isEmpty(mealNname)) {
                 txtmealName.setError("Name can't be empty");
                 txtmealName.requestFocus();
@@ -71,16 +86,18 @@ public class CookMeal extends AppCompatActivity {
                 txtmealPrice.requestFocus();
             } else {
                 double price = Double.parseDouble(mealPrice);
-                addCookMeal(cookID,mealNname,price);
+                addCookMeal(cookID,mealNname,price, mealAvailable);
             }
 
     }
-    private void addCookMeal(String ID,String name, double price){
+    private void addCookMeal(String ID,String name, double price, Integer avail){
         // Create a new user with a first and last name
         Map<String, Object> meal = new HashMap<>();
         meal.put("cookID", ID);
+        meal.put("cookRestaurantName", cookRestaurantName);
         meal.put("mealName", name);
         meal.put("mealPrice", price);
+        meal.put("mealAvailable",avail);
 
 
         // Add a new document with a generated ID

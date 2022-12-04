@@ -14,9 +14,16 @@ import android.widget.Toast;
 
 import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ClientSignUp extends AppCompatActivity {
 
@@ -30,7 +37,7 @@ public class ClientSignUp extends AppCompatActivity {
     private EditText Password;
     FirebaseAuth mAuth;
     private Button clientSignIn;
-
+    FirebaseFirestore db;
     // Instance methods
 
     // Constructor
@@ -45,7 +52,7 @@ public class ClientSignUp extends AppCompatActivity {
         Password = findViewById(R.id.passwordField);
         Address = findViewById(R.id.addressField);
         clientSignIn = findViewById(R.id.btn_cook_signup);
-
+        db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         clientSignIn.setOnClickListener(view ->{
             createUser();
@@ -80,15 +87,44 @@ public class ClientSignUp extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(ClientSignUp.this, "Utilisatuer a entrer sans problèmes", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientSignUp.this, "Utilisatuer crée sans problèmes", Toast.LENGTH_SHORT).show();
+                        addClientUser(email,firstName,lastName,address);
                         startActivity(new Intent(ClientSignUp.this, ClientLogin.class));
                     } else {
-                        Toast.makeText(ClientSignUp.this, "Erreur de régistration" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientSignUp.this, "Erreur de creation" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 }
             });
         }
+    }
+
+    private void addClientUser(String email,String first, String last, String addr){
+        // Create a new user with a first and last name
+        Map<String, Object> client = new HashMap<>();
+        client.put("clientEmail", email);
+        client.put("clientFirstname", first);
+        client.put("clientLastname", last);
+        client.put("clientFullName", first+ " "+last);
+        client.put("clientAddress", addr);
+
+
+        // Add a new document with a generated ID
+        db.collection("client")
+                .add(client)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getApplicationContext(), "Erreur de création client:" + e.getMessage(), Toast.LENGTH_SHORT).show();;
+                    }
+                });
+
     }
 
     /*

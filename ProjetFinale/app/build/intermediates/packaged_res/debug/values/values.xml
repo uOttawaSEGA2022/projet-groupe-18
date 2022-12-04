@@ -9,6 +9,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">Final project</string>
     <string name="btn_complaintPage">Complaint?</string>
     <string name="btn_exitApp">Exit</string>
@@ -19,6 +20,7 @@
     <string name="btn_logout">logout</string>
     <string name="btn_signin_client">Client sign in</string>
     <string name="btn_signin_cook">Cook sign in</string>
+    <string name="come_back_to_login">Come back to main <b><font color="#ffffff">login page</font></b></string>
     <string name="default_web_client_id" translatable="false">800544220412-c238675pbbavdmpbb4ek1t0v2et58p8d.apps.googleusercontent.com</string>
     <string name="edt_password">password</string>
     <string name="edt_username">username</string>
@@ -28,9 +30,12 @@
     <string name="google_app_id" translatable="false">1:800544220412:android:c647264581dca76f3b6379</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA9RnxzrdQqSqMEVdM0XnlyR3SATAcA8q0</string>
     <string name="google_storage_bucket" translatable="false">projet-finale-3e073.appspot.com</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="project_id" translatable="false">projet-finale-3e073</string>
-    <string name="signingUpAsClient">You are signing up as a <strong>Client</strong>.</string>
+    <string name="signingUpAsACook">You are signing up as a <b>Cook</b>.</string>
+    <string name="signingUpAsClient">You are signing up as a <b>Client</b>.</string>
+    <string name="title_activity_cook_main_page">CookMainPage</string>
     <string name="welcomeToMealer">Welcome to Mealer!</string>
     <style name="Theme.ProjetFinale" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
@@ -45,4 +50,10 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
     </style>
+    <style name="Theme.ProjetFinale.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.ProjetFinale.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ProjetFinale.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

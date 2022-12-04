@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,17 +31,20 @@ import java.util.List;
 public class CookWelcome extends AppCompatActivity {
     FirebaseFirestore db;
     FirebaseAuth mAuth;
+    Switch swmealavail;
 
     String cookName;
     String cookEmail;
+    String cookRestaurantName;
     int cookStatus;
+    int includeMeal=1;
     String cookID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_welcome);
-
+        swmealavail = findViewById(R.id.swUnavailableMeal);
         ImageView backArrow = findViewById(R.id.back_arrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +96,7 @@ public class CookWelcome extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 cookStatus = Integer.parseInt(document.get("cookStatus").toString());
                                 cookID = document.getId().toString();
+                                cookRestaurantName = document.get("cookRestaurantName").toString();
                             }
                             TextView statusMsg = findViewById(R.id.txt_cook_status);
                             statusMsg.setText("Your account is "+codeStatus[cookStatus]);
@@ -104,7 +109,7 @@ public class CookWelcome extends AppCompatActivity {
                                 ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
                                 list_cook_menuItems.setEnabled(Boolean.FALSE);
                                 ListView list_cook_orders = findViewById(R.id.list_cook_orders);
-                                list_cook_orders.setVisibility(View.INVISIBLE);
+                                list_cook_orders.setEnabled(Boolean.FALSE);
                             }
 
                             displayMeal(cookID);
@@ -122,6 +127,7 @@ public class CookWelcome extends AppCompatActivity {
 
         db.collection("meal")
                 .whereEqualTo("cookID", cookID)
+                .whereGreaterThanOrEqualTo("mealAvailable",includeMeal)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -159,8 +165,8 @@ public class CookWelcome extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 lstOrders.add(document.get("mealFullName").toString()
                                         + " X " + document.get("quantity").toString()
-                                        + "\nFor " + document.get("clientFullName").toString()
-                                        + "\nStatus: " + document.get("orderStatus"));
+                                        + "\n\tFor " + document.get("clientFullName").toString()
+                                        + "\n\tStatus: " + document.get("orderStatus"));
                             }
                             ListView list_cook_orders = findViewById(R.id.list_cook_orders);
                             ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
@@ -177,6 +183,10 @@ public class CookWelcome extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
     }
+    public void OnCheckAvailable( View view){
+        includeMeal=1-includeMeal;
+        displayMeal(cookID);
+    }
     public void OnLogout( View view){
 
         mAuth.signOut();
@@ -185,6 +195,7 @@ public class CookWelcome extends AppCompatActivity {
     public void OnManageMeals( View view){
         Intent i = new Intent(getApplicationContext(), CookMeal.class);
         i.putExtra("cookID",cookID);
+        i.putExtra("cookRestaurantName", cookRestaurantName);
         startActivity(i);
     }
     public void OnManageOrders( View view){

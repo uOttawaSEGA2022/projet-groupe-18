@@ -33,6 +33,7 @@ public class CookSignUp extends AppCompatActivity {
     EditText Email;
     EditText Address;
     EditText Password;
+    EditText Restaurant;
     EditText Description;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
@@ -47,6 +48,7 @@ public class CookSignUp extends AppCompatActivity {
         LastName = findViewById(R.id.lastNameField);
         Email = findViewById(R.id.emailField);
         Password = findViewById(R.id.passwordField);
+        Restaurant= findViewById(R.id.RestaurantName);
         Address = findViewById(R.id.addressField);
         Description = findViewById(R.id.descriptionField);
         CookSignIn = findViewById(R.id.btn_cook_signup);
@@ -62,6 +64,7 @@ public class CookSignUp extends AppCompatActivity {
         String lastName = LastName.getText().toString();
         String email = Email.getText().toString();
         String address = Address.getText().toString();
+        String restaurant = Restaurant.getText().toString();
         String password = Password.getText().toString();
         String description = Description.getText().toString();
         if(TextUtils.isEmpty(email)){
@@ -76,6 +79,9 @@ public class CookSignUp extends AppCompatActivity {
         }else if(TextUtils.isEmpty(lastName)){
             LastName.setError("Last name can't be empty");
             LastName.requestFocus();
+        }else if(TextUtils.isEmpty(restaurant)){
+            LastName.setError("Restaurant can't be empty");
+            Restaurant.requestFocus();
         }else if(TextUtils.isEmpty(address)){
             Address.setError("Address can't be empty");
             Address.requestFocus();
@@ -94,7 +100,7 @@ public class CookSignUp extends AppCompatActivity {
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
-                                        addCookUser(email,firstName,lastName,address,description);
+                                        addCookUser(email,firstName,lastName,restaurant,address,description);
 
                                     }
                                 });
@@ -117,12 +123,13 @@ public class CookSignUp extends AppCompatActivity {
     public void OnLoginPage(View view) {
         startActivity(new Intent(CookSignUp.this, MainActivity.class));
     }
-    private void addCookUser(String email,String first, String last, String addr, String desc){
+    private void addCookUser(String email,String first, String last, String resto, String addr, String desc){
         // Create a new user with a first and last name
         Map<String, Object> cook = new HashMap<>();
         cook.put("cookEmail", email);
         cook.put("cookFirstname", first);
         cook.put("cookLastname", last);
+        cook.put("cookRestaurantName", resto);
         cook.put("cookAddress", addr);
         cook.put("cookDescription", desc);
         cook.put("cookStatus",2);

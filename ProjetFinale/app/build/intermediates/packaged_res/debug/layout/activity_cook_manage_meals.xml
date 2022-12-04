@@ -85,7 +85,36 @@
                     android:layout_marginRight="20dp"
                     android:layout_column="2" />
             </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_column="1"
+                android:text="Meal Available:" />
+
+                <RadioGroup
+                    android:id="@+id/rdmeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+            </TableRow>
         </TableLayout>
 
         <LinearLayout

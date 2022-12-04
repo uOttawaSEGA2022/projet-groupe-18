@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/mealer_tone2"
+    android:id="@+id/cook_welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mealer_tone2"
     tools:context=".GUI.CookWelcome">
 
     <LinearLayout
@@ -19,12 +20,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton"
+            <Button
+                android:id="@+id/btn_profil_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+                android:backgroundTint="@color/mealer_tone1"
+                android:onClick="OnLogout"
+                android:text="Update cook profil"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -66,6 +68,15 @@
                 android:backgroundTint="@color/mealer_tone1"
                 android:onClick="OnManageMeals"
                 android:text="MANAGE MEALS" />
+
+            <Switch
+                android:id="@+id/swUnavailableMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnCheckAvailable"
+                android:text="Include unavailable meals in the list"
+                android:textOff="No"
+                android:textOn="Yes" />
 
             <ListView
                 android:id="@+id/list_cook_menuItems"
