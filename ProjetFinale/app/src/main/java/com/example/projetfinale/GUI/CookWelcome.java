@@ -36,6 +36,9 @@ public class CookWelcome extends AppCompatActivity {
     String cookName;
     String cookEmail;
     String cookRestaurantName;
+    String cookFirstName;
+    String cookLastName;
+    String cookDescription;
     int cookStatus;
     int includeMeal=1;
     String cookID;
@@ -94,8 +97,11 @@ public class CookWelcome extends AppCompatActivity {
                     public void onComplete( @NonNull Task<QuerySnapshot> task ) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                cookStatus = Integer.parseInt(document.get("cookStatus").toString());
                                 cookID = document.getId().toString();
+                                cookStatus = Integer.parseInt(document.get("cookStatus").toString());
+                                cookFirstName = document.get("cookFirstname").toString();
+                                cookLastName = document.get("cookLastname").toString();
+                                cookDescription = document.get("cookDescription").toString();
                                 cookRestaurantName = document.get("cookRestaurantName").toString();
                             }
                             TextView statusMsg = findViewById(R.id.txt_cook_status);
@@ -195,13 +201,27 @@ public class CookWelcome extends AppCompatActivity {
     public void OnManageMeals( View view){
         Intent i = new Intent(getApplicationContext(), CookMeal.class);
         i.putExtra("cookID",cookID);
+
         i.putExtra("cookRestaurantName", cookRestaurantName);
+        startActivity(i);
+    }
+    public void OnProfileUpdate( View view){
+        Intent i = new Intent(getApplicationContext(), cookProfil.class);
+        i.putExtra("cookID",cookID);
+        i.putExtra("cookFirstname",cookFirstName);
+        i.putExtra("cookLastname",cookLastName);
+        i.putExtra("cookEmail",cookEmail);
+        i.putExtra("cookDescription",cookDescription);
+        i.putExtra("cookStatus", cookStatus);
+        i.putExtra("cookRestaurantName", cookRestaurantName);
+
         startActivity(i);
     }
     public void OnManageOrders( View view){
 
         Intent i = new Intent(getApplicationContext(), CookOrder.class);
         i.putExtra("CookID",cookID);
+        i.putExtra("cookRestaurantName", cookRestaurantName);
         startActivity(i);
     }
 

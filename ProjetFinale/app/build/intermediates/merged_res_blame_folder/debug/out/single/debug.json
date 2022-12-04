@@ -152,6 +152,10 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\fragment_search_tab.xml"
     },
     {
+        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cook_profil.xml.flat",
+        "source": "com.example.projetfinale.app-main-8:/layout/activity_cook_profil.xml"
+    },
+    {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_welcome.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_welcome.xml"
     },

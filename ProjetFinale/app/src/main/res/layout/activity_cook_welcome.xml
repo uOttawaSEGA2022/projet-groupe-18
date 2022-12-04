@@ -25,8 +25,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/mealer_tone1"
-                android:onClick="OnLogout"
-                android:text="Update cook profil"/>
+                android:onClick="OnProfileUpdate"
+                android:text="Update cook profil" />
 
             <Space
                 android:layout_width="wrap_content"

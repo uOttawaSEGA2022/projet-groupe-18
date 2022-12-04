@@ -41,6 +41,7 @@ id btn_cook_logout
 id btn_cook_manage_meals
 id btn_cook_manage_orders
 id btn_cook_signup
+id btn_cook_update
 id btn_profil_update
 id client_menu_toolbar
 id client_tabs_layout
@@ -112,6 +113,7 @@ layout activity_cook_login
 layout activity_cook_main_page
 layout activity_cook_manage_meals
 layout activity_cook_manage_orders
+layout activity_cook_profil
 layout activity_cook_sign_up
 layout activity_cook_welcome
 layout activity_general_sign_up
