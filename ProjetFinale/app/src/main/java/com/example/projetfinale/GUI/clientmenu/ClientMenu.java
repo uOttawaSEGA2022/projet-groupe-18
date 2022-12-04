@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -35,9 +36,11 @@ import java.util.List;
 public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     //Firebase variables
     FirebaseAuth mAuth;
+
     //GUI variables
-    Button Logout;
-    Button Complaint;
+    ImageView complaintButton;
+    ImageView myProfileButton;
+    ImageView logoutButton;
     TabLayout tabLayout;
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
@@ -48,6 +51,9 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_menu);
 
+        complaintButton = findViewById(R.id.btn_complaint);
+        myProfileButton = findViewById(R.id.btn_my_profile);
+        logoutButton = findViewById(R.id.btn_logout);
         tabLayout = findViewById(R.id.client_tabs_layout);
         clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
         clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
@@ -59,6 +65,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                     .add(R.id.fragment_container_view, SearchTabFragment.class, null)
                     .commit();
         }
+
+        // Callback methods for tabs
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -67,15 +75,14 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
 
+        // Callback method for ViewPager2 (for using tabs)
         clientsMenuViewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
@@ -84,29 +91,31 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
             }
         });
 
-        // Logout = findViewById(R.id.btn_logout);
-        // Complaint = findViewById(R.id.btn_ComplaintPage);
         mAuth = FirebaseAuth.getInstance();
-        //Logout.setOnClickListener(view ->{
-            //mAuth.signOut();
-            //startActivity(new Intent(ClientMenu.this, MainActivity.class));
-        //});
+        complaintButton.setOnClickListener(view ->{
+
+            // ADD HERE WHAT TO DO FOR BUTTON "COMPLAINT"
+            Toast.makeText(getApplicationContext(),"Complaint: to be implemented", Toast.LENGTH_SHORT).show();
+
+        });
+        myProfileButton.setOnClickListener(view ->{
+
+            // ADD HERE WHAT TO DO FOR BUTTON "MY PROFILE"
+            Toast.makeText(getApplicationContext(),"My Profile: to be implemented", Toast.LENGTH_SHORT).show();
+
+        });
+        logoutButton.setOnClickListener(view ->{
+            mAuth.signOut();
+            startActivity(new Intent(ClientMenu.this, MainActivity.class));
+        });
     }
     @Override
     protected void onStart(){
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if (user == null){
-            startActivity(new Intent(ClientMenu.this, ClientLogin.class ));
+            startActivity(new Intent(getApplicationContext(), ClientLogin.class ));
         }
-    }
-
-
-    public void OnComplaint(View view){
-        startActivity(new Intent(getApplicationContext(), ClientComplaint.class));
-    }
-    public void OnLogout(View view){
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 
     @Override

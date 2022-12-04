@@ -12,7 +12,9 @@
         android:layout_height="match_parent"
         android:background="@color/mealer_tone2"
         android:orientation="vertical">
+
         <include layout="@layout/toolbar" />
+
         <TextView
             android:id="@+id/loginAsATextView"
             android:layout_width="match_parent"

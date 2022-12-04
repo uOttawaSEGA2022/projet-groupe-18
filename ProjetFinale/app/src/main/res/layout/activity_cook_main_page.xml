@@ -16,23 +16,54 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.google.android.material.appbar.AppBarLayout
+            <RelativeLayout
+                android:id="@+id/cook_toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:id="@+id/cook_main_page_toolbar">
+                android:background="@color/mealer_tone1"
+                android:onClick="OnLogout"
+                android:padding="0dp"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp">
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/toolbar_title"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:minHeight="?actionBarSize"
-                    android:paddingLeft="20dp"
-                    android:text="Menu"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mealer"
                     android:textColor="@color/white"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-            </com.google.android.material.appbar.AppBarLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/right_buttons_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/btn_my_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_baseline_my_profile_24" />
+
+                    <ImageView
+                        android:id="@+id/btn_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/ic_baseline_logout_24"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
 
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
@@ -61,5 +92,15 @@
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_meal_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/mealer_tone2"
+        android:contentDescription="@string/add_meal"
+        android:src="@drawable/ic_baseline_add_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

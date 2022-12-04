@@ -18,6 +18,9 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="come_back_to_login">Come back to main <b><font color="#ffffff">login page</font></b></string>
+    <string name="mealer">Mealer</string>
+    <string name="add_meal">Add meal</string>
+    <string name="log_out">Log out</string>
 
 
 </resources>
