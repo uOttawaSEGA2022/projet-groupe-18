@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentContainer;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewpager2.widget.ViewPager2;
@@ -79,6 +80,9 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                 if (tab.getPosition()==0) {
                     Complaint.setEnabled(false);
                     Order.setEnabled(true);
+                    for (Fragment fragment : getSupportFragmentManager().getFragments()) {
+                        getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+                    }
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
                             .add(R.id.fragment_container_view, SearchTabFragment.class, null)
@@ -90,6 +94,9 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                     Bundle args = new Bundle();
                     args.putString("clientID", clientID);
                     args.putString("clientFullName", clientFullName);
+                    for (Fragment fragment : getSupportFragmentManager().getFragments()) {
+                        getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+                    }
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
                             .add(R.id.fragment_container_view, OrdersTabFragment.class, args)

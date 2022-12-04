@@ -48,6 +48,7 @@ public class CookWelcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_welcome);
         swmealavail = findViewById(R.id.swUnavailableMeal);
+        /*
         ImageView backArrow = findViewById(R.id.back_arrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +62,7 @@ public class CookWelcome extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Dropdown settings coming soon", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();

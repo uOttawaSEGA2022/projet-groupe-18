@@ -41,7 +41,7 @@ public class SearchTabFragment extends Fragment {
         list_client_meals = view.findViewById(R.id.list_client_meals);
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
-        editText = view.findViewById(R.id.txt_client_searchBar);
+
         displayMeal();
         return view;
     }

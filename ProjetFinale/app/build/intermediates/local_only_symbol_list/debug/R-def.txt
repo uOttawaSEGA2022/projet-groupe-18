@@ -102,7 +102,6 @@ id tctComplaint
 id textView
 id toolbar_relative_layout
 id toolbar_title
-id txt_client_searchBar
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID

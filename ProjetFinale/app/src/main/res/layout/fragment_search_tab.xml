@@ -10,14 +10,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/txt_client_searchBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="What are you craving ?"
-            android:inputType="textPersonName" />
-
         <ListView
             android:id="@+id/list_client_meals"
             android:layout_width="match_parent"
