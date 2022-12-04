@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
 MERGED from [androidx.databinding:viewbinding:7.3.0] C:\Users\corin\.gradle\caches\transforms-3\029d414d8bf8b440f076bf4b3eeea15a\transformed\jetified-viewbinding-7.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\corin\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -84,27 +84,27 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\corin\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\corin\.gradle\caches\transforms-3\36c435ca77db51cea62fe8f2d4df721c\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\corin\.gradle\caches\transforms-3\5bc78f602fbdf93b8fbee325972f3a62\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\corin\.gradle\caches\transforms-3\97622dc77e7929ad2bed4ec272709da9\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
-INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
+INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
 	package
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-144:12
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:1-151:12
 		INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-142:19
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:5:5-149:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\corin\.gradle\caches\transforms-3\4fda506388bd184a2aa92296377853e5\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\corin\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -281,28 +281,34 @@ ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\m
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:117:13-37
 	android:name
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:116:13-44
-activity#com.example.projetfinale.GUI.Welcome
+activity#com.example.projetfinale.GUI.ClientComplaint
 ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:122:9-128:20
 	android:exported
 		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:124:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:123:13-40
-activity#com.example.projetfinale.GUI.MainActivity
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:129:9-141:20
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:123:13-48
+activity#com.example.projetfinale.GUI.Welcome
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:129:9-135:20
 	android:exported
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:131:13-36
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:131:13-37
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:130:13-45
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:130:13-40
+activity#com.example.projetfinale.GUI.MainActivity
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:136:9-148:20
+	android:exported
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:138:13-36
+	android:name
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:137:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:132:13-136:29
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:139:13-143:29
 action#android.intent.action.MAIN
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:133:17-69
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:140:17-69
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:133:25-66
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:140:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:135:17-77
+ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:142:17-77
 	android:name
-		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:135:27-74
+		ADDED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml:142:27-74
 uses-sdk
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\SEG 2505 - android project\projet-groupe-18\ProjetFinale\app\src\main\AndroidManifest.xml

@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/mealer_tone2"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -57,13 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="OnSubmit"
-            android:text="Submit" />
+            android:text="Submit to Admin" />
 
-        <Button
-            android:id="@+id/ClientReturn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnReturn"
-            android:text="Return" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

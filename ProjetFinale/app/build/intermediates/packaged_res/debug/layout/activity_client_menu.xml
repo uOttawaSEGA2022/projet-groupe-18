@@ -8,28 +8,45 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/mealer_tone2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             android:orientation="vertical">
 
+            <include layout="@layout/toolbar" />
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:id="@+id/client_menu_toolbar">
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:minHeight="?actionBarSize"
-                    android:paddingLeft="20dp"
-                    android:text="Menu"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="?actionBarSize"
+                        android:text="Menu"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnComplaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnComplaint"
+                        android:text="Submit a complaint" />
+
+                </LinearLayout>
+
 
             </com.google.android.material.appbar.AppBarLayout>
 
@@ -42,7 +59,7 @@
                     android:id="@+id/searchTab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Search" />
+                    android:text="Meals" />
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/ordersTab"
@@ -55,7 +72,9 @@
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragment_container_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:name="com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment"
+                tools:layout="@layout/fragment_search_tab" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:layout_width="match_parent"

@@ -24,7 +24,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.ProjetFinale" >
         <activity
             android:name="com.example.projetfinale.GUI.cookProfil"
@@ -128,6 +127,13 @@
         </activity>
         <activity
             android:name="com.example.projetfinale.GUI.ClientLogin"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.projetfinale.GUI.ClientComplaint"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

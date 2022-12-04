@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,8 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.projetfinale.GUI.ClientComplaint;
 import com.example.projetfinale.GUI.ClientLogin;
+import com.example.projetfinale.GUI.CookLogin;
+import com.example.projetfinale.GUI.CookOrder;
 import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
 import com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment;
@@ -26,8 +29,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import org.checkerframework.checker.units.qual.C;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +41,7 @@ import java.util.List;
 public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     //Firebase variables
     FirebaseAuth mAuth;
+    FirebaseFirestore db;
     //GUI variables
     Button Logout;
     Button Complaint;
@@ -42,12 +49,16 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
     FragmentContainerView fragCtView;
+    String clientEmail;
+    String clientFullName;
+    String clientID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_menu);
-
+        db = FirebaseFirestore.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         tabLayout = findViewById(R.id.client_tabs_layout);
         clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
         clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
@@ -86,7 +97,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
 
         // Logout = findViewById(R.id.btn_logout);
         // Complaint = findViewById(R.id.btn_ComplaintPage);
-        mAuth = FirebaseAuth.getInstance();
+
         //Logout.setOnClickListener(view ->{
             //mAuth.signOut();
             //startActivity(new Intent(ClientMenu.this, MainActivity.class));
@@ -97,14 +108,26 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if (user == null){
-            startActivity(new Intent(ClientMenu.this, ClientLogin.class ));
+            startActivity(new Intent(getApplicationContext(), ClientLogin.class ));
+        } else
+        {
+            //Get client email
+
+            clientEmail = user.getEmail();
+            getClientInfo();
+
+
         }
+
     }
 
 
     public void OnComplaint(View view){
-        startActivity(new Intent(getApplicationContext(), ClientComplaint.class));
-    }
+        Intent i = new Intent(getApplicationContext(), ClientComplaint.class);
+        i.putExtra("clientID",clientID);
+        i.putExtra("clientFullName", clientFullName);
+        startActivity(i);
+      }
     public void OnLogout(View view){
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
@@ -117,5 +140,24 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+    }
+    public void getClientInfo(){
+        db.collection("client")
+                .whereEqualTo("clientEmail",clientEmail)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete( @NonNull Task<QuerySnapshot> task ) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                clientID = document.getId().toString();
+                                clientFullName = document.get("clientFullName").toString();
+                           }
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Database client infos error"
+                                    + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 }

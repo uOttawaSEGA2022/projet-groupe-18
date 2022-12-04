@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +18,10 @@ import com.example.projetfinale.GUI.clientmenu.ClientMenu;
 import com.example.projetfinale.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ClientComplaint extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    EditText FullName;
+    TextView FullName;
     EditText Complaint;
     Button Submit;
     Button Return;
@@ -27,6 +29,12 @@ public class ClientComplaint extends AppCompatActivity implements AdapterView.On
     String[] spin = {"Admin"};
     ArrayAdapter aa;
     String admin;
+    String clientID;
+    String clientFullName;
+    String cookID;
+    String cookRestaurantName;
+    String complaintDescription;
+    FirebaseFirestore db;
     FirebaseAuth mAuth;
 
     @Override
@@ -49,16 +57,20 @@ public class ClientComplaint extends AppCompatActivity implements AdapterView.On
             }
         });
 
+
         FullName = findViewById(R.id.edt_username);
         Complaint = findViewById(R.id.tctComplaint);
         Submit = findViewById(R.id.ComplaintSubmit);
-        Return = findViewById(R.id.ClientReturn);
+
         spinner = findViewById(R.id.spinner);
         mAuth = FirebaseAuth.getInstance();
-        Return.setOnClickListener(view ->{
-            mAuth.signOut();
-            startActivity(new Intent(ClientComplaint.this, MainActivity.class));
-        });
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            clientID = extras.getString("clientID");
+            clientFullName = extras.getString("clientFullName");
+            FullName.setText(clientFullName);
+        }
+
         spinner.setOnItemSelectedListener(this);
         aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item,spin);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
