@@ -65,7 +65,7 @@ public class CookSuspend extends AppCompatActivity {
     public void suspend(String length){
         Intent returnToComplaint = new Intent(getApplicationContext(), Complaint.class);
         returnToComplaint.putExtra("ID", id);
-        returnToComplaint.putExtra("Suspension length", length);
+        returnToComplaint.putExtra("Longeur de suspension", length);
         setResult(RESULT_OK, returnToComplaint);
         finish();
     }
@@ -114,7 +114,7 @@ public class CookSuspend extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String complaintID = data.getStringExtra("Id");
-        String length = data.getStringExtra("Suspension_Length");
+        String length = data.getStringExtra("Longeur de suspension");
         suspendCook(complaintID, length);
     }
     private void suspendCook(String id, String suspensionDate) {
@@ -128,8 +128,8 @@ public class CookSuspend extends AppCompatActivity {
                     String cookID = complaint.getCookName();
                     DatabaseReference databaseChef = FirebaseDatabase.getInstance().getReference("Users").child(cookID);
                     HashMap<String, Object> result = new HashMap<>();
-                    result.put("banned", true);
-                    result.put("suspensionDate", suspensionDate);
+                    result.put("banni", true);
+                    result.put("Date de suspension", suspensionDate);
                     databaseChef.updateChildren(result);
                 }
             }
