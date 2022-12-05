@@ -18,8 +18,42 @@
         <TextView
             android:id="@+id/Bienvenue"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
             android:text="bienvenue Admin!" />
+
+        <TextView
+            android:id="@+id/CookName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cook Name" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Suspension Date" />
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="dd/mm/yyyy" />
+
+        <Button
+            android:id="@+id/SuspendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suspend" />
 
         <Button
             android:id="@+id/btn_admin_logout"
