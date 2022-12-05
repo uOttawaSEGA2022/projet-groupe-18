@@ -114,7 +114,7 @@ public class CookSuspend extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String complaintID = data.getStringExtra("Id");
-        String length = data.getStringExtra("Longeur de suspension");
+        String length = data.getStringExtra("Durée de suspension");
         suspendCook(complaintID, length);
     }
     private void suspendCook(String id, String suspensionDate) {
