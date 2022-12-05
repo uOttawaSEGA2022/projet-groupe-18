@@ -18,11 +18,22 @@
         <ImageView
             android:id="@+id/mealerLogoImageView"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="300dp"
             android:layout_marginTop="30dp"
-            android:paddingTop="50dp"
-            android:paddingBottom="50dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/mealer_new_icon" />
+
+        <TextView
+            android:id="@+id/mealer_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mealer_main_title"
+            android:textSize="40sp"
+            android:textColor="@color/mealer_tone1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp"
+            />
 
         <TextView
             android:id="@+id/loginAsTextView"
@@ -93,15 +104,5 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/disconnectTextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:gravity="bottom|center_horizontal"
-            android:onClick="OnDisconnect"
-            android:text="Disconnect"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

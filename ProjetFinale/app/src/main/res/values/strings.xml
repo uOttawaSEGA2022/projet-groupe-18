@@ -21,6 +21,7 @@
     <string name="mealer">Mealer</string>
     <string name="add_meal">Add meal</string>
     <string name="log_out">Log out</string>
+    <string name="mealer_main_title"><b>MEALER</b></string>
 
 
 </resources>
