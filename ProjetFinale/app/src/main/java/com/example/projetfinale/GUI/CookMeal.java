@@ -37,21 +37,6 @@ public class CookMeal extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_manage_meals);
-        /*
-        ImageView backArrow = findViewById(R.id.back_arrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Back Arrow functionality coming soon", Toast.LENGTH_SHORT).show();
-            }
-        });
-        ImageView dropdownSettingsIcon = findViewById(R.id.dropdown_settings_icon);
-        dropdownSettingsIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Dropdown settings coming soon", Toast.LENGTH_SHORT).show();
-            }
-        });*/
 
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();

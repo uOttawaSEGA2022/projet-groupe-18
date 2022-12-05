@@ -3,11 +3,9 @@ package com.example.projetfinale.GUI;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -47,11 +45,10 @@ public class CookWelcome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_welcome);
-        swmealavail = findViewById(R.id.swUnavailableMeal);
+        swmealavail = findViewById(R.id.swPastComplaints);
 
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
-        setContentView(R.layout.activity_cook_welcome);
 
     }
     protected void onStart(){
@@ -94,11 +91,11 @@ public class CookWelcome extends AppCompatActivity {
                             statusMsg.setText("Your account is "+codeStatus[cookStatus]);
                             if (cookStatus!=2){
                                 //Deactivate buttons and invisible lists when account is suspended
-                                Button btnMeals = findViewById(R.id.btn_cook_manage_meals);
+                                Button btnMeals = findViewById(R.id.btn_admin_suspendCook);
                                 btnMeals.setEnabled(Boolean.FALSE);
                                 Button btnOrders = findViewById(R.id.btn_cook_manage_orders);
                                 btnOrders.setEnabled(Boolean.FALSE);
-                                ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
+                                ListView list_cook_menuItems = findViewById(R.id.list_admin_complaints);
                                 list_cook_menuItems.setEnabled(Boolean.FALSE);
                                 ListView list_cook_orders = findViewById(R.id.list_cook_orders);
                                 list_cook_orders.setEnabled(Boolean.FALSE);
@@ -132,7 +129,7 @@ public class CookWelcome extends AppCompatActivity {
                                         + " $CAD)");
 
                             }
-                            ListView list_cook_menuItems = findViewById(R.id.list_cook_menuItems);
+                            ListView list_cook_menuItems = findViewById(R.id.list_admin_complaints);
                             ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
                                     android.R.layout.simple_list_item_activated_1,lstMeal);
                             list_cook_menuItems.setAdapter(arrayAdapter);
