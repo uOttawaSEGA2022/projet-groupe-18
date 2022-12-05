@@ -41,11 +41,12 @@ public class Complaint {
         Cook = cook;
     }
     public Complaint(Activity Explain, List<Complaint> complaints){
-        super(Explain, R.layout.activity_client_complaints, complaints);
+        //super(Explain, R.layout.activity_client_complaints, complaints);
         this.Explain = Explain;
         this.complaints = complaints;
     }
-    @Override
+
+   // @Override
     public View getView(int position, View convertView, ViewGroup parent){
         LayoutInflater inflater = Explain.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.activity_client_complaints, null, true);

@@ -35,6 +35,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="log_out">Log out</string>
     <string name="mealer">Mealer</string>
+    <string name="mealer_main_title"><b>MEALER</b></string>
     <string name="project_id" translatable="false">projet-finale-3e073</string>
     <string name="signingUpAsACook">You are signing up as a <b>Cook</b>.</string>
     <string name="signingUpAsClient">You are signing up as a <b>Client</b>.</string>

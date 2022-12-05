@@ -20,13 +20,6 @@ public class CookMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_cook_welcome);
-        Button returnToMain;
-        returnToMain = findViewById(R.id.btn_cook_logout);
-
-        returnToMain.setOnClickListener(view ->{
-            mAuth.signOut();
-            startActivity(new Intent(CookMenu.this, MainActivity.class));
-        });
     }
     @Override
     protected void onStart(){

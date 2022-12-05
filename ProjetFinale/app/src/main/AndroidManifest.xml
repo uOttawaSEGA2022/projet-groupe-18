@@ -127,6 +127,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".GUI.ClientProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".GUI.Welcome"
             android:exported="false">
             <meta-data

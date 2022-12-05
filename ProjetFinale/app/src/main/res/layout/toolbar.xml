@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="55dp"
     android:background="@color/mealer_tone1"
-    android:onClick="OnLogout"
     android:padding="0dp"
     android:paddingStart="16dp"
     android:paddingLeft="16dp"
@@ -34,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:onClick="OnProfileUpdate"
             android:src="@drawable/ic_baseline_my_profile_24" />
 
         <ImageView

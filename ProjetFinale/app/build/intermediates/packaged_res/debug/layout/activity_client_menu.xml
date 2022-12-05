@@ -18,6 +18,13 @@
             android:orientation="vertical">
 
             <include layout="@layout/toolbar" />
+
+            <TextView
+                android:id="@+id/txt_client_welcomeMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome  client" />
+
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"

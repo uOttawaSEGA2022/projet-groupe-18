@@ -19,12 +19,14 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.projetfinale.GUI.ClientComplaint;
 import com.example.projetfinale.GUI.ClientLogin;
+import com.example.projetfinale.GUI.ClientProfile;
 import com.example.projetfinale.GUI.CookLogin;
 import com.example.projetfinale.GUI.CookOrder;
 import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
 import com.example.projetfinale.GUI.clientmenu.fragments.OrdersTabFragment;
 import com.example.projetfinale.GUI.clientmenu.fragments.SearchTabFragment;
+import com.example.projetfinale.GUI.cookProfil;
 import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -39,6 +41,7 @@ import org.checkerframework.checker.units.qual.C;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     //Firebase variables
@@ -52,6 +55,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
     FragmentContainerView fragCtView;
     String clientEmail;
+    String clientFirstName;
+    String clientLastName;
     String clientFullName;
     String clientID;
 
@@ -123,14 +128,6 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                 tabLayout.getTabAt(position).select();
             }
         });
-
-        // Logout = findViewById(R.id.btn_logout);
-        // Complaint = findViewById(R.id.btn_ComplaintPage);
-
-        //Logout.setOnClickListener(view ->{
-            //mAuth.signOut();
-            //startActivity(new Intent(ClientMenu.this, MainActivity.class));
-        //});
     }
     @Override
     protected void onStart(){
@@ -141,10 +138,12 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         } else
         {
             //Get client email
-
             clientEmail = user.getEmail().toLowerCase();
+            clientFullName = user.getDisplayName();
+            //Display username
+            TextView welcomeMsg = findViewById(R.id.txt_client_welcomeMsg);
+            welcomeMsg.setText("Welcome "+ clientFullName+ " ("+ clientEmail+")");
             getClientInfo();
-
 
         }
 
@@ -158,7 +157,18 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         startActivity(i);
       }
     public void OnLogout(View view){
+        mAuth.signOut();
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
+    }
+
+    public void OnProfileUpdate( View view){
+        Intent i = new Intent(getApplicationContext(), ClientProfile.class);
+        i.putExtra("clientID",clientID);
+        i.putExtra("clientFirstname",clientFirstName);
+        i.putExtra("clientLastname",clientLastName);
+        i.putExtra("clientEmail",clientEmail);
+
+        startActivity(i);
     }
 
     @Override
@@ -180,6 +190,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 clientID = document.getId().toString();
+                                clientFirstName = document.get("clientFirstname").toString();
+                                clientLastName = document.get("clientLastname").toString();
                                 clientFullName = document.get("clientFullName").toString();
                            }
                         } else {
