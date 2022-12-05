@@ -21,6 +21,25 @@
             android:layout_height="37dp"
             android:text="bienvenue Admin!" />
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="328dp">
+
+            <LinearLayout
+                android:id="@+id/ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/ComplaintList"
+                    android:layout_width="match_parent"
+                    android:layout_height="354dp"
+                    android:layout_gravity="center_horizontal"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+        </ScrollView>
+
         <TextView
             android:id="@+id/CookName"
             android:layout_width="match_parent"

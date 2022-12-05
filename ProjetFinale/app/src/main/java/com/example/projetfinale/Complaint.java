@@ -46,7 +46,7 @@ public class Complaint {
         this.complaints = complaints;
     }
 
-   // @Override
+    //@Override
     public View getView(int position, View convertView, ViewGroup parent){
         LayoutInflater inflater = Explain.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.activity_client_complaints, null, true);
