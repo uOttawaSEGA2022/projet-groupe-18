@@ -19,4 +19,5 @@ public class Cook extends User{
     public String getAddress(){
         return address;
     }
+
 }
