@@ -32,17 +32,15 @@ public class CookSuspend extends AppCompatActivity {
     private String id;
     Button SuspendButton;
     EditText Date;
-    EditText Name;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_welcome);
-        //Date = (EditText) findViewById(R.id.Date);
         Intent currentIntent = getIntent();
         id = currentIntent.getStringExtra("ID");
-        //SuspendButton = findViewById(R.id.SuspendButton);
+        SuspendButton = findViewById(R.id.btn_admin_suspendCook);
         complaints = new ArrayList<>();
-       // ComplaintList = findViewById(R.id.ComplaintList);
+        ComplaintList = findViewById(R.id.list_admin_complaints);
         databaseComplaints = FirebaseDatabase.getInstance().getReference("Complaints");
         SuspendButton.setOnClickListener(new View.OnClickListener(){
             @Override
