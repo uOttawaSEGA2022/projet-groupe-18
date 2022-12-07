@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mealer_tone2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,73 +13,83 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-1dp"
         tools:ignore="MissingConstraints">
-
         <include layout="@layout/toolbar" />
 
         <TextView
-            android:id="@+id/Bienvenue"
+            android:id="@+id/Welcome"
             android:layout_width="match_parent"
             android:layout_height="37dp"
-            android:text="bienvenue Admin!" />
+            android:text="Welcome Admin!" />
 
-        <ScrollView
+        <TextView
+            android:id="@+id/txt_admin_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Please select a complaint and choose an option" />
+
+        <LinearLayout
+            android:id="@+id/layout_cook_lists"
             android:layout_width="match_parent"
-            android:layout_height="328dp">
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/ListView"
-                android:layout_width="fill_parent"
+            <TableRow
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_gravity="center">
 
-                <ListView
-                    android:id="@+id/ComplaintList"
+                <Button
+                    android:id="@+id/btn_admin_activateCook"
                     android:layout_width="match_parent"
-                    android:layout_height="354dp"
-                    android:layout_gravity="center_horizontal"
-                    android:dividerHeight="1dp" />
-            </LinearLayout>
-        </ScrollView>
+                    android:layout_height="wrap_content"
+                    android:onClick="OnExcuse"
+                    android:text="Excuse" />
 
-        <TextView
-            android:id="@+id/CookName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Cook Name" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+                <Button
+                    android:id="@+id/btn_admin_suspendCook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mealer_tone1"
+                    android:onClick="OnSuspend"
+                    android:text="suspend" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="Suspension Date" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/Date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="dd/mm/yyyy" />
+                <Button
+                    android:id="@+id/btn_admin_terminateCook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="OnTerminate"
+                    android:text="Terminate" />
+            </TableRow>
 
-        <Button
-            android:id="@+id/SuspendButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Suspend" />
+            <Switch
+                android:id="@+id/swPastComplaints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnIncludePast"
+                android:text="Include past complaints in the list"
+                android:textOff="No"
+                android:textOn="Yes" />
 
-        <Button
-            android:id="@+id/btn_admin_logout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnReturn"
-            android:text="logout" />
+            <ListView
+                android:id="@+id/list_admin_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice" />
+
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

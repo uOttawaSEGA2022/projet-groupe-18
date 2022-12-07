@@ -9,10 +9,11 @@
     tools:context=".GUI.CookWelcome">
 
     <LinearLayout
+        android:id="@+id/layout_cook_lists"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:orientation="vertical">
-
         <include layout="@layout/toolbar" />
 
         <TextView
@@ -27,52 +28,45 @@
             android:layout_height="wrap_content"
             android:text="Cook status" />
 
-        <LinearLayout
-            android:id="@+id/layout_cook_lists"
+
+        <Button
+            android:id="@+id/btn_cook_manage_meals"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnManageMeals"
+            android:text="MANAGE MEALS" />
 
-            <Button
-                android:id="@+id/btn_cook_manage_meals"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/mealer_tone1"
-                android:onClick="OnManageMeals"
-                android:text="MANAGE MEALS" />
+        <Switch
+            android:id="@+id/swPastComplaints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCheckAvailable"
+            android:text="Include unavailable meals in the list"
+            android:textOff="No"
+            android:textOn="Yes" />
 
-            <Switch
-                android:id="@+id/swUnavailableMeal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="OnCheckAvailable"
-                android:text="Include unavailable meals in the list"
-                android:textOff="No"
-                android:textOn="Yes" />
+        <ListView
+            android:id="@+id/list_admin_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="276dp" />
 
-            <ListView
-                android:id="@+id/list_cook_menuItems"
-                android:layout_width="wrap_content"
-                android:layout_height="276dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_cook_manage_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mealer_tone1"
+            android:onClick="OnManageOrders"
+            android:text="MANAGE ORDERS" />
 
-            <Button
-                android:id="@+id/btn_cook_manage_orders"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/mealer_tone1"
-                android:onClick="OnManageOrders"
-                android:text="MANAGE ORDERS" />
-
-            <ListView
-                android:id="@+id/list_cook_orders"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+        <ListView
+            android:id="@+id/list_cook_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

@@ -16,7 +16,7 @@
 
     <style name="Theme.ProjetFinale.NoActionBar">
         <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="Theme.ProjetFinale.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
