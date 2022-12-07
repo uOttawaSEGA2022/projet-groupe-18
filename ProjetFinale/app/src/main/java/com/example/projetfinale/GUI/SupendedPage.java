@@ -1,4 +1,4 @@
-package com.example.projetfinale;
+package com.example.projetfinale.GUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projetfinale.Cook;
+import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
