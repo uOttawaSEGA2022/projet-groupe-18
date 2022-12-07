@@ -9,7 +9,7 @@
     tools:context=".GUI.CookWelcome">
 
     <LinearLayout
-        android:id="@+id/layout_cook_lists"
+        android:id="@+id/layout_cook"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
@@ -47,7 +47,7 @@
             android:textOn="Yes" />
 
         <ListView
-            android:id="@+id/list_admin_complaints"
+            android:id="@+id/list_cook_meals"
             android:layout_width="wrap_content"
             android:layout_height="276dp" />
 

@@ -73,10 +73,12 @@ id firstNameField
 id fragment_container_view
 id fullNameField
 id lastNameField
+id layout_cook
 id layout_cook_lists
 id list_admin_complaints
 id list_client_meals
 id list_client_orders
+id list_cook_meals
 id list_cook_orders
 id loginAsATextView
 id loginAsTextView
