@@ -31,6 +31,11 @@ public class CookMeal extends AppCompatActivity {
     String action;
     String cookID;
     String cookRestaurantName;
+    String mealID;
+    String mealName ;
+    String mealPrice ;
+    Boolean checkMealAvailable;
+    Integer mealAvailable;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
     Button btnaction;
@@ -52,16 +57,24 @@ public class CookMeal extends AppCompatActivity {
             cookRestaurantName = extras.getString("cookRestaurantName");
             btnaction.setText(action);
         }
-        if (action=="Update")
+        if (action.equals("Update"))
         {
+            mealID = extras.getString("mealID");
+            mealName =  extras.getString("mealName");
+            mealPrice = extras.getString("mealPrice");
+            mealAvailable = extras.getInt("mealAvailable");
+            checkMealAvailable = mealAvailable==1;
+            txtmealName.setText(mealName);
+            txtmealPrice.setText(mealPrice);
+            rdAvailableYes.setChecked(checkMealAvailable);
 
         }
     }
     public void onAction( View view) {
-            String mealNname = txtmealName.getText().toString();
-            String mealPrice = txtmealPrice.getText().toString();
-            Boolean checkMealAvailable = rdAvailableYes.isChecked();
-            Integer mealAvailable;
+            mealName = txtmealName.getText().toString();
+             mealPrice = txtmealPrice.getText().toString();
+             checkMealAvailable = rdAvailableYes.isChecked();
+
             if (checkMealAvailable){
                 mealAvailable=1;
             }else
@@ -69,7 +82,7 @@ public class CookMeal extends AppCompatActivity {
                 mealAvailable=0;
             }
 
-            if (TextUtils.isEmpty(mealNname)) {
+            if (TextUtils.isEmpty(mealName)) {
                 txtmealName.setError("Name can't be empty");
                 txtmealName.requestFocus();
             } else if (TextUtils.isEmpty(mealPrice)) {
@@ -77,12 +90,24 @@ public class CookMeal extends AppCompatActivity {
                 txtmealPrice.requestFocus();
             } else {
                 double price = Double.parseDouble(mealPrice);
-                if (action=="Add") {
-                    addCookMeal(cookID, mealNname, price, mealAvailable);
-                } else {
+                if (action.equals("Add")) {
+                    addCookMeal(cookID, mealName, price, mealAvailable);
+                    finish();
+                }
+                if (action.equals("Update")){
+                    updCookMeal(mealID, mealName, price, mealAvailable);
+                    finish();
 
                 }
             }
+
+    }
+    private void updCookMeal(String MealID,String name, double price, Integer avail){
+        db.collection("meal").document(MealID)
+                .update("mealName", mealName,
+                        "mealPrice",mealPrice,
+                        "mealAvailable",mealAvailable);
+
 
     }
     private void addCookMeal(String ID,String name, double price, Integer avail){
@@ -102,8 +127,7 @@ public class CookMeal extends AppCompatActivity {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(getApplicationContext(), "Repas ajouté au menu" , Toast.LENGTH_SHORT).show();
-                        txtmealName.setText("");
-                        txtmealPrice.setText("");
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

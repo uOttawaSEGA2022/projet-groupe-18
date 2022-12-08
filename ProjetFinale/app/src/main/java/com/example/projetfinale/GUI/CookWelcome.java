@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projetfinale.R;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -31,7 +33,13 @@ public class CookWelcome extends AppCompatActivity {
     FirebaseFirestore db;
     FirebaseAuth mAuth;
     Switch swmealavail;
-
+    ListView list_cook_menuItems;
+    List<String> lstMealID = new ArrayList<>();
+    List<String> lstMealName = new ArrayList<>();
+    List<String> lstMealPrice = new ArrayList<>();
+    List<Integer> lstMealAvailable = new ArrayList<>();
+    ListView list_cook_orders;
+    List<String> lstOrderID = new ArrayList<>();
     String cookName;
     String cookEmail;
     String cookRestaurantName;
@@ -47,6 +55,8 @@ public class CookWelcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cook_welcome);
         swmealavail = findViewById(R.id.swPastComplaints);
+        list_cook_menuItems = findViewById(R.id.list_cook_meals);
+        list_cook_orders = findViewById(R.id.list_cook_orders);
 
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
@@ -96,9 +106,7 @@ public class CookWelcome extends AppCompatActivity {
                                 btnMeals.setEnabled(Boolean.FALSE);
                                 TableRow btnOrders = findViewById(R.id.trOrders);
                                 btnOrders.setEnabled(Boolean.FALSE);
-                                ListView list_cook_menuItems = findViewById(R.id.list_cook_meals);
                                 list_cook_menuItems.setEnabled(Boolean.FALSE);
-                                ListView list_cook_orders = findViewById(R.id.list_cook_orders);
                                 list_cook_orders.setEnabled(Boolean.FALSE);
                             }
 
@@ -123,14 +131,21 @@ public class CookWelcome extends AppCompatActivity {
                     @Override
                     public void onComplete( @NonNull Task<QuerySnapshot> task ) {
                         List<String> lstMeal = new ArrayList<>();
+                        lstMealID.clear();
+                        lstMealName.clear();
+                        lstMealPrice.clear();
+                        lstMealAvailable.clear();
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 lstMeal.add(document.get("mealName").toString() + " ("
                                         + document.get("mealPrice").toString()
                                         + " $CAD)");
+                                lstMealID.add(document.getId());
+                                lstMealName.add(document.get("mealName").toString());
+                                lstMealPrice.add(document.get("mealPrice").toString());
+                                lstMealAvailable.add(Integer.parseInt(document.get("mealAvailable").toString()));
 
                             }
-                            ListView list_cook_menuItems = findViewById(R.id.list_cook_meals);
                             ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
                                     android.R.layout.simple_list_item_activated_1,lstMeal);
                             list_cook_menuItems.setAdapter(arrayAdapter);
@@ -151,14 +166,15 @@ public class CookWelcome extends AppCompatActivity {
                     @Override
                     public void onComplete( @NonNull Task<QuerySnapshot> task ) {
                         List<String> lstOrders = new ArrayList<>();
+                        lstOrderID.clear();
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 lstOrders.add(document.get("mealFullName").toString()
                                         + " X " + document.get("quantity").toString()
                                         + "\n\tFor " + document.get("clientFullName").toString()
                                         + "\n\tStatus: " + document.get("orderStatus"));
+                                lstOrderID.add(document.getId());
                             }
-                            ListView list_cook_orders = findViewById(R.id.list_cook_orders);
                             ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(),
                                     android.R.layout.simple_list_item_activated_1,lstOrders);
                             list_cook_orders.setAdapter(arrayAdapter);
@@ -179,16 +195,53 @@ public class CookWelcome extends AppCompatActivity {
         i.putExtra("cookID",cookID);
         i.putExtra("cookRestaurantName", cookRestaurantName);
         startActivity(i);
+        displayMeal(cookID);
            }
     public void OnUpdMeals( View view){
-        Intent i = new Intent(getApplicationContext(), CookMeal.class);
-        i.putExtra("action","Add");
-        i.putExtra("cookID",cookID);
-        i.putExtra("cookRestaurantName", cookRestaurantName);
-        //startActivity(i);
+        int position = list_cook_menuItems.getCheckedItemPosition();
+        if (position==-1) {
+            Toast.makeText(getApplicationContext(), "Please select a meal", Toast.LENGTH_SHORT).show();
+
+        } else {
+            String mealID = lstMealID.get(position);
+            String mealName = lstMealName.get(position);
+            String mealPrice = lstMealPrice.get(position);
+            Integer mealAvailable = lstMealAvailable.get(position);
+            Intent i = new Intent(getApplicationContext(), CookMeal.class);
+            i.putExtra("action","Update");
+            i.putExtra("cookID",cookID);
+            i.putExtra("cookRestaurantName", cookRestaurantName);
+            i.putExtra("mealID",mealID);
+            i.putExtra("mealName",mealName);
+            i.putExtra("mealPrice",mealPrice);
+            i.putExtra("mealAvailable",mealAvailable);
+            startActivity(i);
+            displayMeal(cookID);
+    }
     }
     public void OnDelMeals( View view){
+        int position = list_cook_menuItems.getCheckedItemPosition();
+        if (position==-1) {
+            Toast.makeText(getApplicationContext(), "Please select a meal", Toast.LENGTH_SHORT).show();
 
+        } else {
+            String mealID = lstMealID.get(position);
+            db.collection("meal").document(mealID)
+                .delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(getApplicationContext(), "Meal deleted", Toast.LENGTH_SHORT).show();
+                        displayMeal(cookID);
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                    }
+                });
+        }
     }
     public void OnCheckAvailable( View view){
         includeMeal=1-includeMeal;

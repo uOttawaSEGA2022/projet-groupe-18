@@ -59,6 +59,7 @@ id btn_cook_update
 id btn_logout
 id btn_my_profile
 id btnaction
+id btncancel
 id client_menu_toolbar
 id client_tabs_layout
 id clients_menu_view_pager

@@ -132,6 +132,14 @@
                 android:backgroundTint="@color/mealer_tone1"
                 android:onClick="onAction"
                 android:text="Action" />
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/mealer_tone1"
+                android:onClick="onReturn"
+                android:text="Cancel" />
 
         </LinearLayout>
 
