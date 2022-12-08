@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Switch;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -91,9 +92,9 @@ public class CookWelcome extends AppCompatActivity {
                             statusMsg.setText("Your account is "+codeStatus[cookStatus]);
                             if (cookStatus!=2){
                                 //Deactivate buttons and invisible lists when account is suspended
-                                Button btnMeals = findViewById(R.id.btn_cook_manage_meals);
+                                TableRow btnMeals = findViewById(R.id.trMeals);
                                 btnMeals.setEnabled(Boolean.FALSE);
-                                Button btnOrders = findViewById(R.id.btn_cook_manage_orders);
+                                TableRow btnOrders = findViewById(R.id.trOrders);
                                 btnOrders.setEnabled(Boolean.FALSE);
                                 ListView list_cook_menuItems = findViewById(R.id.list_cook_meals);
                                 list_cook_menuItems.setEnabled(Boolean.FALSE);
@@ -172,6 +173,23 @@ public class CookWelcome extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
     }
+    public void OnAddMeals( View view){
+        Intent i = new Intent(getApplicationContext(), CookMeal.class);
+        i.putExtra("action","Add");
+        i.putExtra("cookID",cookID);
+        i.putExtra("cookRestaurantName", cookRestaurantName);
+        startActivity(i);
+           }
+    public void OnUpdMeals( View view){
+        Intent i = new Intent(getApplicationContext(), CookMeal.class);
+        i.putExtra("action","Add");
+        i.putExtra("cookID",cookID);
+        i.putExtra("cookRestaurantName", cookRestaurantName);
+        //startActivity(i);
+    }
+    public void OnDelMeals( View view){
+
+    }
     public void OnCheckAvailable( View view){
         includeMeal=1-includeMeal;
         displayMeal(cookID);
@@ -181,13 +199,7 @@ public class CookWelcome extends AppCompatActivity {
         mAuth.signOut();
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
-    public void OnManageMeals( View view){
-        Intent i = new Intent(getApplicationContext(), CookMeal.class);
-        i.putExtra("cookID",cookID);
 
-        i.putExtra("cookRestaurantName", cookRestaurantName);
-        startActivity(i);
-    }
     public void OnProfileUpdate( View view){
         Intent i = new Intent(getApplicationContext(), cookProfil.class);
         i.putExtra("cookID",cookID);

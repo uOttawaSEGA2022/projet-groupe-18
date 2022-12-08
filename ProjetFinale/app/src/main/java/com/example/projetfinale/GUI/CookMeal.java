@@ -28,11 +28,12 @@ public class CookMeal extends AppCompatActivity {
     TextView txtmealName;
     TextView txtmealPrice;
     RadioButton rdAvailableYes;
+    String action;
     String cookID;
     String cookRestaurantName;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
-    Button btnadd;
+    Button btnaction;
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
@@ -43,15 +44,20 @@ public class CookMeal extends AppCompatActivity {
         txtmealName = findViewById(R.id.txt_mealName);
         txtmealPrice = findViewById(R.id.txt_mealPrice);
         rdAvailableYes= findViewById(R.id.rdYes);
-        btnadd = findViewById(R.id.btn_add_meal);
+        btnaction = findViewById(R.id.btnaction);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
+            action =  extras.getString("action");
             cookID = extras.getString("cookID");
             cookRestaurantName = extras.getString("cookRestaurantName");
+            btnaction.setText(action);
+        }
+        if (action=="Update")
+        {
 
         }
     }
-    public void onAddMeal( View view) {
+    public void onAction( View view) {
             String mealNname = txtmealName.getText().toString();
             String mealPrice = txtmealPrice.getText().toString();
             Boolean checkMealAvailable = rdAvailableYes.isChecked();
@@ -71,7 +77,11 @@ public class CookMeal extends AppCompatActivity {
                 txtmealPrice.requestFocus();
             } else {
                 double price = Double.parseDouble(mealPrice);
-                addCookMeal(cookID,mealNname,price, mealAvailable);
+                if (action=="Add") {
+                    addCookMeal(cookID, mealNname, price, mealAvailable);
+                } else {
+
+                }
             }
 
     }
