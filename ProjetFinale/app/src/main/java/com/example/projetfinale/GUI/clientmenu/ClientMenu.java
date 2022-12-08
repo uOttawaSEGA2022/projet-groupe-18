@@ -43,7 +43,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class ClientMenu extends AppCompatActivity  {
     //Firebase variables
     FirebaseAuth mAuth;
     FirebaseFirestore db;
@@ -69,9 +69,11 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         tabLayout = findViewById(R.id.client_tabs_layout);
         Complaint = findViewById(R.id.btnComplaint);
         Order = findViewById(R.id.btnOrder);
-        clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
+   /*     clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
         clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
         clientsMenuViewPager2.setAdapter(clientsMenuTabsViewPagerAdapter);
+
+    */
         fragCtView = findViewById(R.id.fragment_container_view);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -120,7 +122,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
 
             }
         });
-
+/*
         clientsMenuViewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
@@ -128,6 +130,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                 tabLayout.getTabAt(position).select();
             }
         });
+
+ */
     }
     @Override
     protected void onStart(){
@@ -139,11 +143,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
         {
             //Get client email
             clientEmail = user.getEmail().toLowerCase();
-            clientFullName = user.getDisplayName();
-            //Display username
-            TextView welcomeMsg = findViewById(R.id.txt_client_welcomeMsg);
-            welcomeMsg.setText("Welcome "+ clientFullName+ " ("+ clientEmail+")");
-            getClientInfo();
+           getClientInfo();
 
         }
 
@@ -170,7 +170,7 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
 
         startActivity(i);
     }
-
+ /*
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();
@@ -180,6 +180,8 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
     }
+
+ */
     public void getClientInfo(){
         db.collection("client")
                 .whereEqualTo("clientEmail",clientEmail)
@@ -193,7 +195,11 @@ public class ClientMenu extends AppCompatActivity implements AdapterView.OnItemS
                                 clientFirstName = document.get("clientFirstname").toString();
                                 clientLastName = document.get("clientLastname").toString();
                                 clientFullName = document.get("clientFullName").toString();
-                           }
+                                //Display username
+                                TextView welcomeMsg = findViewById(R.id.txt_client_welcomeMsg);
+                                welcomeMsg.setText("Welcome "+ clientFullName+ " ("+ clientEmail+")");
+
+                            }
                         } else {
                             Toast.makeText(getApplicationContext(), "Database client infos error"
                                     + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
