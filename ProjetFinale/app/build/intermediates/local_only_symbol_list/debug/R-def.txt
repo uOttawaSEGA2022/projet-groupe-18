@@ -42,7 +42,6 @@ id btnComplaint
 id btnOrder
 id btn_admin
 id btn_admin_activateCook
-id btn_admin_logout
 id btn_admin_suspendCook
 id btn_admin_terminateCook
 id btn_client
@@ -119,13 +118,14 @@ id toolbar_title
 id trMeals
 id trOrders
 id txt_admin_msg
+id txt_client_msg2
+id txt_client_msg3
 id txt_client_welcomeMsg
 id txt_cook_status
 id txt_cook_welcomeMsg
 id txt_mealID
 id txt_mealName
 id txt_mealPrice
-id txt_welcomeMsg
 id welcomeTextView
 layout activity_admin_login
 layout activity_admin_welcome
@@ -134,7 +134,6 @@ layout activity_client_login
 layout activity_client_menu
 layout activity_client_profile
 layout activity_client_sign_up
-layout activity_client_welcome
 layout activity_cook_login
 layout activity_cook_main_page
 layout activity_cook_manage_meals

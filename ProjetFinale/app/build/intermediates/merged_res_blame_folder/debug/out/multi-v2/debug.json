@@ -963,6 +963,28 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-w1240dp-v13_values-w1240dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\SEG 2505 - android project\\projet-groupe-18\\ProjetFinale\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "42",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-ne_values-ne.arsc.flat",
             "map": [
                 {
@@ -1067,28 +1089,6 @@
                         "startOffsets": "5739,6008,6120,6234",
                         "endColumns": "106,111,113,107",
                         "endOffsets": "5841,6115,6229,6337"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-w1240dp-v13_values-w1240dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\SEG 2505 - android project\\projet-groupe-18\\ProjetFinale\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "42",
-                        "endOffsets": "54"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
                     }
                 }
             ]
@@ -1492,6 +1492,40 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-large-v4_values-large-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\ea4fb2c479fb388b06192e19e8a38269\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\4fda506388bd184a2aa92296377853e5\\transformed\\material-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,177,311,752",
+                        "endLines": "2,3,9,15",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "172,306,747,1190"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,19",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "752,874,1008,1449",
+                        "endLines": "11,12,18,24",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "869,1003,1444,1887"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-hy_values-hy.arsc.flat",
             "map": [
                 {
@@ -1596,40 +1630,6 @@
                         "endLines": "5,33,34,35,36,56,57,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108",
                         "endColumns": "12,79,94,129,80,63,96,84,61,86,63,60,66,60,53,121,56,59,53,80,134,83,84,105,74,74,94,66,65,73,79,85,70,75,75,76,87,79,95,95,73,77,99,50,68,86,90,61,63,62,104,100,99,104,84",
                         "endOffsets": "265,3054,3149,3279,3360,5843,5940,6342,6404,6491,6555,6616,6683,6744,6798,6920,6977,7037,7091,7172,7307,7391,7476,7582,7657,7732,7827,7894,7960,8034,8114,8200,8271,8347,8423,8500,8588,8668,8764,8860,8934,9012,9112,9163,9232,9319,9410,9472,9536,9599,9704,9805,9905,10010,10095"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-large-v4_values-large-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\ea4fb2c479fb388b06192e19e8a38269\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,185,256,326,396,464,532,636",
-                        "endColumns": "58,70,70,69,69,67,67,103,115",
-                        "endOffsets": "109,180,251,321,391,459,527,631,747"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\4fda506388bd184a2aa92296377853e5\\transformed\\material-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,10",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,177,311,752",
-                        "endLines": "2,3,9,15",
-                        "endColumns": "121,133,10,10",
-                        "endOffsets": "172,306,747,1190"
-                    },
-                    "to": {
-                        "startLines": "11,12,13,19",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "752,874,1008,1449",
-                        "endLines": "11,12,18,24",
-                        "endColumns": "121,133,10,10",
-                        "endOffsets": "869,1003,1444,1887"
                     }
                 }
             ]
@@ -2419,22 +2419,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-v25_values-v25.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\ea4fb2c479fb388b06192e19e8a38269\\transformed\\appcompat-1.5.1\\res\\values-v25\\values-v25.xml",
-                    "from": {
-                        "startLines": "2,3,4,6",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,126,209,308",
-                        "endLines": "2,3,5,7",
-                        "endColumns": "70,82,12,12",
-                        "endOffsets": "121,204,303,414"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-bs_values-bs.arsc.flat",
             "map": [
                 {
@@ -2539,6 +2523,22 @@
                         "startOffsets": "3442,3548,3708,3834,3944,4094,4220,4332,4575,4729,4836,4997,5124,5274,5420,5488,5550",
                         "endColumns": "105,159,125,109,149,125,111,101,153,106,160,126,149,145,67,61,84",
                         "endOffsets": "3543,3703,3829,3939,4089,4215,4327,4429,4724,4831,4992,5119,5269,5415,5483,5545,5630"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\values-v25_values-v25.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\corin\\.gradle\\caches\\transforms-3\\ea4fb2c479fb388b06192e19e8a38269\\transformed\\appcompat-1.5.1\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
                     }
                 }
             ]
