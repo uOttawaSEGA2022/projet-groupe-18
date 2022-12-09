@@ -24,7 +24,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="5dp"
             android:visibility="visible"
-            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+            app:srcCompat="@mipmap/ic_logo_foreground" />
 
         <TextView
             android:id="@+id/mealer_main_title"
