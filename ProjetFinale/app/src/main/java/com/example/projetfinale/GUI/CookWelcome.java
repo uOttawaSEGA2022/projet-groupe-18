@@ -265,6 +265,15 @@ public class CookWelcome extends AppCompatActivity {
 
         startActivity(i);
     }
+    /*
+    public void OnOrdAppr(){
+        int position = list_cook_orders.getCheckedItemPosition();
+        if (position==-1) {
+            Toast.makeText(getApplicationContext(), "Please select a meal", Toast.LENGTH_SHORT).show();
+
+        } else {
+
+    }*/
     public void OnManageOrders( View view){
 
         Intent i = new Intent(getApplicationContext(), CookOrder.class);
