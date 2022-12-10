@@ -10,11 +10,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Submit an Order" />
+
+
         <ListView
             android:id="@+id/list_client_meals"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:choiceMode="singleChoice" />
+
 
     </LinearLayout>
 

@@ -21,6 +21,7 @@ import com.example.projetfinale.GUI.ClientComplaint;
 import com.example.projetfinale.GUI.ClientLogin;
 import com.example.projetfinale.GUI.ClientProfile;
 import com.example.projetfinale.GUI.CookLogin;
+import com.example.projetfinale.GUI.CookMeal;
 import com.example.projetfinale.GUI.CookOrder;
 import com.example.projetfinale.GUI.CookWelcome;
 import com.example.projetfinale.GUI.MainActivity;
@@ -48,8 +49,6 @@ public class ClientMenu extends AppCompatActivity  {
     FirebaseAuth mAuth;
     FirebaseFirestore db;
     //GUI variables
-    Button Order;
-    Button Complaint;
     TabLayout tabLayout;
     ViewPager2 clientsMenuViewPager2;
     ClientMenuViewPagerAdapter clientsMenuTabsViewPagerAdapter;
@@ -67,37 +66,26 @@ public class ClientMenu extends AppCompatActivity  {
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         tabLayout = findViewById(R.id.client_tabs_layout);
-        Complaint = findViewById(R.id.btnComplaint);
-        Order = findViewById(R.id.btnOrder);
-   /*     clientsMenuViewPager2 = findViewById(R.id.clients_menu_view_pager);
-        clientsMenuTabsViewPagerAdapter = new ClientMenuViewPagerAdapter(this);
-        clientsMenuViewPager2.setAdapter(clientsMenuTabsViewPagerAdapter);
-
-    */
         fragCtView = findViewById(R.id.fragment_container_view);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .add(R.id.fragment_container_view, SearchTabFragment.class, null)
-                    .commit();
-        }
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab.getPosition()==0) {
-                    Complaint.setEnabled(false);
-                    Order.setEnabled(true);
+                if (tab.getPosition()==0 & clientID != null)
+                {
+                    Bundle args = new Bundle();
+                    args.putString("clientID", clientID);
+                    args.putString("clientFullName", clientFullName);
+
                     for (Fragment fragment : getSupportFragmentManager().getFragments()) {
                         getSupportFragmentManager().beginTransaction().remove(fragment).commit();
                     }
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
-                            .add(R.id.fragment_container_view, SearchTabFragment.class, null)
+                            .add(R.id.fragment_container_view, SearchTabFragment.class, args)
                             .commit();
 
-                } else {
-                    Complaint.setEnabled(true);
-                    Order.setEnabled(false);
+                } else if(clientID != null){
                     Bundle args = new Bundle();
                     args.putString("clientID", clientID);
                     args.putString("clientFullName", clientFullName);
@@ -109,29 +97,16 @@ public class ClientMenu extends AppCompatActivity  {
                             .add(R.id.fragment_container_view, OrdersTabFragment.class, args)
                             .commit();
                 }
-
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 
             }
-
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
         });
-/*
-        clientsMenuViewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                super.onPageSelected(position);
-                tabLayout.getTabAt(position).select();
-            }
-        });
-
- */
     }
     @Override
     protected void onStart(){
@@ -144,6 +119,7 @@ public class ClientMenu extends AppCompatActivity  {
             //Get client email
             clientEmail = user.getEmail().toLowerCase();
            getClientInfo();
+
 
         }
 
@@ -170,18 +146,17 @@ public class ClientMenu extends AppCompatActivity  {
 
         startActivity(i);
     }
- /*
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String text = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(getApplicationContext(), text+" functionality coming soon", Toast.LENGTH_SHORT).show();
-    }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-    }
+    public void displayOrder(){
+            Bundle args = new Bundle();
+            args.putString("clientID", clientID);
+            args.putString("clientFullName", clientFullName);
 
- */
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragment_container_view, SearchTabFragment.class, args)
+                    .commit();
+    }
     public void getClientInfo(){
         db.collection("client")
                 .whereEqualTo("clientEmail",clientEmail)
@@ -200,6 +175,7 @@ public class ClientMenu extends AppCompatActivity  {
                                 welcomeMsg.setText("Welcome "+ clientFullName+ " ("+ clientEmail+")");
 
                             }
+                            displayOrder();
                         } else {
                             Toast.makeText(getApplicationContext(), "Database client infos error"
                                     + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

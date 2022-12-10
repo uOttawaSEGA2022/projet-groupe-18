@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -31,7 +32,7 @@ public class OrdersTabFragment extends Fragment {
     FirebaseAuth mAuth;
     //GUI variables
     protected ListView list_client_orders;
-
+    Button Complaint;
     String clientID;
 
     Activity activity = getActivity();
@@ -42,6 +43,7 @@ public class OrdersTabFragment extends Fragment {
         list_client_orders = view.findViewById(R.id.list_client_orders);
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
+        Complaint = view.findViewById(R.id.btnComplaint);
         Bundle args = getArguments();
         clientID = args.getString("clientID");
         displayOrders(clientID);

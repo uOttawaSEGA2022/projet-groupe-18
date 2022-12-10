@@ -189,6 +189,7 @@ public class CookWelcome extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
     }
+
     public void OnAddMeals( View view){
         Intent i = new Intent(getApplicationContext(), CookMeal.class);
         i.putExtra("action","Add");
@@ -196,7 +197,8 @@ public class CookWelcome extends AppCompatActivity {
         i.putExtra("cookRestaurantName", cookRestaurantName);
         startActivity(i);
         displayMeal(cookID);
-           }
+    }
+
     public void OnUpdMeals( View view){
         int position = list_cook_menuItems.getCheckedItemPosition();
         if (position==-1) {

@@ -4,12 +4,12 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-mdpi\\ic_logo.png"
     },
     {
-        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_profil.xml.flat",
-        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_profil.xml"
-    },
-    {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_sign_up.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_profil.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_profil.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-anydpi-v26_ic_logo_round.xml.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxhdpi_ic_logo.png.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-xxhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "com.example.projetfinale.app-merged_res-6:/layout_fragment_search_tab.xml.flat",
+        "source": "com.example.projetfinale.app-main-8:/layout/fragment_search_tab.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxxhdpi_ic_logo_foreground.png.flat",
@@ -64,20 +68,20 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_general_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-mdpi_ic_logo_foreground.png.flat",
-        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-mdpi\\ic_logo_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_baseline_feedback_24.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\drawable\\ic_baseline_feedback_24.xml"
     },
     {
-        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-mdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-mdpi\\ic_logo_foreground.png"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_baseline_my_profile_24.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\drawable\\ic_baseline_my_profile_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -148,10 +152,6 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_login.xml"
     },
     {
-        "merged": "com.example.projetfinale.app-merged_res-6:/layout_activity_cook_welcome.xml.flat",
-        "source": "com.example.projetfinale.app-main-8:/layout/activity_cook_welcome.xml"
-    },
-    {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xhdpi_ic_logo.png.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-xhdpi\\ic_logo.png"
     },
@@ -172,16 +172,16 @@
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-debug-7:\\mipmap-hdpi\\ic_logo_foreground.png"
     },
     {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_menu.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_cook_manage_meals.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_cook_manage_meals.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_content_cook_main_page.xml.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\content_cook_main_page.xml"
-    },
-    {
-        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_menu.xml.flat",
-        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_menu.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xxxhdpi_ic_logo.png.flat",
@@ -234,6 +234,10 @@
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_order.xml.flat",
+        "source": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-main-8:\\layout\\activity_client_order.xml"
     },
     {
         "merged": "C:\\Users\\corin\\.gradle\\daemon\\7.4\\com.example.projetfinale.app-merged_res-6:\\layout_activity_client_complaints.xml.flat",

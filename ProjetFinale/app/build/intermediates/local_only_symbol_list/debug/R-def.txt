@@ -126,12 +126,14 @@ id txt_cook_welcomeMsg
 id txt_mealID
 id txt_mealName
 id txt_mealPrice
+id txt_mealQuantity
 id welcomeTextView
 layout activity_admin_login
 layout activity_admin_welcome
 layout activity_client_complaints
 layout activity_client_login
 layout activity_client_menu
+layout activity_client_order
 layout activity_client_profile
 layout activity_client_sign_up
 layout activity_cook_login

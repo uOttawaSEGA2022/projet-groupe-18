@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CookMeal extends AppCompatActivity {
+
     TextView txtmealName;
     TextView txtmealPrice;
     RadioButton rdAvailableYes;
@@ -71,35 +72,35 @@ public class CookMeal extends AppCompatActivity {
         }
     }
     public void onAction( View view) {
-            mealName = txtmealName.getText().toString();
-             mealPrice = txtmealPrice.getText().toString();
-             checkMealAvailable = rdAvailableYes.isChecked();
+        mealName = txtmealName.getText().toString();
+        mealPrice = txtmealPrice.getText().toString();
+        checkMealAvailable = rdAvailableYes.isChecked();
 
-            if (checkMealAvailable){
-                mealAvailable=1;
-            }else
-            {
-                mealAvailable=0;
+        if (checkMealAvailable){
+            mealAvailable=1;
+        }else
+        {
+            mealAvailable=0;
+        }
+
+        if (TextUtils.isEmpty(mealName)) {
+            txtmealName.setError("Name can't be empty");
+            txtmealName.requestFocus();
+        } else if (TextUtils.isEmpty(mealPrice)) {
+            txtmealPrice.setError("Price can't be empty");
+            txtmealPrice.requestFocus();
+        } else {
+            double price = Double.parseDouble(mealPrice);
+            if (action.equals("Add")) {
+                addCookMeal(cookID, mealName, price, mealAvailable);
+                finish();
             }
+            if (action.equals("Update")){
+                updCookMeal(mealID, mealName, price, mealAvailable);
+                finish();
 
-            if (TextUtils.isEmpty(mealName)) {
-                txtmealName.setError("Name can't be empty");
-                txtmealName.requestFocus();
-            } else if (TextUtils.isEmpty(mealPrice)) {
-                txtmealPrice.setError("Price can't be empty");
-                txtmealPrice.requestFocus();
-            } else {
-                double price = Double.parseDouble(mealPrice);
-                if (action.equals("Add")) {
-                    addCookMeal(cookID, mealName, price, mealAvailable);
-                    finish();
-                }
-                if (action.equals("Update")){
-                    updCookMeal(mealID, mealName, price, mealAvailable);
-                    finish();
-
-                }
             }
+        }
 
     }
     private void updCookMeal(String MealID,String name, double price, Integer avail){
@@ -141,4 +142,4 @@ public class CookMeal extends AppCompatActivity {
     public void OnReturn( View view) {
         Intent intent = new Intent(getApplicationContext(), CookWelcome.class);
     }
-    }
+}

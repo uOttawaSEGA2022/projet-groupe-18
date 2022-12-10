@@ -35,12 +35,6 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/btnOrder"
-                        android:layout_width="208dp"
-                        android:layout_height="wrap_content"
-                        android:onClick="OnOrder"
-                        android:text="Submit an Order" />
 
                     <Button
                         android:id="@+id/btnComplaint"
